@@ -1,0 +1,180 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: assistant, sans-serif;
+  background-color: black;
+}
+
+html h2 {
+  font-weight: bold;
+}
+
+hr {
+  width: 300px;
+  border-top: 2px solid #999;
+}
+
+label {
+  font-weight: bold;
+}
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: #3d3d3d;
+}
+
+footer p {
+  color: #c9c9c9;
+  font-size: 0.95em;
+  padding-top: 30px;
+  font: 15px/20px assistant, sans-serif;
+  letter-spacing: 1px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #fbff00;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+.jumbotron {
+  margin: 0px;
+  background-image: url(../img/Jumbotron-background.jpg);
+  background-size: cover;
+  text-shadow: 1px 1px 4px #413b3b;
+}
+
+.jumbotron img {
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 7px 5px #8b8b8b;
+          box-shadow: 0px 0px 7px 5px #8b8b8b;
+}
+
+.jumbotron h1 {
+  margin-bottom: 20px;
+  color: #ededed;
+}
+
+.jumbotron p {
+  margin-bottom: 20px;
+  color: #ededed;
+}
+
+.jumbotron .brand-dean {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jumbotron .brand-dean img {
+  width: 30px;
+  height: 30px;
+  margin-top: 0px;
+  margin-right: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.jumbotron .brand-dean h4 {
+  margin-left: 10px;
+  color: #ededed;
+}
+
+.about {
+  background-image: url(../img/about-background.jpg);
+  background-size: cover;
+  min-height: 280px;
+}
+
+.about h2 {
+  margin-top: 20px;
+}
+
+.about p {
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.portfolio {
+  background-image: url(../img/portfolio2-background.png);
+  background-size: cover;
+}
+
+.portfolio h2 {
+  margin-top: 20px;
+  color: #fdfdfd;
+  text-shadow: 1px 1px 4px #413b3b;
+}
+
+.portfolio hr {
+  margin-top: 5px;
+  border-top: 2px solid #fdfdfd;
+}
+
+.card {
+  margin-bottom: 20px;
+  -webkit-box-shadow: 3px 5px 10px 3px #cccccc;
+          box-shadow: 3px 5px 10px 3px #cccccc;
+}
+
+.contact {
+  margin-top: 25px;
+  margin-bottom: 150px;
+}
+
+.contact h1 {
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  font: 80px/100px assistant, sans-serif;
+  font-weight: bold;
+  color: #a4a700;
+  text-shadow: 3px 3px 5px #646464;
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+.engga {
+  font-weight: normal;
+}
+
+.cardcontact {
+  background-color: rgba(199, 199, 199, 0.5);
+}
+
+.formkanan {
+  margin-top: 70px;
+}
+
+.kirim {
+  width: 90px;
+  height: 40px;
+}
+
+#pesan {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .about {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+/*# sourceMappingURL=index.css.map */
