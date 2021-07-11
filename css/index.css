@@ -44,6 +44,7 @@ footer a:hover {
 
 .jumbotron {
   margin: 0px;
+  padding: 30px;
   background-image: url(../img/Jumbotron-background.jpg);
   background-size: cover;
   text-shadow: 1px 1px 4px #413b3b;
@@ -77,6 +78,7 @@ footer a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px;
 }
 
 .jumbotron .brand-dean img {
@@ -96,7 +98,8 @@ footer a:hover {
 .about {
   background-image: url(../img/about-background.jpg);
   background-size: cover;
-  min-height: 280px;
+  min-height: 400px;
+  padding: 50px;
 }
 
 .about h2 {
@@ -104,13 +107,20 @@ footer a:hover {
 }
 
 .about p {
-  letter-spacing: 1px;
+  font: 20px/30px assistant, sans-serif;
+  letter-spacing: 1.7px;
   font-weight: 400;
+  text-align: justify;
+}
+
+.about p span {
+  font-weight: bold;
 }
 
 .portfolio {
   background-image: url(../img/portfolio2-background.png);
   background-size: cover;
+  padding: 50px;
 }
 
 .portfolio h2 {
@@ -128,53 +138,36 @@ footer a:hover {
   margin-bottom: 20px;
   -webkit-box-shadow: 3px 5px 10px 3px #cccccc;
           box-shadow: 3px 5px 10px 3px #cccccc;
+  padding: 30px;
+  min-height: 450px;
+  min-width: 300px;
 }
 
-.contact {
-  margin-top: 25px;
-  margin-bottom: 150px;
+.card img {
+  min-height: 200px;
+  max-width: 400px;
+  max-height: 400px;
 }
 
-.contact h1 {
-  display: inline-block;
-  width: 300px;
-  height: 100px;
-  font: 80px/100px assistant, sans-serif;
-  font-weight: bold;
-  color: #a4a700;
-  text-shadow: 3px 3px 5px #646464;
+.card-body {
+  margin: auto 0px;
 }
 
 .card-header {
   font-weight: bold;
 }
 
-.engga {
-  font-weight: normal;
-}
-
-.cardcontact {
-  background-color: rgba(199, 199, 199, 0.5);
-}
-
-.formkanan {
-  margin-top: 70px;
-}
-
-.kirim {
-  width: 90px;
-  height: 40px;
-}
-
-#pesan {
-  margin-top: 15px;
-}
-
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .about {
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
+  }
+  .card img {
+    margin: 0px auto;
+  }
+  .kurang-margin {
+    margin-top: 0px;
   }
 }
 /*# sourceMappingURL=index.css.map */
