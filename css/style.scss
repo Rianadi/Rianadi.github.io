@@ -1,0 +1,132 @@
+// Dean's index SCSS
+
+$main-color-font: #2c2c2c;
+$secondary-color-font: #ebebeb;
+
+body {
+  background-color: #e7d4b5;
+  margin-top: 20px;
+  font: 16px/20px assistant, sans-serif;
+  color: $main-color-font;
+  li {
+    list-style-type: circle;
+  }
+
+  a {
+    text-decoration: none;
+    color: $secondary-color-font;
+  }
+
+  button {
+    background-color: #665d4e;
+    border: none;
+    color: #ebebeb;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #302c25;
+  }
+
+  button.submit {
+    display: none;
+  }
+
+  footer {
+    h1 {
+      margin-top: 185px;
+      margin-bottom: 20px;
+      text-align: center;
+      padding: 10px;
+      color: $main-color-font;
+      font: 14px/20px assistant, sans-serif;
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 0.15fr 0.15fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". judul judul ."
+      ". search search ."
+      ". table table ."
+      ". table table ."
+      ". signout signout .";
+  }
+
+  // .img {
+  //   grid-area: img;
+  //   background-color: black;
+  //   text-align: center;
+
+  // }
+
+  .judul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    grid-area: judul;
+    img {
+      background-color: #231e23;
+      border: 5px solid #231e23;
+      border-radius: 50%;
+      margin-right: 10px;
+      width: 50px;
+      height: 50px;
+      cursor: not-allowed;
+    }
+
+    h1 {
+      margin-left: 10px;
+      margin-top: 25px;
+      font-weight: 400;
+      cursor: not-allowed;
+    }
+  }
+
+  .search {
+    grid-area: search;
+    ::placeholder {
+      color: $main-color-font;
+      opacity: 1; /* Firefox */
+    }
+
+    #search {
+      color: #353535;
+    }
+  }
+
+  .table {
+    grid-area: table;
+    th {
+      text-align: center;
+    }
+    td {
+      text-align: center;
+    }
+  }
+
+  .down-button {
+    grid-area: signout;
+    margin-top: 20px;
+  }
+
+  @media print {
+    .judul,
+    .search,
+    .signout,
+    footer {
+      display: none;
+    }
+  }
+}
