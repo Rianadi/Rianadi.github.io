@@ -1,5 +1,6 @@
 // global
 html {
+  position: relative;
   margin: 0px;
   padding: 0px;
   font-family: assistant, sans-serif;
@@ -7,6 +8,20 @@ html {
 
   h2 {
     font-weight: bold;
+  }
+}
+
+nav {
+  img {
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 35px;
+    max-height: 35px;
+    margin-right: 10px;
+  }
+
+  .login {
+    margin: 0px 5px;
   }
 }
 
@@ -46,6 +61,7 @@ footer {
 // class
 .jumbotron {
   margin: 0px;
+  margin-top: -5px;
   padding: 30px;
   background-image: url(../img/Jumbotron-background.jpg);
   background-size: cover;
@@ -154,6 +170,90 @@ footer {
   font-weight: bold;
 }
 
+.intro-copy {
+  padding: 1em;
+  margin: 50vh auto;
+  max-width: 15em;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 2em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.top-link {
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3em 3em 0;
+  border-radius: 50%;
+  padding: 0.25em;
+  width: 80px;
+  height: 80px;
+  background-color: #185adb;
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  svg {
+    fill: #000;
+    width: 24px;
+    height: 12px;
+  }
+
+  &:hover {
+    background-color: #e8e8e8;
+
+    svg {
+      fill: #000000;
+    }
+  }
+}
+
+// Text meant only for screen readers.
+.screen-reader-text {
+  position: absolute;
+  clip-path: inset(50%);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  clip: rect(1px, 1px, 1px, 1px);
+
+  &:focus {
+    display: block;
+    top: 5px;
+    left: 5px;
+    z-index: 100000; // Above WP toolbar
+    clip-path: none;
+    background-color: #eee;
+    padding: 15px 23px 14px;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    line-height: normal;
+    color: #444;
+    font-size: 1em;
+    clip: auto !important;
+  }
+}
+
 // .kurang-margin {
 //   margin-top: 35px;
 // }
@@ -213,6 +313,11 @@ footer {
     }
   }
 
+  .top-link {
+    width: 60px;
+    height: 60px;
+  }
+
   .kurang-margin {
     margin-top: 0px;
   }
@@ -225,19 +330,3 @@ footer {
 //     }
 //   }
 // }
-
-@media screen and (max-width: 400px) {
-  .about {
-    min-height: fit-content;
-  }
-
-  .card {
-    img {
-      margin: 0px auto;
-    }
-  }
-
-  .kurang-margin {
-    margin-top: 0px;
-  }
-}

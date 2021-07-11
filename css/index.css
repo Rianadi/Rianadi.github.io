@@ -1,4 +1,5 @@
 html {
+  position: relative;
   margin: 0px;
   padding: 0px;
   font-family: assistant, sans-serif;
@@ -7,6 +8,18 @@ html {
 
 html h2 {
   font-weight: bold;
+}
+
+nav img {
+  min-width: 25px;
+  min-height: 25px;
+  max-width: 35px;
+  max-height: 35px;
+  margin-right: 10px;
+}
+
+nav .login {
+  margin: 0px 5px;
 }
 
 hr {
@@ -44,6 +57,7 @@ footer a:hover {
 
 .jumbotron {
   margin: 0px;
+  margin-top: -5px;
   padding: 30px;
   background-image: url(../img/Jumbotron-background.jpg);
   background-size: cover;
@@ -159,6 +173,97 @@ footer a:hover {
   font-weight: bold;
 }
 
+.intro-copy {
+  padding: 1em;
+  margin: 50vh auto;
+  max-width: 15em;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 2em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.top-link {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 3em 3em 0;
+  border-radius: 50%;
+  padding: 0.25em;
+  width: 80px;
+  height: 80px;
+  background-color: #185adb;
+}
+
+.top-link.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.top-link.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.top-link svg {
+  fill: #000;
+  width: 24px;
+  height: 12px;
+}
+
+.top-link:hover {
+  background-color: #e8e8e8;
+}
+
+.top-link:hover svg {
+  fill: #000000;
+}
+
+.screen-reader-text {
+  position: absolute;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.screen-reader-text:focus {
+  display: block;
+  top: 5px;
+  left: 5px;
+  z-index: 100000;
+  -webkit-clip-path: none;
+          clip-path: none;
+  background-color: #eee;
+  padding: 15px 23px 14px;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  line-height: normal;
+  color: #444;
+  font-size: 1em;
+  clip: auto !important;
+}
+
 @media (max-width: 992px) {
   .about {
     min-height: -webkit-fit-content;
@@ -168,19 +273,9 @@ footer a:hover {
   .card img {
     margin: 0px auto;
   }
-  .kurang-margin {
-    margin-top: 0px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .about {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-  }
-  .card img {
-    margin: 0px auto;
+  .top-link {
+    width: 60px;
+    height: 60px;
   }
   .kurang-margin {
     margin-top: 0px;
