@@ -136,8 +136,8 @@ footer a:hover {
 
 .card {
   margin-bottom: 20px;
-  -webkit-box-shadow: 3px 5px 10px 3px #cccccc;
-          box-shadow: 3px 5px 10px 3px #cccccc;
+  -webkit-box-shadow: 3px 5px 10px 3px rgba(53, 45, 45, 0.5);
+          box-shadow: 3px 5px 10px 3px rgba(53, 45, 45, 0.5);
   padding: 30px;
   min-height: 450px;
   min-width: 300px;
