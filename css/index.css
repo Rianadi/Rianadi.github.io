@@ -13,13 +13,24 @@ html h2 {
 nav img {
   min-width: 25px;
   min-height: 25px;
-  max-width: 35px;
-  max-height: 35px;
+  max-width: 40px;
+  max-height: 40px;
   margin-right: 10px;
 }
 
-nav .login {
-  margin: 0px 5px;
+nav .brand-foxico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .brand-foxico .brand-foxico-name a {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+nav .brand-foxico .brand-foxico-name a:hover {
+  color: #ffd523;
 }
 
 hr {
@@ -48,7 +59,7 @@ footer p {
 
 footer p a {
   text-decoration: none;
-  color: #fbff00;
+  color: #ffd523;
 }
 
 footer a:hover {
@@ -74,12 +85,30 @@ footer a:hover {
 }
 
 .jumbotron h1 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #ededed;
 }
 
 .jumbotron p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: #ededed;
+}
+
+.jumbotron .brand-dean {
+  margin-top: -20px;
+}
+
+.jumbotron .brand-dean img {
+  width: 30px;
+  height: 30px;
+  margin-top: 0px;
+  margin-right: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.jumbotron h4 {
+  margin-left: 10px;
   color: #ededed;
 }
 
@@ -95,18 +124,17 @@ footer a:hover {
   padding: 30px;
 }
 
-.jumbotron .brand-dean img {
-  width: 30px;
-  height: 30px;
-  margin-top: 0px;
-  margin-right: 10px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.jumbotron .foxico-developer h4 {
+  cursor: context-menu;
 }
 
-.jumbotron .brand-dean h4 {
-  margin-left: 10px;
-  color: #ededed;
+.jumbotron .foxico-developer h4 span {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.jumbotron .foxico-developer h4 span:hover {
+  color: #ffd523;
 }
 
 .about {
@@ -162,13 +190,26 @@ footer a:hover {
   max-width: 400px;
   max-height: 400px;
   border-radius: 10px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  z-index: 0;
 }
 
-.card-body {
+.card img:hover {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+  z-index: 9999;
+}
+
+.card .card-body {
   margin: auto 0px;
 }
 
-.card-header {
+.card .card-body .card-text {
+  font-weight: 400;
+}
+
+.card .card-header {
   font-weight: bold;
 }
 
@@ -263,7 +304,27 @@ footer a:hover {
   clip: auto !important;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+  footer {
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #3d3d3d;
+  }
+  footer p {
+    color: #c9c9c9;
+    font-size: 0.95em;
+    padding-top: 30px;
+    font: 12px/20px assistant, sans-serif;
+    letter-spacing: 1px;
+  }
+  footer p a {
+    text-decoration: none;
+    color: #ffd523;
+  }
+  footer a:hover {
+    text-decoration: none;
+  }
   .about {
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
@@ -271,6 +332,18 @@ footer a:hover {
   }
   .card img {
     margin: 0px auto;
+    min-height: 200px;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 10px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    z-index: 0;
+  }
+  .card img:hover {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    z-index: 0;
   }
   .top-link {
     width: 60px;
@@ -278,6 +351,28 @@ footer a:hover {
   }
   .kurang-margin {
     margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes card-image {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+  }
+}
+
+@keyframes card-image {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
   }
 }
 /*# sourceMappingURL=index.css.map */

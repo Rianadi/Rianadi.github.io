@@ -15,13 +15,23 @@ nav {
   img {
     min-width: 25px;
     min-height: 25px;
-    max-width: 35px;
-    max-height: 35px;
+    max-width: 40px;
+    max-height: 40px;
     margin-right: 10px;
   }
 
-  .login {
-    margin: 0px 5px;
+  .brand-foxico {
+    display: flex;
+
+    .brand-foxico-name {
+      a {
+        transition: 300ms;
+      }
+
+      a:hover {
+        color: #ffd523;
+      }
+    }
   }
 }
 
@@ -49,7 +59,7 @@ footer {
 
     a {
       text-decoration: none;
-      color: rgb(251, 255, 0);
+      color: #ffd523;
     }
   }
 
@@ -76,12 +86,28 @@ footer {
   }
 
   h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #ededed;
   }
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #ededed;
+  }
+
+  .brand-dean {
+    margin-top: -20px;
+    img {
+      width: 30px;
+      height: 30px;
+      margin-top: 0px;
+      margin-right: 10px;
+      box-shadow: none;
+    }
+  }
+
+  h4 {
+    margin-left: 10px;
     color: #ededed;
   }
 
@@ -90,18 +116,19 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     padding: 30px;
+  }
 
-    img {
-      width: 30px;
-      height: 30px;
-      margin-top: 0px;
-      margin-right: 10px;
-      box-shadow: none;
-    }
-
+  .foxico-developer {
     h4 {
-      margin-left: 10px;
-      color: #ededed;
+      cursor: context-menu;
+
+      span {
+        transition: 300ms;
+      }
+
+      span:hover {
+        color: #ffd523;
+      }
     }
   }
 }
@@ -158,15 +185,26 @@ footer {
     max-width: 400px;
     max-height: 400px;
     border-radius: 10px;
+    transition: 300ms;
+    z-index: 0;
   }
-}
 
-.card-body {
-  margin: auto 0px;
-}
+  img:hover {
+    transform: scale(2, 2);
+    z-index: 9999;
+  }
 
-.card-header {
-  font-weight: bold;
+  .card-body {
+    margin: auto 0px;
+
+    .card-text {
+      font-weight: 400;
+    }
+  }
+
+  .card-header {
+    font-weight: bold;
+  }
 }
 
 .intro-copy {
@@ -301,7 +339,31 @@ footer {
 //   margin-top: 15px;
 // }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+  footer {
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(61, 61, 61);
+
+    p {
+      color: rgb(201, 201, 201);
+      font-size: 0.95em;
+      padding-top: 30px;
+      font: 12px/20px assistant, sans-serif;
+      letter-spacing: 1px;
+
+      a {
+        text-decoration: none;
+        color: #ffd523;
+      }
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
   .about {
     min-height: fit-content;
   }
@@ -309,6 +371,17 @@ footer {
   .card {
     img {
       margin: 0px auto;
+      min-height: 200px;
+      max-width: 400px;
+      max-height: 400px;
+      border-radius: 10px;
+      transition: 300ms;
+      z-index: 0;
+    }
+
+    img:hover {
+      transform: scale(1, 1);
+      z-index: 0;
     }
   }
 
@@ -329,3 +402,14 @@ footer {
 //     }
 //   }
 // }
+
+// animation
+@keyframes card-image {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(2, 2);
+  }
+}
