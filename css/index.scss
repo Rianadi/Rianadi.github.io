@@ -370,6 +370,26 @@ footer {
 
   .about {
     min-height: fit-content;
+    background-image: url(../img/about-background.jpg);
+    background-size: cover;
+    min-height: 400px;
+    padding: 50px;
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    p {
+      font: 14px/30px assistant, sans-serif;
+      letter-spacing: 1.7px;
+      font-weight: 400;
+      text-align: justify;
+      // text-justify: inter-word;
+
+      span {
+        font-weight: bold;
+      }
+    }
   }
 
   .card {

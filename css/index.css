@@ -333,6 +333,22 @@ footer a:hover {
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
+    background-image: url(../img/about-background.jpg);
+    background-size: cover;
+    min-height: 400px;
+    padding: 50px;
+  }
+  .about h2 {
+    margin-top: 20px;
+  }
+  .about p {
+    font: 14px/30px assistant, sans-serif;
+    letter-spacing: 1.7px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .about p span {
+    font-weight: bold;
   }
   .card img {
     margin: 0px auto;
