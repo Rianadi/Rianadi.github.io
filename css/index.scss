@@ -175,39 +175,39 @@ footer {
 
 .card-luar {
   padding: 15px;
-}
 
-.card {
-  margin-bottom: 20px;
-  box-shadow: 3px 5px 10px 3px rgba(53, 45, 45, 0.5);
-  padding: 20px;
-  min-height: 450px;
-  border-radius: 10px;
-
-  img {
-    min-height: 200px;
-    max-width: 400px;
-    max-height: 400px;
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 3px 5px 10px 3px rgba(53, 45, 45, 0.5);
+    padding: 10px;
+    min-height: 450px;
     border-radius: 10px;
-    transition: 300ms;
-    z-index: 0;
-  }
 
-  img:hover {
-    transform: scale(2, 2);
-    z-index: 9999;
-  }
-
-  .card-body {
-    margin: auto 0px;
-
-    .card-text {
-      font-weight: 400;
+    img {
+      min-height: 200px;
+      max-width: 400px;
+      max-height: 400px;
+      border-radius: 10px;
+      transition: 300ms;
+      z-index: 0;
     }
-  }
 
-  .card-header {
-    font-weight: bold;
+    img:hover {
+      transform: scale(2, 2);
+      z-index: 9999;
+    }
+
+    .card-body {
+      margin: auto 0px;
+
+      .card-text {
+        font-weight: 400;
+      }
+    }
+
+    .card-header {
+      font-weight: bold;
+    }
   }
 }
 

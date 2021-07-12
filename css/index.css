@@ -180,16 +180,16 @@ footer a:hover {
   padding: 15px;
 }
 
-.card {
+.card-luar .card {
   margin-bottom: 20px;
   -webkit-box-shadow: 3px 5px 10px 3px rgba(53, 45, 45, 0.5);
           box-shadow: 3px 5px 10px 3px rgba(53, 45, 45, 0.5);
-  padding: 20px;
+  padding: 10px;
   min-height: 450px;
   border-radius: 10px;
 }
 
-.card img {
+.card-luar .card img {
   min-height: 200px;
   max-width: 400px;
   max-height: 400px;
@@ -199,21 +199,21 @@ footer a:hover {
   z-index: 0;
 }
 
-.card img:hover {
+.card-luar .card img:hover {
   -webkit-transform: scale(2, 2);
           transform: scale(2, 2);
   z-index: 9999;
 }
 
-.card .card-body {
+.card-luar .card .card-body {
   margin: auto 0px;
 }
 
-.card .card-body .card-text {
+.card-luar .card .card-body .card-text {
   font-weight: 400;
 }
 
-.card .card-header {
+.card-luar .card .card-header {
   font-weight: bold;
 }
 
