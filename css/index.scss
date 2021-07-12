@@ -36,7 +36,8 @@ nav {
 }
 
 hr {
-  width: 300px;
+  min-width: 50px;
+  max-width: 200px;
   border-top: 2px solid #999;
 }
 
@@ -45,9 +46,7 @@ label {
 }
 
 footer {
-  bottom: 0px;
   width: 100%;
-  height: 80px;
   background-color: rgb(61, 61, 61);
 
   p {
@@ -345,9 +344,7 @@ footer {
 
 @media (max-width: 1200px) {
   footer {
-    bottom: 0px;
     width: 100%;
-    height: 80px;
     background-color: rgb(61, 61, 61);
 
     p {
