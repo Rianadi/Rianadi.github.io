@@ -164,29 +164,6 @@ footer {
   }
 }
 
-// .about {
-//   background-image: url(../img/about-background.jpg);
-//   background-size: cover;
-//   min-height: 400px;
-//   padding: 50px;
-
-//   h2 {
-//     margin-top: 20px;
-//   }
-
-//   p {
-//     font: 20px/30px assistant, sans-serif;
-//     letter-spacing: 1.7px;
-//     font-weight: 400;
-//     text-align: justify;
-//     // text-justify: inter-word;
-
-//     span {
-//       font-weight: bold;
-//     }
-//   }
-// }
-
 .portfolio {
   background-image: url(../img/portfolio2-background.png);
   background-size: cover;
@@ -326,54 +303,7 @@ footer {
   }
 }
 
-// .kurang-margin {
-//   margin-top: 35px;
-// }
-
-// .cardcontact {
-//   background-color: rgba(199, 199, 199, 0.5);
-// }
-
-// .pembatas {
-//   width: 900px;
-//   margin-top: 30px;
-//   margin-bottom: 30px;
-//   border-top: 2px solid #eee;
-// }
-
-// .contact {
-//   margin-top: 25px;
-//   margin-bottom: 150px;
-
-//   h1 {
-//     display: inline-block;
-//     width: 300px;
-//     height: 100px;
-//     font: 80px/100px assistant, sans-serif;
-//     font-weight: bold;
-//     color: rgba(164, 167, 0, 1);
-//     text-shadow: 3px 3px 5px rgb(100, 100, 100);
-//   }
-// }
-
-// .engga {
-//   font-weight: normal;
-// }
-
-// .formkanan {
-//   margin-top: 70px;
-// }
-
-// .kirim {
-//   width: 90px;
-//   height: 40px;
-// }
-
-// id
-// #pesan {
-//   margin-top: 15px;
-// }
-
+// small-version-design
 @media (max-width: 1200px) {
   footer {
     width: 100%;
@@ -418,30 +348,6 @@ footer {
     }
   }
 
-  // .about {
-  //   min-height: fit-content;
-  //   background-image: url(../img/about-background.jpg);
-  //   background-size: cover;
-  //   min-height: 400px;
-  //   padding: 50px;
-
-  //   h2 {
-  //     margin-top: 20px;
-  //   }
-
-  //   p {
-  //     font: 14px/30px assistant, sans-serif;
-  //     letter-spacing: 1.7px;
-  //     font-weight: 400;
-  //     text-align: justify;
-  //     // text-justify: inter-word;
-
-  //     span {
-  //       font-weight: bold;
-  //     }
-  //   }
-  // }
-
   .card {
     img {
       margin: 0px auto;
@@ -468,14 +374,6 @@ footer {
     margin-top: 0px;
   }
 }
-
-// @media (max-width: 600px) {
-//   .card {
-//     img {
-//       margin: 0px auto;
-//     }
-//   }
-// }
 
 // animation
 @keyframes card-image {
