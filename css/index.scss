@@ -1,3 +1,6 @@
+// scss variables
+$header-footer: #343a40;
+
 // global
 html {
   position: relative;
@@ -47,12 +50,12 @@ label {
 
 footer {
   width: 100%;
-  background-color: rgb(61, 61, 61);
+  background-color: $header-footer;
+  padding: 20px;
 
   p {
+    margin: auto;
     color: rgb(201, 201, 201);
-    font-size: 0.95em;
-    padding-top: 30px;
     font: 15px/20px assistant, sans-serif;
     letter-spacing: 1px;
 
@@ -132,28 +135,57 @@ footer {
   }
 }
 
-.about {
+.core {
   background-image: url(../img/about-background.jpg);
-  background-size: cover;
-  min-height: 400px;
-  padding: 50px;
+  padding: 60px;
 
-  h2 {
-    margin-top: 20px;
+  .core-header {
+    margin-top: -25px;
   }
 
-  p {
-    font: 20px/30px assistant, sans-serif;
-    letter-spacing: 1.7px;
-    font-weight: 400;
-    text-align: justify;
-    // text-justify: inter-word;
+  .core-2 {
+    padding: 20px;
+    border: 2px solid rgb(75, 75, 75);
+    border-radius: 20px;
+  }
 
-    span {
-      font-weight: bold;
+  .core-list {
+    p {
+      font: 20px/40px assistant, sans-serif;
+      letter-spacing: 1.7px;
+      font-weight: 400;
+      text-align: justify;
+      // text-justify: inter-word;
+
+      span {
+        font-weight: bold;
+      }
     }
   }
 }
+
+// .about {
+//   background-image: url(../img/about-background.jpg);
+//   background-size: cover;
+//   min-height: 400px;
+//   padding: 50px;
+
+//   h2 {
+//     margin-top: 20px;
+//   }
+
+//   p {
+//     font: 20px/30px assistant, sans-serif;
+//     letter-spacing: 1.7px;
+//     font-weight: 400;
+//     text-align: justify;
+//     // text-justify: inter-word;
+
+//     span {
+//       font-weight: bold;
+//     }
+//   }
+// }
 
 .portfolio {
   background-image: url(../img/portfolio2-background.png);
@@ -345,12 +377,10 @@ footer {
 @media (max-width: 1200px) {
   footer {
     width: 100%;
-    background-color: rgb(61, 61, 61);
 
     p {
+      margin: auto;
       color: rgb(201, 201, 201);
-      font-size: 0.95em;
-      padding-top: 30px;
       font: 12px/20px assistant, sans-serif;
       letter-spacing: 1px;
 
@@ -365,29 +395,52 @@ footer {
     }
   }
 
-  .about {
-    min-height: fit-content;
+  .core {
     background-image: url(../img/about-background.jpg);
-    background-size: cover;
-    min-height: 400px;
-    padding: 50px;
+    padding: 60px;
 
-    h2 {
-      margin-top: 20px;
+    .core-1 {
+      margin-bottom: 40px;
     }
 
-    p {
-      font: 14px/30px assistant, sans-serif;
-      letter-spacing: 1.7px;
-      font-weight: 400;
-      text-align: justify;
-      // text-justify: inter-word;
+    .core-list {
+      p {
+        font: 14px/30px assistant, sans-serif;
+        letter-spacing: 1.7px;
+        font-weight: 400;
+        text-align: justify;
+        // text-justify: inter-word;
 
-      span {
-        font-weight: bold;
+        span {
+          font-weight: bold;
+        }
       }
     }
   }
+
+  // .about {
+  //   min-height: fit-content;
+  //   background-image: url(../img/about-background.jpg);
+  //   background-size: cover;
+  //   min-height: 400px;
+  //   padding: 50px;
+
+  //   h2 {
+  //     margin-top: 20px;
+  //   }
+
+  //   p {
+  //     font: 14px/30px assistant, sans-serif;
+  //     letter-spacing: 1.7px;
+  //     font-weight: 400;
+  //     text-align: justify;
+  //     // text-justify: inter-word;
+
+  //     span {
+  //       font-weight: bold;
+  //     }
+  //   }
+  // }
 
   .card {
     img {

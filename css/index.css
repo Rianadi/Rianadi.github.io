@@ -45,13 +45,13 @@ label {
 
 footer {
   width: 100%;
-  background-color: #3d3d3d;
+  background-color: #343a40;
+  padding: 20px;
 }
 
 footer p {
+  margin: auto;
   color: #c9c9c9;
-  font-size: 0.95em;
-  padding-top: 30px;
   font: 15px/20px assistant, sans-serif;
   letter-spacing: 1px;
 }
@@ -136,25 +136,29 @@ footer a:hover {
   color: #ffd523;
 }
 
-.about {
+.core {
   background-image: url(../img/about-background.jpg);
-  background-size: cover;
-  min-height: 400px;
-  padding: 50px;
+  padding: 60px;
 }
 
-.about h2 {
-  margin-top: 20px;
+.core .core-header {
+  margin-top: -25px;
 }
 
-.about p {
-  font: 20px/30px assistant, sans-serif;
+.core .core-2 {
+  padding: 20px;
+  border: 2px solid #4b4b4b;
+  border-radius: 20px;
+}
+
+.core .core-list p {
+  font: 20px/40px assistant, sans-serif;
   letter-spacing: 1.7px;
   font-weight: 400;
   text-align: justify;
 }
 
-.about p span {
+.core .core-list p span {
   font-weight: bold;
 }
 
@@ -310,12 +314,10 @@ footer a:hover {
 @media (max-width: 1200px) {
   footer {
     width: 100%;
-    background-color: #3d3d3d;
   }
   footer p {
+    margin: auto;
     color: #c9c9c9;
-    font-size: 0.95em;
-    padding-top: 30px;
     font: 12px/20px assistant, sans-serif;
     letter-spacing: 1px;
   }
@@ -326,25 +328,20 @@ footer a:hover {
   footer a:hover {
     text-decoration: none;
   }
-  .about {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
+  .core {
     background-image: url(../img/about-background.jpg);
-    background-size: cover;
-    min-height: 400px;
-    padding: 50px;
+    padding: 60px;
   }
-  .about h2 {
-    margin-top: 20px;
+  .core .core-1 {
+    margin-bottom: 40px;
   }
-  .about p {
+  .core .core-list p {
     font: 14px/30px assistant, sans-serif;
     letter-spacing: 1.7px;
     font-weight: 400;
     text-align: justify;
   }
-  .about p span {
+  .core .core-list p span {
     font-weight: bold;
   }
   .card img {

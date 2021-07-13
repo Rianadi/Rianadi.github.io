@@ -50,74 +50,113 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <div class="navbar-link">
-              <a class="nav-link" href="#about">About</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="navbar-link">
-              <a href="#portfolio" class="nav-link">Portfolio</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Class
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#core">About</a>
+              <a class="dropdown-item" href="#portfolio">Portfolio</a>
+              <div class="dropdown-divider" style="display: none;"></div>
+              <a class="dropdown-item" href="#" style="display: none;"></a>
             </div>
           </li>
         </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-primary my-2 my-sm-0 login " type="submit">Register</button>
-          <button class="btn btn-outline-success my-2 my-sm-0 login" type="submit">Login</button>
-        </form> -->
       </div>
   </nav>
   <!-- Navbar End -->
 
-
   <!-- Jumbotron Start -->
-  <div class="jumbotron text-center">
-    <img src="img/deanfix3.png" class="rounded-circle" class="text-center">
-    <h1>
-      Fikri Dean Radityo
-    </h1>
-    <p>
-      Web Developer | College Student | Web Designer
-    </p>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-sm-12 brand-dean">
-          <img src="img/Brand - Foxico2.png" alt="brand-foxico">
-          <div class="foxico-developer">
-            <h4><span>FOXICO</span> Developer</h4>
+  <section>
+    <div class="jumbotron text-center">
+      <img src="img/deanfix3.png" class="rounded-circle" class="text-center">
+      <h1>
+        Fikri Dean Radityo
+      </h1>
+      <p>
+        Web Developer | College Student | Web Designer
+      </p>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-12 brand-dean">
+            <img src="img/Brand - Foxico2.png" alt="brand-foxico">
+            <div class="foxico-developer">
+              <h4><span>FOXICO</span> Developer</h4>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- Jumbotron End -->
 
-  <!-- About Start -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="row  text-center">
-        <div class="col-lg-12 text-center">
-          <h2>
-            What is a web developer?
-          </h2>
-          <hr>
+  <!-- Core Start -->
+  <section class="core" id="core">
+    <div class="row text-center core-header">
+      <div class="col-lg-12">
+        <h2>
+          What is a web developer?
+        </h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 core-1">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Web Developer</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Web Designer</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Front-End Web Development</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Back-End Web Development</a>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <p>
-            A <span>web developer</span> is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications using a client–server model. <span>Web developers</span> are found working in various types of organizations, including large corporations and governments, small and medium-sized companies, or alone as freelancers.
-          </p>
-        </div>
-        <div class="col-lg-6">
-          <p>
-            The applications typically use <span>HTML</span> , <span>CSS</span> and <span>JavaScript</span> in the client, <span>PHP</span>,<span>ASP.NET (C#)</span>, <span>Python</span>, <span>Node.js</span>, <span>Go</span></span> or <span>Java</span> in the server, and <span>http</span>, for communications between client and server.
-          </p>
+      <div class="col-lg-8 core-2">
+        <div class="tab-content core-list" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <p>
+              A <span>web developer</span> is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications using a client–server model. <span>Web developers</span> are found working in various types of organizations, including large corporations and governments, small and medium-sized companies, or alone as freelancers.
+            </p>
+            <p>
+              The applications typically use <span>HTML</span> , <span>CSS</span> and <span>JavaScript</span> in the client, <span>PHP</span>,<span>ASP.NET (C#)</span>, <span>Python</span>, <span>Node.js</span>, <span>Go</span></span> or <span>Java</span> in the server, and <span>http</span>, for communications between client and server.
+            </p>
+            <p>
+              <span>Source : <a href="https://en.wikipedia.org/wiki/Web_developer" target="_blank">Wikipedia</a></span>
+            </p>
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <p>
+              A <span>web designer</span> is an IT professional who is responsible for designing the layout, visual appearance and the usability of a website. A good <span>web designer</span> needs to have both creative graphic skills and technical skills. They need to be able to visualise how a site will look (the graphical design of the site) and how it will function (conversion of a design into a working website). 
+            </p>
+            <p>
+              The term <span>Web Designer</span> is often incorrectly interchanged with the term <span>Web Developer</span> and vice versa.  A <span>web developer</span> is often more likely to be a <span>software developer</span> who works with programming languages to create a higher level of interactions on a website such as the integration with a database system.
+            </p>
+            <p>
+              <span>Source : <a href="https://www.technojobs.co.uk/info/it-job-roles/what-is-a-web-designer.phtml" target="_blank">Technojobs</a></span>
+            </p>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <p>
+              <span>Front-end web development</span>, also known as <span>client-side development</span> is the practice of producing <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span> for a website or Web Application so that a user can see and interact with them directly. The challenge associated with front end development is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing.
+            </p>
+            <p>
+              The objective of designing a site is to ensure that when the users open up the site they see the information in a format that is easy to read and relevant. This is further complicated by the fact that users now use a large variety of devices with varying screen sizes and resolutions thus forcing the designer to take into consideration these aspects when designing the site. They need to ensure that their site comes up correctly in different browsers (cross-browser), different operating systems (cross-platform) and different devices (cross-device), which requires careful planning on the side of the developer.
+            </p>
+            <p>
+              <span>Source : <a href="https://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.html" target="_blank">Frontendmasters</a></span>
+            </p>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <p>
+              <span>Back end Development</span> refers to the server side of development where you are primarily focused on how the site works. Making updates and changes in addition to monitoring functionality of the site will be your primary responsibility. This type of <span>web development</span> usually consists of three parts: a <span>server</span>, an <span>application</span>, and a <span>database</span>. Code written by <span>back end developers</span> is what communicates the database information to the browser. Anything you can’t see easily with the eye such as databases and servers is the work of a <span>back end developer</span>. <span>Back end developer</span> positions are often called <span>programmers</span> or <span>web developers</span>.
+            </p>
+            <p>
+              <span>Source : <a href="https://www.coursereport.com/blog/front-end-development-vs-back-end-development-where-to-start" target="_blank">Coursereport</a></span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- About End -->
+  <!-- Core End -->
 
   <!-- Portfolio Start -->
   <section class="portfolio card-luar" id="portfolio">
@@ -167,7 +206,7 @@
                   <p class="card-text">My Design //
                     <br>
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deanradityo@gmail.com&su=SUBJECT&body=BODY&bcc=deanradityo@gmail.com" target="_blank">Foxico's Email</a> //
-                    <br>
+                    <!-- <br> -->
                     <!-- <a href="https://dribbble.com/shots/15607887-StepWorld" target="_blank">StepWorld Design V2</a> // -->
                   </p>
                 </div>
@@ -177,87 +216,6 @@
         </div>
   </section>
   <!-- Portfolio End -->
-
-  <!-- Contact Start -->
-  <!-- <section class="contact" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h2>
-              Contact
-            </h2>
-            <hr>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row justify-content-center"> -->
-  <!-- Helper Start -->
-  <!-- <div class="col-sm-4">
-              <h1>
-                SIX
-              </h1>
-              <h4>
-                Six help you to make a better website
-              </h4>
-              <div class="card bg-light mt-4">
-                <div class="card-header text-center"><h2 class="text-left">Location</h2></div>
-                <div class="card-header text-center"><h6 class="text-left engga">SIX Company</h6></div>
-                <div class="card-header text-center"><h6 class="text-left engga">Bukit Rivaria Blok B1 No. 16 Sawangan, Depok, Jawa Barat</h6></div>
-                <div class="card-header text-center"><h6 class="text-left engga">Location</h6></div>
-              </div>
-            </div> -->
-  <!-- Helper End -->
-  <!-- Middle Side Start -->
-  <!-- <div class="col-sm-1"></div> -->
-  <!-- Middle Side End -->
-  <!-- Form Start -->
-  <!-- <div class="col-sm-5 formkanan">
-              <div class="card cardcontact">
-                <div class="card-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="name">Full Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Your Name">
-                      <small id="name" class="form-text">We'll never share your name with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email Address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
-                      <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
-                    <div class="form-group mt-3">
-                      <label for="phonenumber">Phone Number</label>
-                      <input type="text" class="form-control" id="phonenumber" placeholder="Your Phone Number">
-                      <small id="name" class="form-text">We'll never share your phone number with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="class">Class</label>
-                      <select class="form-control" id="class">
-                        <option>Choose Your Class</option>
-                        <option>Reguler</option>
-                        <option>Premium</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message</label>
-                      <textarea class="form-control" id="message" rows="3" placeholder="Please Put Your Message Here."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div> -->
-  <!-- form End -->
-  <!-- </div>
-    </section> -->
-  <!-- Contact End -->
 
   <!-- Pull Up Start -->
   <section class="pull-up" id="pull-up">
@@ -289,8 +247,6 @@
     </div>
   </footer>
   <!-- Footer End -->
-
-
 
   <!-- Optional JavaScript; choose one of the two! -->
 
