@@ -83,7 +83,7 @@ footer {
     width: 200px;
     height: 200px;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     box-shadow: 0px 0px 7px 5px rgb(139, 139, 139);
   }
 
@@ -322,6 +322,66 @@ footer {
 
     a:hover {
       text-decoration: none;
+    }
+  }
+
+  .jumbotron {
+    margin: 0px;
+    margin-top: -5px;
+    padding: 30px;
+    background-image: url(../img/Jumbotron-background.jpg);
+    background-size: cover;
+    text-shadow: 1px 1px 4px #413b3b;
+
+    img {
+      width: 180px;
+      height: 180px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0px 0px 7px 5px rgb(139, 139, 139);
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #ededed;
+      font-size: 30px;
+    }
+
+    p {
+      margin-bottom: 30px;
+      color: #ededed;
+    }
+
+    .brand-dean {
+      margin-top: -20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        margin-right: 10px;
+        box-shadow: none;
+      }
+
+      .foxico-developer {
+        h4 {
+          cursor: context-menu;
+          margin-left: 10px;
+          color: #ededed;
+
+          span {
+            transition: 300ms;
+          }
+
+          span:hover {
+            color: #ffd523;
+          }
+        }
+      }
     }
   }
 
