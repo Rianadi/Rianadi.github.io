@@ -65,7 +65,12 @@ footer a:hover {
   text-decoration: none;
 }
 
+section.carousel-start img {
+  max-height: 900px;
+}
+
 .jumbotron {
+  display: none;
   margin: 0px;
   margin-top: -5px;
   padding: 30px;
@@ -75,12 +80,12 @@ footer a:hover {
 }
 
 .jumbotron img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   margin-top: 40px;
   margin-bottom: 40px;
-  -webkit-box-shadow: 0px 0px 7px 5px #8b8b8b;
-          box-shadow: 0px 0px 7px 5px #8b8b8b;
+  -webkit-box-shadow: 0px 0px 3px 3px #8b8b8b;
+          box-shadow: 0px 0px 3px 3px #8b8b8b;
 }
 
 .jumbotron h1 {
@@ -95,6 +100,15 @@ footer a:hover {
 
 .jumbotron .brand-dean {
   margin-top: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
 }
 
 .jumbotron .brand-dean img {
@@ -107,32 +121,17 @@ footer a:hover {
 }
 
 .jumbotron h4 {
+  cursor: context-menu;
   margin-left: 10px;
   color: #ededed;
 }
 
-.jumbotron .brand-dean {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 30px;
-}
-
-.jumbotron .foxico-developer h4 {
-  cursor: context-menu;
-}
-
-.jumbotron .foxico-developer h4 span {
+.jumbotron span {
   -webkit-transition: 300ms;
   transition: 300ms;
 }
 
-.jumbotron .foxico-developer h4 span:hover {
+.jumbotron span:hover {
   color: #ffd523;
 }
 
@@ -328,7 +327,14 @@ footer a:hover {
   footer a:hover {
     text-decoration: none;
   }
+  section.carousel-start {
+    display: none;
+  }
+  section.carousel-start img {
+    max-height: 900px;
+  }
   .jumbotron {
+    display: block;
     margin: 0px;
     margin-top: -5px;
     padding: 30px;
@@ -337,8 +343,8 @@ footer a:hover {
     text-shadow: 1px 1px 4px #413b3b;
   }
   .jumbotron img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     margin-top: 40px;
     margin-bottom: 40px;
     -webkit-box-shadow: 0px 0px 7px 5px #8b8b8b;
@@ -353,7 +359,7 @@ footer a:hover {
     margin-bottom: 30px;
     color: #ededed;
   }
-  .jumbotron .brand-dean {
+  .jumbotron .foxico-developer {
     margin-top: -20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -365,25 +371,27 @@ footer a:hover {
             justify-content: center;
     padding: 30px;
   }
-  .jumbotron .brand-dean img {
-    width: 30px;
-    height: 30px;
-    margin-top: 0px;
-    margin-right: 10px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .jumbotron .brand-dean .foxico-developer h4 {
+  .jumbotron .foxico-developer h4 {
+    padding-top: 2px;
+    font-size: 20px;
     cursor: context-menu;
     margin-left: 10px;
     color: #ededed;
   }
-  .jumbotron .brand-dean .foxico-developer h4 span {
+  .jumbotron .foxico-developer h4 span {
     -webkit-transition: 300ms;
     transition: 300ms;
   }
-  .jumbotron .brand-dean .foxico-developer h4 span:hover {
+  .jumbotron .foxico-developer h4 span:hover {
     color: #ffd523;
+  }
+  .jumbotron .foxico-developer img {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    margin-right: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .core {
     background-image: url(../img/about-background.jpg);
