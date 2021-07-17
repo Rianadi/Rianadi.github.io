@@ -10,7 +10,7 @@ html h2 {
   font-weight: bold;
 }
 
-nav img {
+.navbar img {
   min-width: 25px;
   min-height: 25px;
   max-width: 40px;
@@ -18,18 +18,18 @@ nav img {
   margin-right: 10px;
 }
 
-nav .brand-foxico {
+.navbar .brand-foxico {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-nav .brand-foxico .brand-foxico-name a {
+.navbar .brand-foxico .brand-foxico-name a {
   -webkit-transition: 300ms;
   transition: 300ms;
 }
 
-nav .brand-foxico .brand-foxico-name a:hover {
+.navbar .brand-foxico .brand-foxico-name a:hover {
   color: #ffd523;
 }
 
@@ -63,6 +63,10 @@ footer p a {
 
 footer a:hover {
   text-decoration: none;
+}
+
+section.carousel-start span {
+  margin: auto 10px;
 }
 
 section.carousel-start img {
@@ -146,10 +150,12 @@ section.carousel-start img {
 }
 
 .core .core-2 {
+  background-color: #ffd523;
   padding: 20px;
   border: 2px solid #4b4b4b;
   border-radius: 20px;
-  text-shadow: 3px 3px 8px lightgray;
+  -webkit-box-shadow: inset 0px 0px 70px 10px #a78c17;
+          box-shadow: inset 0px 0px 70px 10px #a78c17;
 }
 
 .core .core-list p {
@@ -161,6 +167,17 @@ section.carousel-start img {
 
 .core .core-list p span {
   font-weight: bold;
+}
+
+.parallax {
+  /* The image used */
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .portfolio {

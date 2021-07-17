@@ -14,7 +14,9 @@ html {
   }
 }
 
-nav {
+.navbar {
+  // background-image: url(../img/transparent.png);
+
   img {
     min-width: 25px;
     min-height: 25px;
@@ -72,6 +74,10 @@ footer {
 
 // class
 section.carousel-start {
+  span {
+    margin: auto 10px;
+  }
+
   img {
     max-height: 900px;
   }
@@ -145,10 +151,12 @@ section.carousel-start {
   }
 
   .core-2 {
+    background-color: #ffd523;
     padding: 20px;
     border: 2px solid rgb(75, 75, 75);
     border-radius: 20px;
-    text-shadow: 3px 3px 8px rgb(211, 211, 211);
+    // text-shadow: 3px 3px 8px rgb(119, 119, 119);
+    box-shadow: inset 0px 0px 70px 10px #a78c17;
   }
 
   .core-list {
@@ -164,6 +172,19 @@ section.carousel-start {
       }
     }
   }
+}
+
+.parallax {
+  /* The image used */
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .portfolio {
