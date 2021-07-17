@@ -137,6 +137,7 @@ section.carousel-start {
 
 .core {
   background-image: url(../img/about-background.jpg);
+  background-size: cover;
   padding: 60px;
 
   .core-header {
@@ -147,6 +148,7 @@ section.carousel-start {
     padding: 20px;
     border: 2px solid rgb(75, 75, 75);
     border-radius: 20px;
+    text-shadow: 3px 3px 8px rgb(211, 211, 211);
   }
 
   .core-list {
@@ -372,7 +374,6 @@ section.carousel-start {
         padding-top: 2px;
         font-size: 20px;
         cursor: context-menu;
-        // background-color: #999;
         margin-left: 10px;
         color: #ededed;
 
@@ -386,7 +387,6 @@ section.carousel-start {
       }
 
       img {
-        // background-color: aqua;
         width: 30px;
         height: 30px;
         margin-top: 0px;
