@@ -1,4 +1,4 @@
-html {
+body {
   position: relative;
   margin: 0px;
   padding: 0px;
@@ -6,7 +6,7 @@ html {
   background-color: black;
 }
 
-html h2 {
+body h2 {
   font-weight: bold;
 }
 
@@ -71,6 +71,40 @@ section.carousel-start span {
 
 section.carousel-start img {
   max-height: 900px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
 
 .jumbotron {
@@ -139,17 +173,18 @@ section.carousel-start img {
   color: #ffd523;
 }
 
-.core {
+section.core {
+  margin: auto;
   background-image: url(../img/about-background.jpg);
   background-size: cover;
   padding: 60px;
 }
 
-.core .core-header {
+section.core .core-header {
   margin-top: -25px;
 }
 
-.core .core-2 {
+section.core .core-2 {
   background-color: #ffd523;
   padding: 20px;
   border: 2px solid #4b4b4b;
@@ -158,14 +193,14 @@ section.carousel-start img {
           box-shadow: inset 0px 0px 70px 10px #a78c17;
 }
 
-.core .core-list p {
+section.core .core-list p {
   font: 20px/40px assistant, sans-serif;
   letter-spacing: 1.7px;
   font-weight: 400;
   text-align: justify;
 }
 
-.core .core-list p span {
+section.core .core-list p span {
   font-weight: bold;
 }
 
@@ -418,6 +453,9 @@ section.carousel-start img {
   }
   .core .core-1 {
     margin-bottom: 20px;
+  }
+  .core .core-p p {
+    font-size: 10px;
   }
   .core .core-list p {
     font: 14px/30px assistant, sans-serif;
