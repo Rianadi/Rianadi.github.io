@@ -365,22 +365,6 @@ section.core .core-list p span {
 }
 
 @media (max-width: 1200px) {
-  footer {
-    width: 100%;
-  }
-  footer p {
-    margin: auto;
-    color: #c9c9c9;
-    font: 12px/20px assistant, sans-serif;
-    letter-spacing: 1px;
-  }
-  footer p a {
-    text-decoration: none;
-    color: #ffd523;
-  }
-  footer a:hover {
-    text-decoration: none;
-  }
   section.carousel-start {
     display: none;
   }
@@ -407,7 +391,7 @@ section.core .core-list p span {
   .jumbotron h1 {
     margin-bottom: 30px;
     color: #ededed;
-    font-size: 30px;
+    font-size: 20px;
   }
   .jumbotron p {
     margin-bottom: 30px;
@@ -447,26 +431,41 @@ section.core .core-list p span {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .core {
+  section.core {
     background-image: url(../img/about-background.jpg);
     padding: 60px;
   }
-  .core .core-1 {
+  section.core .core-header h2 {
+    font-size: 20px;
+  }
+  section.core .core-1 {
     margin-bottom: 20px;
   }
-  .core .core-p p {
-    font-size: 10px;
+  section.core .core-1 a {
+    font-size: 12px;
   }
-  .core .core-list p {
-    font: 14px/30px assistant, sans-serif;
+  section.core .core-list p {
+    font: 12px/30px assistant, sans-serif;
     letter-spacing: 1.7px;
     font-weight: 400;
     text-align: justify;
   }
-  .core .core-list p span {
+  section.core .core-list p span {
     font-weight: bold;
   }
-  .card img {
+  section.portfolio .core-header h2 {
+    font-size: 20px;
+  }
+  section.portfolio .card .card-title {
+    font-size: 16px;
+  }
+  section.portfolio .card .card-text {
+    font-size: 12px;
+  }
+  section.portfolio .card cite {
+    font-size: 10px;
+  }
+  section.portfolio .card img {
     margin: 0px auto;
     min-height: 200px;
     max-width: 400px;
@@ -476,17 +475,33 @@ section.core .core-list p span {
     transition: 300ms;
     z-index: 0;
   }
-  .card img:hover {
+  section.portfolio .card img:hover {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
     z-index: 0;
   }
-  .top-link {
+  section.portfolio .top-link {
     width: 60px;
     height: 60px;
   }
-  .kurang-margin {
+  section.portfolio .kurang-margin {
     margin-top: 0px;
+  }
+  footer {
+    width: 100%;
+  }
+  footer p {
+    margin: auto;
+    color: #c9c9c9;
+    font: 12px/20px assistant, sans-serif;
+    letter-spacing: 1px;
+  }
+  footer p a {
+    text-decoration: none;
+    color: #ffd523;
+  }
+  footer a:hover {
+    text-decoration: none;
   }
 }
 

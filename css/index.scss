@@ -363,47 +363,6 @@ section.core {
 
 // small-version-design
 @media (max-width: 1200px) {
-  // .topnav a:not(:first-child) {
-  //   display: none;
-  // }
-  // .topnav a.icon {
-  //   float: right;
-  //   display: block;
-  // }
-  // .topnav.responsive {
-  //   position: relative;
-  // }
-  // .topnav.responsive a.icon {
-  //   position: absolute;
-  //   right: 0;
-  //   top: 0;
-  // }
-  // .topnav.responsive a {
-  //   float: none;
-  //   display: block;
-  //   text-align: left;
-  // }
-
-  footer {
-    width: 100%;
-
-    p {
-      margin: auto;
-      color: rgb(201, 201, 201);
-      font: 12px/20px assistant, sans-serif;
-      letter-spacing: 1px;
-
-      a {
-        text-decoration: none;
-        color: #ffd523;
-      }
-    }
-
-    a:hover {
-      text-decoration: none;
-    }
-  }
-
   section.carousel-start {
     display: none;
 
@@ -432,7 +391,7 @@ section.core {
     h1 {
       margin-bottom: 30px;
       color: #ededed;
-      font-size: 30px;
+      font-size: 20px;
     }
 
     p {
@@ -473,27 +432,30 @@ section.core {
     }
   }
 
-  .core {
+  section.core {
     background-image: url(../img/about-background.jpg);
     padding: 60px;
 
-    .core-1 {
-      margin-bottom: 20px;
+    .core-header {
+      h2 {
+        font-size: 20px;
+      }
     }
 
-    .core-p {
-      p {
-        font-size: 10px;
+    .core-1 {
+      margin-bottom: 20px;
+
+      a {
+        font-size: 12px;
       }
     }
 
     .core-list {
       p {
-        font: 14px/30px assistant, sans-serif;
+        font: 12px/30px assistant, sans-serif;
         letter-spacing: 1.7px;
         font-weight: 400;
         text-align: justify;
-        // text-justify: inter-word;
 
         span {
           font-weight: bold;
@@ -502,30 +464,70 @@ section.core {
     }
   }
 
-  .card {
-    img {
-      margin: 0px auto;
-      min-height: 200px;
-      max-width: 400px;
-      max-height: 400px;
-      border-radius: 10px;
-      transition: 300ms;
-      z-index: 0;
+  section.portfolio {
+    .core-header {
+      h2 {
+        font-size: 20px;
+      }
     }
 
-    img:hover {
-      transform: scale(1, 1);
-      z-index: 0;
+    .card {
+      .card-title {
+        font-size: 16px;
+      }
+
+      .card-text {
+        font-size: 12px;
+      }
+
+      cite {
+        font-size: 10px;
+      }
+
+      img {
+        margin: 0px auto;
+        min-height: 200px;
+        max-width: 400px;
+        max-height: 400px;
+        border-radius: 10px;
+        transition: 300ms;
+        z-index: 0;
+      }
+
+      img:hover {
+        transform: scale(1, 1);
+        z-index: 0;
+      }
+    }
+
+    .top-link {
+      width: 60px;
+      height: 60px;
+    }
+
+    .kurang-margin {
+      margin-top: 0px;
     }
   }
 
-  .top-link {
-    width: 60px;
-    height: 60px;
-  }
+  footer {
+    width: 100%;
 
-  .kurang-margin {
-    margin-top: 0px;
+    p {
+      margin: auto;
+      color: rgb(201, 201, 201);
+      font: 12px/20px assistant, sans-serif;
+      letter-spacing: 1px;
+
+      a {
+        text-decoration: none;
+        color: #ffd523;
+      }
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 
