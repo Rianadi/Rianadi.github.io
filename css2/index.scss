@@ -1,0 +1,104 @@
+$blue-dark: rgb(0, 0, 66);
+$dark: #212529;
+
+* {
+  margin: 0;
+  padding: 0;
+
+  body {
+    hr {
+      width: 100%;
+    }
+
+    .parallax {
+      /* The image used */
+
+      /* Set a specific height */
+      min-height: 300px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    nav.navbar {
+      a.navbar-brand {
+        font-size: 1.4rem;
+      }
+
+      img.navbar-logo {
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+    }
+
+    section.gallery {
+      margin-top: 2em;
+      padding: 0 50px;
+
+      .gallery-image {
+        margin-bottom: 2em;
+        img {
+          background-size: cover;
+          width: 30vw;
+          border-radius: 30px;
+          border: 1px solid $blue-dark;
+        }
+      }
+
+      .gallery-text {
+        h6 {
+          font-size: 2vw;
+          font-weight: 400;
+          color: $blue-dark;
+        }
+        span {
+          font-weight: bold;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 1.3vw;
+          color: $dark;
+        }
+      }
+    }
+
+    footer {
+      width: 100%;
+      background-color: $dark;
+      padding: 20px;
+
+      p {
+        margin: auto;
+        color: rgb(201, 201, 201);
+        font: 1vw/20px assistant, sans-serif;
+        letter-spacing: 1px;
+
+        a {
+          text-decoration: none;
+          color: #ffd523;
+        }
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  body {
+    nav.navbar {
+      a.navbar-brand {
+        font-size: 1.1rem;
+      }
+      img.navbar-logo {
+        width: 1.3rem;
+        height: 1.3rem;
+      }
+    }
+  }
+}

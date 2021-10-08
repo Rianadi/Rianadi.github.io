@@ -52,7 +52,7 @@ footer {
 footer p {
   margin: auto;
   color: #c9c9c9;
-  font: 15px/20px assistant, sans-serif;
+  font: 1vw/20px assistant, sans-serif;
   letter-spacing: 1px;
 }
 
@@ -184,6 +184,10 @@ section.core .core-header {
   margin-top: -25px;
 }
 
+section.core .core-header h2 {
+  font-size: 2vw;
+}
+
 section.core .core-2 {
   background-color: #ffd523;
   padding: 20px;
@@ -222,6 +226,7 @@ section.core .core-list p span {
 }
 
 .portfolio h2 {
+  font-size: 2vw;
   margin-top: 20px;
   color: #fdfdfd;
   text-shadow: 1px 1px 4px #413b3b;
@@ -435,9 +440,6 @@ section.core .core-list p span {
     background-image: url(../img/about-background.jpg);
     padding: 60px;
   }
-  section.core .core-header h2 {
-    font-size: 20px;
-  }
   section.core .core-1 {
     margin-bottom: 20px;
   }
@@ -452,9 +454,6 @@ section.core .core-list p span {
   }
   section.core .core-list p span {
     font-weight: bold;
-  }
-  section.portfolio .core-header h2 {
-    font-size: 20px;
   }
   section.portfolio .card .card-title {
     font-size: 16px;
@@ -493,7 +492,6 @@ section.core .core-list p span {
   footer p {
     margin: auto;
     color: #c9c9c9;
-    font: 10px/20px assistant, sans-serif;
     letter-spacing: 1px;
   }
   footer p a {

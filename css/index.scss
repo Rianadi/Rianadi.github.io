@@ -58,7 +58,7 @@ footer {
   p {
     margin: auto;
     color: rgb(201, 201, 201);
-    font: 15px/20px assistant, sans-serif;
+    font: 1vw/20px assistant, sans-serif;
     letter-spacing: 1px;
 
     a {
@@ -183,6 +183,9 @@ section.core {
 
   .core-header {
     margin-top: -25px;
+    h2 {
+      font-size: 2vw;
+    }
   }
 
   .core-2 {
@@ -228,6 +231,7 @@ section.core {
   padding: 50px;
 
   h2 {
+    font-size: 2vw;
     margin-top: 20px;
     color: #fdfdfd;
     text-shadow: 1px 1px 4px #413b3b;
@@ -436,12 +440,6 @@ section.core {
     background-image: url(../img/about-background.jpg);
     padding: 60px;
 
-    .core-header {
-      h2 {
-        font-size: 20px;
-      }
-    }
-
     .core-1 {
       margin-bottom: 20px;
 
@@ -465,12 +463,6 @@ section.core {
   }
 
   section.portfolio {
-    .core-header {
-      h2 {
-        font-size: 20px;
-      }
-    }
-
     .card {
       .card-title {
         font-size: 16px;
@@ -516,7 +508,6 @@ section.core {
     p {
       margin: auto;
       color: rgb(201, 201, 201);
-      font: 10px/20px assistant, sans-serif;
       letter-spacing: 1px;
 
       a {
