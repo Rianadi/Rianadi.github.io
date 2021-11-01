@@ -138,8 +138,6 @@ body {
   }
 
   .content {
-    padding: 30px;
-
     .row {
       margin: 50px 0;
     }
@@ -163,7 +161,7 @@ body {
     }
 
     li {
-      margin-left: 50px;
+      margin-left: 30px;
     }
 
     code {
@@ -299,6 +297,7 @@ body {
 
     .content {
       margin-top: -40px;
+      padding: 30px;
     }
   }
 }
