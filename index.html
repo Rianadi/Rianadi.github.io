@@ -1,320 +1,593 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
- <!-- Favicon -->
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" />
-  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="&nbsp;"/>
-  <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
- 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-   <!-- Load an icon library to show a hamburger menu (bars) on small screens (w3school) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <!-- Own CSS -->
-  <link rel="stylesheet" href="css/index.css">
-  <title>Random Web Tryout</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google-Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Fredoka+One&family=Monoton&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-xl navbar-dark bg-dark" id="navbar">
-    <div class="container" id="navbarsatu" data-aos="fade-up">
-      <div class="brand-foxico">
-        <a href="#"><img class="navbar-brand" src="img/Brand - Foxico2.png" alt="brand"></a>
-        <div class="brand-foxico-name">
-          <a class="navbar-brand" href="#">FOXICO</a>
-        </div>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Class
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#core" data-toggle="tooltip" data-placement="bottom" title="About">About</a>
-              <a class="dropdown-item" href="#portfolio" data-toggle="tooltip" data-placement="bottom" title="Portfolio">Portfolio</a>
-              <div class="dropdown-divider" style="display: none;"></div>
-              <a class="dropdown-item" href="#" style="display: none;"></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-  </nav>
-  <!-- Navbar End -->
+  <div class="container">
 
-  <!-- Carousel Start -->
-  <section class="carousel-start" id="carousel-start" data-aos="flip-left">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">test</li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/Jumbotron800.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/code.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/anime.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span>Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span>Next</span>
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </a>
-    </div>
-  </section>
-  <!-- Carousel End -->
+    <div class="row title">
 
-  <!-- Jumbotron Start -->
-  <section class="jumbotron">
-    <div class="jumbotron justify-content-center text-center">
-      <img src="img/deanfix3.png" class="rounded-circle img-jumbotron">
-      <h1>
-        FIKRI DEAN RADITYO
-      </h1>
-      <p>
-        Web Developer | College Student | Web Designer
-      </p>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="foxico-developer">
-              <img src="img/Brand - Foxico2.png" alt="brand-foxico">
-              <h4><span>FOXICO</span> DEVELOPER</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Jumbotron End -->
+      <div class="col-12 col-s-12">
 
-  <!-- Core Start -->
-  <section class="core parallax" id="core">
-    <div class="row text-center core-header" data-aos="zoom-in-up">
-      <div class="col-lg-12">
-        <h2>
-          What is a web developer?
-        </h2>
-        <hr>
-      </div>
-    </div>
-    <div class="row" data-aos="zoom-in-up">
-      <div class="col-lg-4 core-1">
-        <div class="list-group" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Web Developer</a>
-          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Web Designer</a>
-          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Front-End Web Development</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Back-End Web Development</a>
-        </div>
-      </div>
-      <div class="col-lg-8 core-2">
-        <div class="tab-content core-list" id="nav-tabContent">
-          <div class="tab-pane fade show active core-p" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-            <p>
-              A <span>web developer</span> is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications using a client–server model. <span>Web developers</span> are found working in various types of organizations, including large corporations and governments, small and medium-sized companies, or alone as freelancers.
-            </p>
-            <p>
-              The applications typically use <span>HTML</span> , <span>CSS,</span> and <span>JavaScript</span> in the client, <span>PHP</span>,<span> ASP.NET (C#)</span>, <span>Python</span>, <span>Node.js</span>, <span>Go</span></span> or <span>Java</span> in the server, and <span>http</span>, for communications between client and server.
-            </p>
-            <p>
-              <span>Source : <a href="https://en.wikipedia.org/wiki/Web_developer" target="_blank">Wikipedia</a></span>
-            </p>
-          </div>
-          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-            <p>
-              A <span>web designer</span> is an IT professional who is responsible for designing the layout, visual appearance and the usability of a website. A good <span>web designer</span> needs to have both creative graphic skills and technical skills. They need to be able to visualise how a site will look (the graphical design of the site) and how it will function (conversion of a design into a working website). 
-            </p>
-            <p>
-              The term <span>Web Designer</span> is often incorrectly interchanged with the term <span>Web Developer</span> and vice versa.  A <span>web developer</span> is often more likely to be a <span>software developer</span> who works with programming languages to create a higher level of interactions on a website such as the integration with a database system.
-            </p>
-            <p>
-              <span>Source : <a href="https://www.technojobs.co.uk/info/it-job-roles/what-is-a-web-designer.phtml" target="_blank">Technojobs</a></span>
-            </p>
-          </div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-            <p>
-              <span>Front-end web development</span>, also known as <span>client-side development</span> is the practice of producing <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span> for a website or Web Application so that a user can see and interact with them directly. The challenge associated with front end development is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing.
-            </p>
-            <p>
-              The objective of designing a site is to ensure that when the users open up the site they see the information in a format that is easy to read and relevant. This is further complicated by the fact that users now use a large variety of devices with varying screen sizes and resolutions thus forcing the designer to take into consideration these aspects when designing the site. They need to ensure that their site comes up correctly in different browsers (cross-browser), different operating systems (cross-platform) and different devices (cross-device), which requires careful planning on the side of the developer.
-            </p>
-            <p>
-              <span>Source : <a href="https://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.html" target="_blank">Frontendmasters</a></span>
-            </p>
-          </div>
-          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-            <p>
-              <span>Back end Development</span> refers to the server side of development where you are primarily focused on how the site works. Making updates and changes in addition to monitoring functionality of the site will be your primary responsibility. This type of <span>web development</span> usually consists of three parts: a <span>server</span>, an <span>application</span>, and a <span>database</span>. Code written by <span>back end developers</span> is what communicates the database information to the browser. Anything you can’t see easily with the eye such as databases and servers is the work of a <span>back end developer</span>. <span>Back end developer</span> positions are often called <span>programmers</span> or <span>web developers</span>.
-            </p>
-            <p>
-              <span>Source : <a href="https://www.coursereport.com/blog/front-end-development-vs-back-end-development-where-to-start" target="_blank">Coursereport</a></span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Core End -->
+        <h1>JS Documentation</h1>
 
-  <!-- Portfolio Start -->
-  <section class="portfolio parallax card-luar" id="portfolio">
-    <div class="container">
-      <div class="row text-center" data-aos="zoom-in-up">
-        <div class="col-lg-12">
-          <h2 class="portfolio-header">
-            Try Out
-          </h2>
-          <hr>
+      </div>
+
+    </div>
+
+    <div class="row navigation">
+
+      <div class="col-12 col-s-12">
+
+        <h1>• Navigation •</h1>
+
+      </div>
+
+    </div>
+
+    <nav id="navbar">
+      <header>Navigation</header>
+      <div class="row scroll">
+
+        <div class="col-12 col-s-12">
+  
+          <ul>
+  
+            <li>
+              <a class="nav-link" href="#introduction">Introduction</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#javaScript_and_java">JavaScript and Java</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#hello_world">Hello World</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#variables">Variables</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#declaring_variable">Declaring Variable</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#Variable_Scope">Variable Scope</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#global_variables">Global Variables</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#constants">Constants</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#data_types">Data Types</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#if_else_statement">if else statement</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#while_statement">while Statement</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#function_declarations">Function Declarations</a>
+            </li>
+  
+            <li>
+              <a class="nav-link" href="#Reference">Reference</a>
+            </li>
+  
+          </ul>
+  
         </div>
-        <div class="container">
-          <div class="row mx-auto align-items-center justify-content-center">
-            <div class="col-lg-4">
-              <div class="card">
-                <img src="img/Vacansy Remake.png" class="card-img-top gambar-satu" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Vacansy Remake</h5>
-                  <p class="card-text">My First Remake Design //
-                    <br>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@omnicreativora.com&su=SUBJECT&body=BODY&bcc=hello@omnicreativora.com" target="_blank" class="badge badge-info">Vacansy's Email</a> //
-                    <br>
-                    <a href="https://dribbble.com/shots/12230630-Vacansy-Landing-Page" target="_blank" class="badge badge-primary">Vacansy Dribble Page</a> //
-                  </p>
-                  <small>
-                    <cite title="Source Title">Rianadi</cite>
-                  </small>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card">
-                <img src="img/StepWorld.jpg" class="card-img-top gambar-dua" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">StepWorld</h5>
-                  <p class="card-text">My First Design //
-                    <br>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deanradityo@gmail.com&su=SUBJECT&body=BODY&bcc=deanradityo@gmail.com" target="_blank" class="badge badge-info">Foxico's Email<a> //
-                        <br>
-                        <a href="https://dribbble.com/shots/15607887-StepWorld" target="_blank" class="badge badge-primary">StepWorld Dribble Page</a> //
-                  </p>
-                  <small>
-                    <cite title="Source Title">Rianadi</cite>
-                  </small>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card">
-                <img src="img/StepWorld-v2.png" class="card-img-top gambar-tiga" alt="...">
-                <div class="card-body  kurang-margin">
-                  <h5 class="card-title">StepWorld V2</h5>
-                  <p class="card-text">My Design //
-                    <br>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deanradityo@gmail.com&su=SUBJECT&body=BODY&bcc=deanradityo@gmail.com" target="_blank" class="badge badge-info">Foxico's Email</a> //
-                    <!-- <br> -->
-                    <!-- <a href="https://dribbble.com/shots/15607887-StepWorld" target="_blank">StepWorld Design V2</a> // -->
-                  </p>
-                  <small>
-                    <cite title="Source Title">Rianadi</cite>
-                  </small>
-                </div>
-              </div>
+  
+      </div>
+    </nav>
+    
+
+    <main id="main-doc">
+
+      <div class="content">
+        <section class="main-section" id="introduction">
+          <header>Introduction</header>
+          <div class="row">
+            <div class="col-12 col-s-12">
+              
+              <h1>Introduction</h1>
+    
+              <hr>
+        
+              <p>
+                JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+                <br><br>
+                JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+              </p>
+      
+              <ul>
+      
+                <li>
+                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+                </li>
+      
+                <li>
+                  Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+                </li>
+      
+              </ul>
+        
             </div>
           </div>
-        </div>
-  </section>
-  <!-- Portfolio End -->
+        </section>
+        
+        <section class="main-section" id="What_you_should_already_know">
+          <header>What you should already know</header>
 
-  <!-- Pull Up Start -->
-  <section class="pull-up" id="pull-up">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-lg-12 text-center">
-          <a class="top-link hide" href="" id="js-top">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
-              <path d="M12 6H0l6-6z" />
-            </svg>
-            <span class="screen-reader-text">Back to top</span>
-          </a>
-        </div>
+          <div class="row">
+            <div class="col-12 col-s-12">
+    
+              <h1>What you should already know</h1>
+    
+              <hr>
+    
+              <p>
+                This guide assumes you have the following basic background:
+              </p>
+    
+              <ul>
+    
+                <li>
+                  A general understanding of the Internet and the World Wide Web (WWW).
+                </li>
+    
+                <li>
+                  Good working knowledge of HyperText Markup Language (HTML).
+                </li>
+    
+                <li>
+                  Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+                </li>
+    
+              </ul>
+    
+            </div>
+          </div>
+          
+        </section>
+       
+        <section class="main-section" id="javaScript_and_java">
+          <header>javaScript and java</header>
+
+          <div class="row">
+
+            <div class="col-12 col-s-12">
+    
+              <h1>JavaScript and Java</h1>
+    
+              <hr>
+    
+              <p>
+                JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+                <br><br>
+                In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+                <br><br>
+                JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+              </p>
+    
+            </div>
+    
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="hello_world">
+          <header>hello world</header>
+
+          <div class="row">
+
+            <div class="col-12 col-s-12">
+    
+              <h1>Hello world</h1>
+    
+              <hr>
+    
+              <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+    
+              <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                greetMe("World");</code>
+    
+                <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+    
+            </div>
+    
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="variables">
+          <header>variables</header>
+
+          <div class="row">
+
+            <div class="col-12 col-s-12">
+    
+              <h1>Variables</h1>
+    
+              <hr>
+    
+              <p>
+                You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+                <br><br>
+                A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+                <br><br>
+                You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
+              </p>
+    
+            </div>
+    
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="declaring_variable">
+          <header>declaring variable</header>
+
+          <div class="row">
+
+            <div class="col-12 col-s-12">
+    
+              <h1>Declaring variables</h1>
+    
+              <hr>
+    
+              <p>You can declare a variable in three ways: <br> With the keyword var. For example,</p>
+    
+              <code>var x = 42</code>
+    
+              <p>This syntax can be used to declare both local and global variables.</p>
+    
+              <code>x = 42</code>
+    
+              <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.<br>With the keyword let. For example,</p>
+    
+              <code>let y = 13</code>
+    
+              <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+    
+            </div>
+    
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="Variable_Scope">
+          <header>Variable Scope</header>
+
+          <div class="row">
+
+            <h1>Variable scope</h1>
+    
+            <hr>
+    
+            <p>
+              When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+              <br><br>
+              JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+            </p>
+    
+            <code>if (true) { var x = 5; } console.log(x); // 5</code>
+    
+            <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
+    
+            <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</code>
+    
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="global_variables">
+          <header>global variables</header>
+
+          <div class="row">
+
+            <div class="col-12 col-s-12">
+    
+              <h1>Global variables</h1>
+    
+              <hr>
+    
+              <p>
+                Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
+                <br><br>
+                Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+              </p>
+    
+            </div>
+            
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="constants">
+          <header>constants</header>
+
+          <div class="row">
+
+            <div class="col-12 col-s-12">
+    
+              <h1>Constants</h1>
+    
+              <hr>
+    
+              <p>
+                You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+              </p>
+    
+              <code>const PI = 3.14;</code>
+    
+              <p>
+                A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+                <br><br>
+                The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
+                <br><br>
+                You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+              </p>
+    
+              <code>
+                // THIS WILL CAUSE AN ERROR function f() {}; const f = 5;
+                <br>
+                // THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements}
+              </code>
+    
+              <p>
+                However, object attributes are not protected, so the following statement is executed without problems.
+              </p>
+    
+              <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
+              
+            </div>
+    
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="data_types">
+          <header>data types</header>
+
+          <div class="row">
+
+            <div class="col-12 col-s-12">
+    
+              <h1>Data types</h1>
+    
+              <hr>
+    
+              <p>The latest ECMAScript standard defines seven data types:</p>
+    
+              <ul>
+    
+                <li>
+                  Six data types that are primitives:
+    
+                  <ul>
+    
+                    <li>Boolean. true and false.</li>
+    
+                    <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+    
+                    <li>undefined. A top-level property whose value is undefined.</li>
+    
+                    <li>Number. 42 or 3.14159.</li>
+    
+                    <li>String. "Howdy"</li>
+    
+                    <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                  </ul>
+    
+                </li>
+    
+                <li>and Object</li>
+    
+              </ul>
+    
+              <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
+    
+            </div>
+    
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="if_else_statement">
+          <header>if else statement</header>
+
+          <div class="row">
+
+            <h1>if...else statement</h1>
+    
+            <hr>
+    
+            <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
+    
+            <code>if (condition) { statement_1; } else { statement_2; }</code>
+    
+            <p>
+              condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.
+              <br><br>
+              You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
+            </p>
+    
+            <code>
+              if (condition_1) { statement_1; }
+              <br>
+              else if (condition_2) { statement_2;}
+              <br>
+              else if (condition_n) { statement_n; }
+              <br>
+              else { statement_last; }
+            </code>
+    
+            <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
+    
+            <code>
+              if (condition) { 
+                <br>
+                (1) if condition is true; 
+                <br>
+                (2) if condition is true;}
+              <br>
+              else {
+              <br>
+                (3)if condition is false;
+                <br>
+                (4) if condition is false;}
+            </code>
+    
+            <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:</p>
+    
+            <code>if (x = y) { /* statements here */ }</code>
+    
+            <p>If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:</p>
+    
+            <code>if ((x = y)) { /* statements here */ }</code>
+    
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="while_statement">
+          <header>while statement</header>
+
+          <div class="row">
+
+            <div class="col-12 col-s-12">
+    
+              <h1>while statement</h1>
+    
+              <hr>
+    
+              <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+    
+              <code>while (condition) statement</code>
+    
+              <p>
+                If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+                <br><br>
+                The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.
+                <br><br>
+                To execute multiple statements, use a block statement ({ ... }) to group those statements.
+                <br><br>
+                Example:
+                <br><br>
+                The following while loop iterates as long as n is less than three:
+              </p>
+    
+              <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
+    
+              <p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:</p>
+    
+              <ul>
+    
+                <li>After the first pass: n = 1 and x = 1</li>
+    
+                <li>After the second pass: n = 2 and x = 3</li>
+    
+                <li>After the third pass: n = 3 and x = 6</li>
+    
+              </ul>
+    
+              <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
+    
+            </div>
+    
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="function_declarations">
+          <header>function declarations</header>
+
+          <div class="row">
+
+            <div class="col-12 col-s-12">
+    
+              <h1>Function declarations</h1>
+    
+              <hr>
+      
+              <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+      
+              <ul>
+      
+                <li>The name of the function.</li>
+      
+                <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+      
+                <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+      
+              </ul>
+      
+              <p>For example, the following code defines a simple function named square:</p>
+      
+              <code>function square(number) { return number * number; }</code>
+      
+              <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.</p>
+      
+              <code>return number * number;</code>
+      
+              <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
+    
+            </div>
+    
+          </div>
+          
+        </section>
+        
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+
+          <div class="row">
+            <div class="col-12 col-s-12">
+    
+              <h1>Reference</h1>
+    
+              <hr>
+      
+              <ul>
+      
+                <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li>
+      
+              </ul>
+    
+            </div>
+            
+          </div>
+          
+        </section>
+        
       </div>
-    </div>
-  </section>
-  <!-- Pull Up End -->
 
-  <!-- Footer Start -->
-  <footer>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-sm-12">
-          <p>
-            &copy; 2020 - 2021 <a href="">FOXICO</a> • All rights reserved • Love from Depok
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer End -->
-
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-  <!-- My Own JS -->
-  <script src="js/script.js"></script>
-
+    </main>
+  
+  </div>
 </body>
-
 </html>
