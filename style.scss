@@ -61,10 +61,6 @@ body {
     color: $universal;
     letter-spacing: 1.2px;
   }
-
-  header {
-    display: none;
-  }
 }
 
 .container {
@@ -73,6 +69,7 @@ body {
   border-radius: 30px;
   background-image: linear-gradient(270deg, #1c0c5b, #2c2891);
   word-wrap: break-word;
+  box-shadow: 0px 0 20px 2px rgba(0, 0, 0, 0.336);
 
   hr {
     margin: 0 auto;
@@ -80,105 +77,249 @@ body {
     width: 30%;
   }
 
-  .title {
-    text-align: center;
-
-    h1 {
-      font: 28px "Roboto", sans-serif;
-      color: $orange3;
-      font-weight: 500;
-    }
-  }
-
   .navigation {
-    margin-top: 30px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
 
-    h1 {
-      font: 20px "Roboto", sans-serif;
-      font-weight: 500;
-    }
-  }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff8e5;
 
-  #navbar {
-    margin-top: 10px;
-    background: #161e54;
-    overflow: auto;
-    width: 100%;
-    height: 300px;
-    border-radius: 30px;
-    text-align: center;
-    box-shadow: 0 0 10px 0.01px #161425;
-    cursor: pointer;
+      img {
+        margin-right: 5px;
+        width: 100%;
+        max-width: 30px;
+        height: auto;
+      }
 
-    ul {
-      list-style-type: none;
-
-      li {
-        margin-bottom: 15px;
-        background-color: #1e296e;
-        padding: 10px;
-        border-radius: 20px;
+      h1 {
+        margin-left: 5px;
+        font: 26px "Fredoka One", cursive;
+        font-weight: lighter;
 
         a {
-          font: 14px "Roboto", sans-serif;
-          line-height: 0;
           text-decoration: none;
+          color: #fff8e5;
+          transition: 300ms;
+        }
+
+        a:hover {
+          color: #c36a2d;
         }
       }
+    }
 
-      li:last-child {
-        margin-bottom: 0px;
-      }
+    .about,
+    .work,
+    .contact {
+      h4 {
+        text-align: center;
+        font: 20px "Roboto", sans-serif;
 
-      li:hover {
-        background-color: #202966;
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          color: $universal;
+          transition: border-bottom 1s;
+          padding-bottom: 5px;
+        }
+
+        a:hover {
+          border-bottom: 2px solid #c36a2d;
+        }
       }
     }
   }
 
-  .content {
-    .row {
-      margin: 50px 0;
-    }
+  .hr1 {
+    margin-top: 20px;
+  }
 
-    .row:last-child {
-      margin-bottom: 0;
-    }
+  .intro {
+    margin-top: 50px;
 
     h1 {
+      cursor: pointer;
       text-align: center;
-      font: 20px "Roboto", sans-serif;
+      font: 24px "Roboto", sans-serif;
       font-weight: 500;
+      transition: 300ms ease-in-out;
     }
 
-    p,
-    li {
-      margin-top: 30px;
-      font: 16px "Roboto", sans-serif;
-      line-height: 40px;
-      text-align: justify;
+    h1:hover {
+      color: $orange1;
     }
 
-    li {
-      margin-left: 30px;
-    }
-
-    code {
-      display: block;
-      margin-top: 30px;
+    h3 {
+      cursor: pointer;
+      margin-top: 20px;
       text-align: center;
-      font: 16px "Roboto Mono", monospace;
-      color: salmon;
+      font: 18px "Roboto Mono", monospace;
+      color: $orange3;
+    }
+  }
+
+  .portfolio {
+    margin-top: 50px;
+
+    .portfolio-1 {
+      h1 {
+        cursor: pointer;
+        text-align: center;
+        font: 22px "Roboto", sans-serif;
+        font-weight: 500;
+        transition: 300ms ease-in-out;
+      }
+
+      h1:hover {
+        color: $orange1;
+      }
     }
 
-    a {
-      font: 16px "Roboto", sans-serif;
+    .portfolio-2,
+    .portfolio-3 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      max-width: 350px;
+      margin: 0 auto;
+      height: auto;
+
+      .p1,
+      .p2,
+      .p3 {
+        border-radius: 20px;
+        margin: 20px auto;
+        text-align: center;
+        max-width: 100%;
+        height: auto;
+
+        a {
+          text-decoration: none;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border: 5px solid $purple2;
+          border-radius: 10px;
+          transition: 300ms ease-in-out;
+        }
+
+        img:hover {
+          transform: scale(1.5);
+        }
+
+        h3 {
+          display: block;
+          margin-top: 20px;
+          text-align: center;
+          font: 18px "Roboto Mono", monospace;
+          color: $orange3;
+        }
+      }
+    }
+
+    .all {
+      text-align: center;
+
+      button {
+        cursor: pointer;
+        background-image: linear-gradient(to right, #e26a2c, #ff8243);
+        border-radius: 5px;
+        margin-top: 20px;
+        height: auto;
+        min-height: 40px;
+        width: 80%;
+        max-width: 120px;
+        font: 14px "Roboto", sans-serif;
+        color: $universal;
+        text-shadow: 1px 1px 2px #3f3f3f;
+        outline: none;
+        letter-spacing: 1.2px;
+        transition: background-color 300ms;
+      }
+
+      button:hover {
+        background-image: linear-gradient(to right, #dd5612, #c94705);
+      }
+
+      button:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .together {
+    margin-top: 70px;
+
+    h1 {
+      cursor: pointer;
+      text-align: center;
+      font: 24px "Roboto", sans-serif;
+      font-weight: 500;
+      transition: 300ms ease-in-out;
+    }
+
+    h1:hover {
+      color: $orange1;
+    }
+
+    h3 {
+      cursor: pointer;
+      margin-top: 20px;
+      text-align: center;
+      font: 18px "Roboto Mono", monospace;
+      color: $orange3;
+      font-style: italic;
+    }
+  }
+
+  .social {
+    h3 {
+      cursor: pointer;
+      margin-top: 20px;
+      text-align: center;
+      font: 18px "Roboto Mono", monospace;
+      color: $universal;
+      font-style: italic;
+
+      a {
+        text-decoration: none;
+        transition: 300ms ease-in-out;
+      }
+    }
+
+    a:hover {
+      color: $orange1;
+    }
+  }
+
+  .footer {
+    margin-top: 30px;
+
+    .row {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    h3 {
+      cursor: pointer;
+      margin-top: 20px;
+      text-align: center;
+      font: 18px "Roboto", sans-serif;
+      color: $universal;
     }
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   /* For tablets: */
   .col-s-0 {
     width: 0;
@@ -218,14 +359,6 @@ body {
   }
   .col-s-12 {
     width: 100%;
-  }
-
-  .container {
-    .title {
-      h1 {
-        font-size: 28px;
-      }
-    }
   }
 }
 
@@ -273,31 +406,159 @@ body {
 
   .container {
     position: relative;
-    margin-left: 22%;
+    margin-top: 90px;
 
-    .title {
-      h1 {
-        font-size: 34px;
+    .navigation {
+      position: fixed;
+      z-index: 9999;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      margin-top: 0;
+      background-color: #1f1d36;
+      box-shadow: 0.3px 0 20px 2px black;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff8e5;
+
+        img {
+          margin-right: 5px;
+          width: 100%;
+          max-width: 30px;
+        }
+
+        h1 {
+          font: 26px "Fredoka One", cursive;
+        }
+      }
+
+      .about,
+      .work,
+      .contact {
+        h4 {
+          font: 20px "Roboto", sans-serif;
+        }
       }
     }
 
-    .navigation {
+    .hr1 {
       display: none;
     }
 
-    #navbar {
-      margin-top: 0;
-      border-radius: 0;
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 20%;
-      height: 100%;
+    .intro {
+      margin-top: 50px;
+
+      h1 {
+        font: 30px "Roboto", sans-serif;
+      }
+
+      h3 {
+        margin-top: 20px;
+        text-align: center;
+        font: 20px "Roboto Mono", monospace;
+        color: $orange3;
+      }
     }
 
-    .content {
-      margin-top: -40px;
-      padding: 30px;
+    .portfolio {
+      margin-top: 50px;
+
+      .portfolio-1 {
+        h1 {
+          text-align: center;
+          font: 22px "Roboto", sans-serif;
+          font-weight: 500;
+        }
+      }
+
+      .portfolio-2,
+      .portfolio-3 {
+        margin-top: 10px;
+        margin: auto;
+        display: flex;
+        max-width: 100%;
+        height: auto;
+
+        .p1,
+        .p2,
+        .p3 {
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+
+          h3 {
+            font: 18px "Roboto Mono", monospace;
+          }
+        }
+      }
+    }
+
+    .together {
+      margin-top: 100px;
+
+      h1 {
+        cursor: pointer;
+        text-align: center;
+        font: 24px "Roboto", sans-serif;
+        font-weight: 500;
+        transition: 300ms ease-in-out;
+      }
+
+      h1:hover {
+        color: $orange1;
+      }
+
+      h3 {
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+        font: 18px "Roboto Mono", monospace;
+        color: $orange3;
+        font-style: italic;
+      }
+    }
+
+    .social {
+      h3 {
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+        font: 18px "Roboto Mono", monospace;
+        color: $universal;
+        font-style: italic;
+
+        a {
+          text-decoration: none;
+          transition: 300ms ease-in-out;
+        }
+      }
+
+      a:hover {
+        color: $orange1;
+      }
+    }
+
+    .footer {
+      margin-top: 100px;
+
+      .row {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      h3 {
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+        font: 18px "Roboto", sans-serif;
+        color: $universal;
+      }
     }
   }
 }

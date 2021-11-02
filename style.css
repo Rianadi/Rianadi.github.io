@@ -2,7 +2,7 @@
 /* For mobile phones: */
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -28,13 +28,7 @@ img {
 }
 
 body {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#1c0c5b),
-    to(#2c2891)
-  );
+  background-image: -webkit-gradient(linear, left top, right top, from(#1c0c5b), to(#2c2891));
   background-image: linear-gradient(to right, #1c0c5b, #2c2891);
   letter-spacing: 1px;
 }
@@ -58,23 +52,15 @@ body li {
   letter-spacing: 1.2px;
 }
 
-body header {
-  display: none;
-}
-
 .container {
   margin: 15px;
   padding: 10px;
   border-radius: 30px;
-  background-image: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(#1c0c5b),
-    to(#2c2891)
-  );
+  background-image: -webkit-gradient(linear, right top, left top, from(#1c0c5b), to(#2c2891));
   background-image: linear-gradient(270deg, #1c0c5b, #2c2891);
   word-wrap: break-word;
+  -webkit-box-shadow: 0px 0 20px 2px rgba(0, 0, 0, 0.336);
+          box-shadow: 0px 0 20px 2px rgba(0, 0, 0, 0.336);
 }
 
 .container hr {
@@ -83,103 +69,299 @@ body header {
   width: 30%;
 }
 
-.container .title {
-  text-align: center;
-}
-
-.container .title h1 {
-  font: 28px "Roboto", sans-serif;
-  color: #ff935d;
-  font-weight: 500;
-}
-
 .container .navigation {
-  margin-top: 30px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
 }
 
-.container .navigation h1 {
-  font: 20px "Roboto", sans-serif;
-  font-weight: 500;
+.container .navigation .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff8e5;
 }
 
-.container #navbar {
-  margin-top: 10px;
-  background: #161e54;
-  overflow: auto;
+.container .navigation .logo img {
+  margin-right: 5px;
   width: 100%;
-  height: 300px;
-  border-radius: 30px;
+  max-width: 30px;
+  height: auto;
+}
+
+.container .navigation .logo h1 {
+  margin-left: 5px;
+  font: 26px "Fredoka One", cursive;
+  font-weight: lighter;
+}
+
+.container .navigation .logo h1 a {
+  text-decoration: none;
+  color: #fff8e5;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container .navigation .logo h1 a:hover {
+  color: #c36a2d;
+}
+
+.container .navigation .about h4,
+.container .navigation .work h4,
+.container .navigation .contact h4 {
   text-align: center;
-  -webkit-box-shadow: 0 0 10px 0.01px #161425;
-  box-shadow: 0 0 10px 0.01px #161425;
+  font: 20px "Roboto", sans-serif;
+}
+
+.container .navigation .about h4 a,
+.container .navigation .work h4 a,
+.container .navigation .contact h4 a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ededed;
+  -webkit-transition: border-bottom 1s;
+  transition: border-bottom 1s;
+  padding-bottom: 5px;
+}
+
+.container .navigation .about h4 a:hover,
+.container .navigation .work h4 a:hover,
+.container .navigation .contact h4 a:hover {
+  border-bottom: 2px solid #c36a2d;
+}
+
+.container .hr1 {
+  margin-top: 20px;
+}
+
+.container .intro {
+  margin-top: 50px;
+}
+
+.container .intro h1 {
   cursor: pointer;
+  text-align: center;
+  font: 24px "Roboto", sans-serif;
+  font-weight: 500;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
-.container #navbar ul {
-  list-style-type: none;
+.container .intro h1:hover {
+  color: #c36a2d;
 }
 
-.container #navbar ul li {
-  margin-bottom: 15px;
-  background-color: #1e296e;
-  padding: 10px;
+.container .intro h3 {
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  font: 18px "Roboto Mono", monospace;
+  color: #ff935d;
+}
+
+.container .portfolio {
+  margin-top: 50px;
+}
+
+.container .portfolio .portfolio-1 h1 {
+  cursor: pointer;
+  text-align: center;
+  font: 22px "Roboto", sans-serif;
+  font-weight: 500;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.container .portfolio .portfolio-1 h1:hover {
+  color: #c36a2d;
+}
+
+.container .portfolio .portfolio-2,
+.container .portfolio .portfolio-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+  max-width: 350px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.container .portfolio .portfolio-2 .p1,
+.container .portfolio .portfolio-2 .p2,
+.container .portfolio .portfolio-2 .p3,
+.container .portfolio .portfolio-3 .p1,
+.container .portfolio .portfolio-3 .p2,
+.container .portfolio .portfolio-3 .p3 {
   border-radius: 20px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
 }
 
-.container #navbar ul li a {
-  font: 14px "Roboto", sans-serif;
-  line-height: 0;
+.container .portfolio .portfolio-2 .p1 a,
+.container .portfolio .portfolio-2 .p2 a,
+.container .portfolio .portfolio-2 .p3 a,
+.container .portfolio .portfolio-3 .p1 a,
+.container .portfolio .portfolio-3 .p2 a,
+.container .portfolio .portfolio-3 .p3 a {
   text-decoration: none;
 }
 
-.container #navbar ul li:last-child {
-  margin-bottom: 0px;
+.container .portfolio .portfolio-2 .p1 img,
+.container .portfolio .portfolio-2 .p2 img,
+.container .portfolio .portfolio-2 .p3 img,
+.container .portfolio .portfolio-3 .p1 img,
+.container .portfolio .portfolio-3 .p2 img,
+.container .portfolio .portfolio-3 .p3 img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #2c2891;
+  border-radius: 10px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
-.container #navbar ul li:hover {
-  background-color: #202966;
+.container .portfolio .portfolio-2 .p1 img:hover,
+.container .portfolio .portfolio-2 .p2 img:hover,
+.container .portfolio .portfolio-2 .p3 img:hover,
+.container .portfolio .portfolio-3 .p1 img:hover,
+.container .portfolio .portfolio-3 .p2 img:hover,
+.container .portfolio .portfolio-3 .p3 img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
-.container .content .row {
-  margin: 50px 0;
-}
-
-.container .content .row:last-child {
-  margin-bottom: 0;
-}
-
-.container .content h1 {
-  text-align: center;
-  font: 20px "Roboto", sans-serif;
-  font-weight: 500;
-}
-
-.container .content p,
-.container .content li {
-  margin-top: 30px;
-  font: 16px "Roboto", sans-serif;
-  line-height: 40px;
-  text-align: justify;
-}
-
-.container .content li {
-  margin-left: 30px;
-}
-
-.container .content code {
+.container .portfolio .portfolio-2 .p1 h3,
+.container .portfolio .portfolio-2 .p2 h3,
+.container .portfolio .portfolio-2 .p3 h3,
+.container .portfolio .portfolio-3 .p1 h3,
+.container .portfolio .portfolio-3 .p2 h3,
+.container .portfolio .portfolio-3 .p3 h3 {
   display: block;
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
-  font: 16px "Roboto Mono", monospace;
-  color: salmon;
+  font: 18px "Roboto Mono", monospace;
+  color: #ff935d;
 }
 
-.container .content a {
-  font: 16px "Roboto", sans-serif;
+.container .portfolio .all {
+  text-align: center;
 }
 
-@media only screen and (min-width: 600px) {
+.container .portfolio .all button {
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e26a2c), to(#ff8243));
+  background-image: linear-gradient(to right, #e26a2c, #ff8243);
+  border-radius: 5px;
+  margin-top: 20px;
+  height: auto;
+  min-height: 40px;
+  width: 80%;
+  max-width: 120px;
+  font: 14px "Roboto", sans-serif;
+  color: #ededed;
+  text-shadow: 1px 1px 2px #3f3f3f;
+  outline: none;
+  letter-spacing: 1.2px;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.container .portfolio .all button:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#dd5612), to(#c94705));
+  background-image: linear-gradient(to right, #dd5612, #c94705);
+}
+
+.container .portfolio .all button:focus {
+  outline: none;
+}
+
+.container .together {
+  margin-top: 70px;
+}
+
+.container .together h1 {
+  cursor: pointer;
+  text-align: center;
+  font: 24px "Roboto", sans-serif;
+  font-weight: 500;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.container .together h1:hover {
+  color: #c36a2d;
+}
+
+.container .together h3 {
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  font: 18px "Roboto Mono", monospace;
+  color: #ff935d;
+  font-style: italic;
+}
+
+.container .social h3 {
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  font: 18px "Roboto Mono", monospace;
+  color: #ededed;
+  font-style: italic;
+}
+
+.container .social h3 a {
+  text-decoration: none;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.container .social a:hover {
+  color: #c36a2d;
+}
+
+.container .footer {
+  margin-top: 30px;
+}
+
+.container .footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .footer h3 {
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  font: 18px "Roboto", sans-serif;
+  color: #ededed;
+}
+
+@media only screen and (min-width: 768px) {
   /* For tablets: */
   .col-s-0 {
     width: 0;
@@ -219,9 +401,6 @@ body header {
   }
   .col-s-12 {
     width: 100%;
-  }
-  .container .title h1 {
-    font-size: 28px;
   }
 }
 
@@ -268,26 +447,152 @@ body header {
   }
   .container {
     position: relative;
-    margin-left: 22%;
-  }
-  .container .title h1 {
-    font-size: 34px;
+    margin-top: 90px;
   }
   .container .navigation {
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin-top: 0;
+    background-color: #1f1d36;
+    -webkit-box-shadow: 0.3px 0 20px 2px black;
+            box-shadow: 0.3px 0 20px 2px black;
+  }
+  .container .navigation .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #fff8e5;
+  }
+  .container .navigation .logo img {
+    margin-right: 5px;
+    width: 100%;
+    max-width: 30px;
+  }
+  .container .navigation .logo h1 {
+    font: 26px "Fredoka One", cursive;
+  }
+  .container .navigation .about h4,
+  .container .navigation .work h4,
+  .container .navigation .contact h4 {
+    font: 20px "Roboto", sans-serif;
+  }
+  .container .hr1 {
     display: none;
   }
-  .container #navbar {
-    margin-top: 0;
-    border-radius: 0;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 20%;
-    height: 100%;
+  .container .intro {
+    margin-top: 50px;
   }
-  .container .content {
-    margin-top: -40px;
-    padding: 30px;
+  .container .intro h1 {
+    font: 30px "Roboto", sans-serif;
+  }
+  .container .intro h3 {
+    margin-top: 20px;
+    text-align: center;
+    font: 20px "Roboto Mono", monospace;
+    color: #ff935d;
+  }
+  .container .portfolio {
+    margin-top: 50px;
+  }
+  .container .portfolio .portfolio-1 h1 {
+    text-align: center;
+    font: 22px "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .container .portfolio .portfolio-2,
+  .container .portfolio .portfolio-3 {
+    margin-top: 10px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+  }
+  .container .portfolio .portfolio-2 .p1 img,
+  .container .portfolio .portfolio-2 .p2 img,
+  .container .portfolio .portfolio-2 .p3 img,
+  .container .portfolio .portfolio-3 .p1 img,
+  .container .portfolio .portfolio-3 .p2 img,
+  .container .portfolio .portfolio-3 .p3 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .container .portfolio .portfolio-2 .p1 h3,
+  .container .portfolio .portfolio-2 .p2 h3,
+  .container .portfolio .portfolio-2 .p3 h3,
+  .container .portfolio .portfolio-3 .p1 h3,
+  .container .portfolio .portfolio-3 .p2 h3,
+  .container .portfolio .portfolio-3 .p3 h3 {
+    font: 18px "Roboto Mono", monospace;
+  }
+  .container .together {
+    margin-top: 100px;
+  }
+  .container .together h1 {
+    cursor: pointer;
+    text-align: center;
+    font: 24px "Roboto", sans-serif;
+    font-weight: 500;
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+  }
+  .container .together h1:hover {
+    color: #c36a2d;
+  }
+  .container .together h3 {
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font: 18px "Roboto Mono", monospace;
+    color: #ff935d;
+    font-style: italic;
+  }
+  .container .social h3 {
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font: 18px "Roboto Mono", monospace;
+    color: #ededed;
+    font-style: italic;
+  }
+  .container .social h3 a {
+    text-decoration: none;
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+  }
+  .container .social a:hover {
+    color: #c36a2d;
+  }
+  .container .footer {
+    margin-top: 100px;
+  }
+  .container .footer .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .footer h3 {
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font: 18px "Roboto", sans-serif;
+    color: #ededed;
   }
 }
 /*# sourceMappingURL=style.css.map */
