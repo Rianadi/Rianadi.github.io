@@ -224,7 +224,18 @@ body {
       }
     }
 
+    .different {
+      text-align: center;
+
+      h3 {
+        font: 18px "Roboto Mono", monospace;
+        color: $orange1;
+        font-style: italic;
+      }
+    }
+
     .all {
+      display: none;
       text-align: center;
 
       button {
@@ -405,18 +416,17 @@ body {
   }
 
   .container {
-    position: relative;
-    margin-top: 90px;
+    // position: relative;
 
     .navigation {
-      position: fixed;
-      z-index: 9999;
-      top: 0px;
-      left: 0px;
+      // position: fixed;
+      // z-index: 9999;
+      // top: 0px;
+      // left: 0px;
       width: 100%;
       margin-top: 0;
-      background-color: #1f1d36;
-      box-shadow: 0.3px 0 20px 2px black;
+      // background-color: #1f1d36;
+      // box-shadow: 0.3px 0 20px 2px black;
 
       .logo {
         display: flex;
@@ -449,10 +459,10 @@ body {
     }
 
     .intro {
-      margin-top: 50px;
+      margin-top: 100px;
 
       h1 {
-        font: 30px "Roboto", sans-serif;
+        font: 40px "Roboto", sans-serif;
       }
 
       h3 {
@@ -464,7 +474,7 @@ body {
     }
 
     .portfolio {
-      margin-top: 50px;
+      margin-top: 100px;
 
       .portfolio-1 {
         h1 {

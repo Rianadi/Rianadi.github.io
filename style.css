@@ -260,7 +260,18 @@ body li {
   color: #ff935d;
 }
 
+.container .portfolio .different {
+  text-align: center;
+}
+
+.container .portfolio .different h3 {
+  font: 18px "Roboto Mono", monospace;
+  color: #c36a2d;
+  font-style: italic;
+}
+
 .container .portfolio .all {
+  display: none;
   text-align: center;
 }
 
@@ -445,20 +456,9 @@ body li {
   .col-12 {
     width: 100%;
   }
-  .container {
-    position: relative;
-    margin-top: 90px;
-  }
   .container .navigation {
-    position: fixed;
-    z-index: 9999;
-    top: 0px;
-    left: 0px;
     width: 100%;
     margin-top: 0;
-    background-color: #1f1d36;
-    -webkit-box-shadow: 0.3px 0 20px 2px black;
-            box-shadow: 0.3px 0 20px 2px black;
   }
   .container .navigation .logo {
     display: -webkit-box;
@@ -489,10 +489,10 @@ body li {
     display: none;
   }
   .container .intro {
-    margin-top: 50px;
+    margin-top: 100px;
   }
   .container .intro h1 {
-    font: 30px "Roboto", sans-serif;
+    font: 40px "Roboto", sans-serif;
   }
   .container .intro h3 {
     margin-top: 20px;
@@ -501,7 +501,7 @@ body li {
     color: #ff935d;
   }
   .container .portfolio {
-    margin-top: 50px;
+    margin-top: 100px;
   }
   .container .portfolio .portfolio-1 h1 {
     text-align: center;
