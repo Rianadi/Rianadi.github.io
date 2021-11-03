@@ -157,6 +157,8 @@ body li {
   font-weight: 500;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
+  -webkit-animation: intro 5s linear infinite alternate;
+          animation: intro 5s linear infinite alternate;
 }
 
 .container .intro h1:hover {
@@ -164,11 +166,17 @@ body li {
 }
 
 .container .intro h3 {
+  -webkit-animation: opacity 300ms linear infinite alternate;
+          animation: opacity 300ms linear infinite alternate;
   cursor: pointer;
   margin-top: 20px;
   text-align: center;
   font: 18px "Roboto Mono", monospace;
   color: #ff935d;
+}
+
+.container .cursor {
+  display: none;
 }
 
 .container .portfolio {
@@ -189,7 +197,8 @@ body li {
 }
 
 .container .portfolio .portfolio-2,
-.container .portfolio .portfolio-3 {
+.container .portfolio .portfolio-3,
+.container .portfolio .portfolio-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,12 +210,9 @@ body li {
   height: auto;
 }
 
-.container .portfolio .portfolio-2 .p1,
-.container .portfolio .portfolio-2 .p2,
-.container .portfolio .portfolio-2 .p3,
-.container .portfolio .portfolio-3 .p1,
-.container .portfolio .portfolio-3 .p2,
-.container .portfolio .portfolio-3 .p3 {
+.container .portfolio .portfolio-2 .project-tile,
+.container .portfolio .portfolio-3 .project-tile,
+.container .portfolio .portfolio-4 .project-tile {
   border-radius: 20px;
   margin: 20px auto;
   text-align: center;
@@ -214,45 +220,35 @@ body li {
   height: auto;
 }
 
-.container .portfolio .portfolio-2 .p1 a,
-.container .portfolio .portfolio-2 .p2 a,
-.container .portfolio .portfolio-2 .p3 a,
-.container .portfolio .portfolio-3 .p1 a,
-.container .portfolio .portfolio-3 .p2 a,
-.container .portfolio .portfolio-3 .p3 a {
+.container .portfolio .portfolio-2 .project-tile a,
+.container .portfolio .portfolio-3 .project-tile a,
+.container .portfolio .portfolio-4 .project-tile a {
   text-decoration: none;
 }
 
-.container .portfolio .portfolio-2 .p1 img,
-.container .portfolio .portfolio-2 .p2 img,
-.container .portfolio .portfolio-2 .p3 img,
-.container .portfolio .portfolio-3 .p1 img,
-.container .portfolio .portfolio-3 .p2 img,
-.container .portfolio .portfolio-3 .p3 img {
+.container .portfolio .portfolio-2 .project-tile img,
+.container .portfolio .portfolio-3 .project-tile img,
+.container .portfolio .portfolio-4 .project-tile img {
   max-width: 100%;
   height: auto;
   border: 5px solid #2c2891;
   border-radius: 10px;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
+  -webkit-animation: border 2s linear infinite alternate;
+          animation: border 2s linear infinite alternate;
 }
 
-.container .portfolio .portfolio-2 .p1 img:hover,
-.container .portfolio .portfolio-2 .p2 img:hover,
-.container .portfolio .portfolio-2 .p3 img:hover,
-.container .portfolio .portfolio-3 .p1 img:hover,
-.container .portfolio .portfolio-3 .p2 img:hover,
-.container .portfolio .portfolio-3 .p3 img:hover {
+.container .portfolio .portfolio-2 .project-tile img:hover,
+.container .portfolio .portfolio-3 .project-tile img:hover,
+.container .portfolio .portfolio-4 .project-tile img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
-.container .portfolio .portfolio-2 .p1 h3,
-.container .portfolio .portfolio-2 .p2 h3,
-.container .portfolio .portfolio-2 .p3 h3,
-.container .portfolio .portfolio-3 .p1 h3,
-.container .portfolio .portfolio-3 .p2 h3,
-.container .portfolio .portfolio-3 .p3 h3 {
+.container .portfolio .portfolio-2 .project-tile h3,
+.container .portfolio .portfolio-3 .project-tile h3,
+.container .portfolio .portfolio-4 .project-tile h3 {
   display: block;
   margin-top: 20px;
   text-align: center;
@@ -260,7 +256,26 @@ body li {
   color: #ff935d;
 }
 
+.container .portfolio .portfolio-2 .project-tile h3::before,
+.container .portfolio .portfolio-3 .project-tile h3::before,
+.container .portfolio .portfolio-4 .project-tile h3::before {
+  color: #ededed;
+  content: "<";
+  -webkit-animation: opacity 1s linear infinite alternate;
+          animation: opacity 1s linear infinite alternate;
+}
+
+.container .portfolio .portfolio-2 .project-tile h3::after,
+.container .portfolio .portfolio-3 .project-tile h3::after,
+.container .portfolio .portfolio-4 .project-tile h3::after {
+  color: #ededed;
+  content: "/>";
+  -webkit-animation: opacity 1s linear infinite alternate;
+          animation: opacity 1s linear infinite alternate;
+}
+
 .container .portfolio .different {
+  display: none;
   text-align: center;
 }
 
@@ -350,6 +365,8 @@ body li {
 
 .container .footer {
   margin-top: 30px;
+  -webkit-animation: opacity 500ms linear infinite alternate;
+          animation: opacity 500ms linear infinite alternate;
 }
 
 .container .footer .row {
@@ -489,16 +506,48 @@ body li {
     display: none;
   }
   .container .intro {
-    margin-top: 100px;
+    margin-top: 50px;
+    height: 520px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .container .intro h1 {
-    font: 40px "Roboto", sans-serif;
+    font: 70px "Roboto", sans-serif;
   }
   .container .intro h3 {
     margin-top: 20px;
     text-align: center;
-    font: 20px "Roboto Mono", monospace;
+    font: 26px "Roboto Mono", monospace;
     color: #ff935d;
+  }
+  .container .cursor {
+    display: block;
+    margin-top: -70px;
+    cursor: context-menu;
+  }
+  .container .cursor h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font: 16px "Roboto Mono", monospace;
+  }
+  .container .cursor h3.satu {
+    -webkit-animation: opacity 300ms linear infinite alternate;
+            animation: opacity 300ms linear infinite alternate;
+    color: #c36a2d;
+  }
+  .container .cursor h3.dua {
+    color: #ff8243;
+    -webkit-animation: opacity 300ms linear 100ms infinite alternate;
+            animation: opacity 300ms linear 100ms infinite alternate;
+  }
+  .container .cursor h3.tiga {
+    color: #ff935d;
+    -webkit-animation: opacity 300ms linear 200ms infinite alternate;
+            animation: opacity 300ms linear 200ms infinite alternate;
   }
   .container .portfolio {
     margin-top: 100px;
@@ -509,7 +558,8 @@ body li {
     font-weight: 500;
   }
   .container .portfolio .portfolio-2,
-  .container .portfolio .portfolio-3 {
+  .container .portfolio .portfolio-3,
+  .container .portfolio .portfolio-4 {
     margin-top: 10px;
     margin: auto;
     display: -webkit-box;
@@ -518,21 +568,15 @@ body li {
     max-width: 100%;
     height: auto;
   }
-  .container .portfolio .portfolio-2 .p1 img,
-  .container .portfolio .portfolio-2 .p2 img,
-  .container .portfolio .portfolio-2 .p3 img,
-  .container .portfolio .portfolio-3 .p1 img,
-  .container .portfolio .portfolio-3 .p2 img,
-  .container .portfolio .portfolio-3 .p3 img {
+  .container .portfolio .portfolio-2 .project-tile img,
+  .container .portfolio .portfolio-3 .project-tile img,
+  .container .portfolio .portfolio-4 .project-tile img {
     max-width: 100%;
     height: auto;
   }
-  .container .portfolio .portfolio-2 .p1 h3,
-  .container .portfolio .portfolio-2 .p2 h3,
-  .container .portfolio .portfolio-2 .p3 h3,
-  .container .portfolio .portfolio-3 .p1 h3,
-  .container .portfolio .portfolio-3 .p2 h3,
-  .container .portfolio .portfolio-3 .p3 h3 {
+  .container .portfolio .portfolio-2 .project-tile h3,
+  .container .portfolio .portfolio-3 .project-tile h3,
+  .container .portfolio .portfolio-4 .project-tile h3 {
     font: 18px "Roboto Mono", monospace;
   }
   .container .together {
@@ -593,6 +637,60 @@ body li {
     text-align: center;
     font: 18px "Roboto", sans-serif;
     color: #ededed;
+  }
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes border {
+  from {
+    border: 5px solid #2c2891;
+  }
+  to {
+    border: 5px solid #1c0c5b;
+  }
+}
+
+@keyframes border {
+  from {
+    border: 5px solid #2c2891;
+  }
+  to {
+    border: 5px solid #1c0c5b;
+  }
+}
+
+@-webkit-keyframes intro {
+  from {
+    color: #ededed;
+  }
+  to {
+    color: #777777;
+  }
+}
+
+@keyframes intro {
+  from {
+    color: #ededed;
+  }
+  to {
+    color: #777777;
   }
 }
 /*# sourceMappingURL=style.css.map */
