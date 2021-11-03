@@ -124,12 +124,14 @@ body {
           text-decoration: none;
           font-weight: 500;
           color: $universal;
-          transition: border-bottom 1s;
+          transition: 1s;
           padding-bottom: 5px;
+          transition: border-bottom 300ms;
         }
 
         a:hover {
-          border-bottom: 2px solid #c36a2d;
+          // animation: navbar 300ms ease-in-out forwards;
+          border-bottom: 2px solid $orange1;
         }
       }
     }
@@ -166,7 +168,37 @@ body {
   }
 
   .cursor {
-    display: none;
+    display: flex;
+    margin-top: 40px;
+    cursor: context-menu;
+    justify-content: center;
+
+    h3 {
+      margin-bottom: 10px;
+      text-align: center;
+      font: 16px "Roboto Mono", monospace;
+    }
+
+    h3.scroll {
+      display: none;
+      animation: opacity 300ms linear infinite alternate;
+      color: $orange2;
+    }
+
+    h3.satu {
+      animation: opacity 300ms linear 100ms infinite alternate;
+      color: $orange1;
+    }
+
+    h3.dua {
+      color: $orange2;
+      animation: opacity 300ms linear 200ms infinite alternate;
+    }
+
+    h3.tiga {
+      color: $orange3;
+      animation: opacity 300ms linear 300ms infinite alternate;
+    }
   }
 
   .portfolio {
@@ -230,13 +262,13 @@ body {
 
         h3::before {
           color: $universal;
-          content: "<";
+          content: "< ";
           animation: opacity 1s linear infinite alternate;
         }
 
         h3::after {
           color: $universal;
-          content: "/>";
+          content: " />";
           animation: opacity 1s linear infinite alternate;
         }
       }
@@ -436,17 +468,9 @@ body {
   }
 
   .container {
-    // position: relative;
-
     .navigation {
-      // position: fixed;
-      // z-index: 9999;
-      // top: 0px;
-      // left: 0px;
       width: 100%;
       margin-top: 0;
-      // background-color: #1f1d36;
-      // box-shadow: 0.3px 0 20px 2px black;
 
       .logo {
         display: flex;
@@ -497,29 +521,10 @@ body {
     }
 
     .cursor {
-      display: block;
       margin-top: -70px;
-      cursor: context-menu;
 
-      h3 {
-        margin-bottom: 10px;
-        text-align: center;
-        font: 16px "Roboto Mono", monospace;
-      }
-
-      h3.satu {
-        animation: opacity 300ms linear infinite alternate;
-        color: $orange1;
-      }
-
-      h3.dua {
-        color: $orange2;
-        animation: opacity 300ms linear 100ms infinite alternate;
-      }
-
-      h3.tiga {
-        color: $orange3;
-        animation: opacity 300ms linear 200ms infinite alternate;
+      h3.scroll {
+        display: block;
       }
     }
 
@@ -619,6 +624,16 @@ body {
         color: $universal;
       }
     }
+  }
+}
+
+@keyframes navbar {
+  from {
+    border-bottom: none;
+  }
+
+  to {
+    border-bottom: 2px solid $orange3;
   }
 }
 
