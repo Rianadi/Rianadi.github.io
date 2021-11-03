@@ -229,6 +229,7 @@ body {
       height: auto;
 
       .project-tile {
+        position: relative;
         border-radius: 20px;
         margin: 20px auto;
         text-align: center;
@@ -240,12 +241,14 @@ body {
         }
 
         img {
+          position: relative;
           max-width: 100%;
           height: auto;
           border: 5px solid $purple2;
           border-radius: 10px;
           transition: 300ms ease-in-out;
           animation: border 2s linear infinite alternate;
+          z-index: 9999;
         }
 
         img:hover {
@@ -264,12 +267,14 @@ body {
           color: $universal;
           content: "< ";
           animation: opacity 1s linear infinite alternate;
+          z-index: -9999;
         }
 
         h3::after {
           color: $universal;
           content: " />";
           animation: opacity 1s linear infinite alternate;
+          z-index: -9999;
         }
       }
     }
