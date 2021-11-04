@@ -56,8 +56,8 @@ body li {
   margin: 15px;
   padding: 10px;
   border-radius: 30px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#1c0c5b), to(#2c2891));
-  background-image: linear-gradient(270deg, #1c0c5b, #2c2891);
+  -webkit-animation: container 5s linear infinite alternate;
+          animation: container 5s linear infinite alternate;
   word-wrap: break-word;
   -webkit-box-shadow: 0px 0 20px 2px rgba(0, 0, 0, 0.336);
           box-shadow: 0px 0 20px 2px rgba(0, 0, 0, 0.336);
@@ -85,9 +85,6 @@ body li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -521,14 +518,14 @@ body li {
   .container .navigation {
     width: 100%;
     margin-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .container .navigation .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -559,6 +556,7 @@ body li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-image: url(img/);
   }
   .container .intro h1 {
     font: 70px "Roboto", sans-serif;
@@ -663,6 +661,24 @@ body li {
     text-align: center;
     font: 18px "Roboto", sans-serif;
     color: #ededed;
+  }
+}
+
+@-webkit-keyframes container {
+  0% {
+    background-color: #1c0c5b;
+  }
+  100% {
+    background-color: #2c2891;
+  }
+}
+
+@keyframes container {
+  0% {
+    background-color: #1c0c5b;
+  }
+  100% {
+    background-color: #2c2891;
   }
 }
 
