@@ -584,6 +584,7 @@ body li {
   .container .portfolio .portfolio-2,
   .container .portfolio .portfolio-3,
   .container .portfolio .portfolio-4 {
+    cursor: pointer;
     margin-top: 10px;
     margin: auto;
     display: -webkit-box;
