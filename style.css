@@ -584,7 +584,6 @@ body li {
   }
   .container .intro .img1 img,
   .container .intro .img2 img {
-    display: none;
     width: 30%;
     height: auto;
     max-width: 100px;
