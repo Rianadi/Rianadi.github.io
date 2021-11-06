@@ -145,10 +145,11 @@ body {
     h1 {
       cursor: pointer;
       text-align: center;
-      font: 24px "Roboto", sans-serif;
+      font: 32px "Roboto", sans-serif;
       font-weight: 500;
       transition: 300ms ease-in-out;
       animation: intro 5s linear infinite alternate;
+      animation: intro2 4s ease-in-out infinite alternate;
     }
 
     h1:hover {
@@ -156,13 +157,18 @@ body {
     }
 
     h3 {
-      animation: opacity 300ms linear infinite alternate;
+      animation: opacity 600ms linear infinite alternate;
       cursor: pointer;
       margin-top: 20px;
       text-align: center;
       font: 18px "Roboto Mono", monospace;
       color: $orange3;
     }
+  }
+
+  .img1,
+  .img2 {
+    display: none;
   }
 
   .cursor {
@@ -381,6 +387,12 @@ body {
       text-align: center;
       font: 18px "Roboto", sans-serif;
       color: $universal;
+
+      span {
+        display: inline-block;
+        transform: scale(0.8);
+        padding-top: 20px;
+      }
     }
   }
 }
@@ -512,6 +524,33 @@ body {
       display: flex;
       align-items: center;
       background-image: url(img/);
+
+      .img1,
+      .img2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        img {
+          width: 30%;
+          height: auto;
+          max-width: 100px;
+        }
+      }
+
+      .img1 {
+        img {
+          animation: intro3 4s ease-in-out infinite alternate;
+        }
+      }
+
+      .img2 {
+        transform: rotate(180deg);
+
+        img {
+          animation: intro4 4s ease-in-out infinite alternate;
+        }
+      }
 
       h1 {
         font: 70px "Roboto", sans-serif;
@@ -679,5 +718,39 @@ body {
 
   to {
     color: #777777;
+  }
+}
+
+@keyframes intro2 {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes intro3 {
+  0% {
+    transform: translateX(0px);
+    filter: saturate(0);
+  }
+
+  100% {
+    transform: translateX(50px);
+    filter: saturate(1);
+  }
+}
+
+@keyframes intro4 {
+  0% {
+    transform: translateX(0px);
+    filter: saturate(0);
+  }
+
+  100% {
+    transform: translateX(50px);
+    filter: saturate(1);
   }
 }
