@@ -152,12 +152,14 @@ body li {
 .container .intro h1 {
   cursor: pointer;
   text-align: center;
-  font: 24px "Roboto", sans-serif;
+  font: 32px "Roboto", sans-serif;
   font-weight: 500;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
   -webkit-animation: intro 5s linear infinite alternate;
           animation: intro 5s linear infinite alternate;
+  -webkit-animation: intro2 4s ease-in-out infinite alternate;
+          animation: intro2 4s ease-in-out infinite alternate;
 }
 
 .container .intro h1:hover {
@@ -165,13 +167,18 @@ body li {
 }
 
 .container .intro h3 {
-  -webkit-animation: opacity 300ms linear infinite alternate;
-          animation: opacity 300ms linear infinite alternate;
+  -webkit-animation: opacity 600ms linear infinite alternate;
+          animation: opacity 600ms linear infinite alternate;
   cursor: pointer;
   margin-top: 20px;
   text-align: center;
   font: 18px "Roboto Mono", monospace;
   color: #ff935d;
+}
+
+.container .img1,
+.container .img2 {
+  display: none;
 }
 
 .container .cursor {
@@ -431,6 +438,13 @@ body li {
   color: #ededed;
 }
 
+.container .footer h3 span {
+  display: inline-block;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  padding-top: 20px;
+}
+
 @media only screen and (min-width: 768px) {
   /* For tablets: */
   .col-s-0 {
@@ -557,6 +571,34 @@ body li {
         -ms-flex-align: center;
             align-items: center;
     background-image: url(img/);
+  }
+  .container .intro .img1,
+  .container .intro .img2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .container .intro .img1 img,
+  .container .intro .img2 img {
+    width: 30%;
+    height: auto;
+    max-width: 100px;
+  }
+  .container .intro .img1 img {
+    -webkit-animation: intro3 4s ease-in-out infinite alternate;
+            animation: intro3 4s ease-in-out infinite alternate;
+  }
+  .container .intro .img2 {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .container .intro .img2 img {
+    -webkit-animation: intro4 4s ease-in-out infinite alternate;
+            animation: intro4 4s ease-in-out infinite alternate;
   }
   .container .intro h1 {
     font: 70px "Roboto", sans-serif;
@@ -752,6 +794,88 @@ body li {
   }
   to {
     color: #777777;
+  }
+}
+
+@-webkit-keyframes intro2 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes intro2 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes intro3 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
+  }
+  100% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    -webkit-filter: saturate(1);
+            filter: saturate(1);
+  }
+}
+
+@keyframes intro3 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
+  }
+  100% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    -webkit-filter: saturate(1);
+            filter: saturate(1);
+  }
+}
+
+@-webkit-keyframes intro4 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
+  }
+  100% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    -webkit-filter: saturate(1);
+            filter: saturate(1);
+  }
+}
+
+@keyframes intro4 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
+  }
+  100% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    -webkit-filter: saturate(1);
+            filter: saturate(1);
   }
 }
 /*# sourceMappingURL=style.css.map */
