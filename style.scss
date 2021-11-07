@@ -84,7 +84,6 @@ body {
 
     .logo {
       display: flex;
-      // align-items: center;
       justify-content: center;
       color: #fff8e5;
 
@@ -140,7 +139,7 @@ body {
   }
 
   .intro {
-    margin-top: 50px;
+    margin-top: 70px;
 
     h1 {
       cursor: pointer;
@@ -205,8 +204,56 @@ body {
     }
   }
 
+  .univ {
+    margin-top: 70px;
+    position: relative;
+
+    .row {
+      max-width: 350px;
+      margin: 0 auto;
+
+      a {
+        text-decoration: none;
+      }
+
+      .img {
+        img {
+          position: relative;
+          z-index: 9999;
+          max-width: 100%;
+          height: auto;
+          border: 5px solid $purple2;
+          border-radius: 10px;
+          animation: border 2s linear infinite alternate;
+          transition: 300ms;
+        }
+
+        img:hover {
+          transform: scale(1.25);
+        }
+      }
+
+      .profile {
+        h1 {
+          cursor: pointer;
+          text-align: center;
+          font: 22px "Roboto", sans-serif;
+          font-weight: 500;
+        }
+
+        h3 {
+          cursor: pointer;
+          margin-top: 20px;
+          text-align: center;
+          font: 20px "Roboto Mono", monospace;
+          color: $orange3;
+        }
+      }
+    }
+  }
+
   .portfolio {
-    margin-top: 50px;
+    margin-top: 70px;
 
     .portfolio-1 {
       h1 {
@@ -371,7 +418,7 @@ body {
   }
 
   .footer {
-    margin-top: 30px;
+    margin-top: 70px;
     animation: opacity 500ms linear infinite alternate;
 
     .row {
@@ -569,6 +616,42 @@ body {
 
       h3.scroll {
         display: block;
+      }
+    }
+
+    .univ {
+      margin-top: 100px;
+
+      .row {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .img {
+          img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid $purple2;
+            border-radius: 10px;
+          }
+        }
+
+        .profile {
+          h1 {
+            cursor: pointer;
+            text-align: center;
+            font: 30px "Roboto", sans-serif;
+            font-weight: 500;
+          }
+
+          h3 {
+            margin-top: 20px;
+            text-align: center;
+            font: 20px "Roboto Mono", monospace;
+            color: $orange3;
+          }
+        }
       }
     }
 
