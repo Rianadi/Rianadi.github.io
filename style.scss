@@ -12,6 +12,8 @@ $orange3: #ff935d;
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Roboto Mono', monospace;
 
+// bagian class togerther h1nya masih tidak bisa di fix transitionnya
+
 /* For mobile phones: */
 * {
   box-sizing: border-box;
@@ -81,11 +83,14 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    justify-content: center;
 
     .logo {
       display: flex;
       justify-content: center;
       color: #fff8e5;
+      text-align: center;
+      margin: 0 auto;
 
       img {
         margin-right: 5px;
@@ -98,6 +103,7 @@ body {
         margin-left: 5px;
         font: 26px "Fredoka One", cursive;
         font-weight: lighter;
+        text-transform: uppercase;
 
         a {
           text-decoration: none;
@@ -106,7 +112,7 @@ body {
         }
 
         a:hover {
-          color: #c36a2d;
+          color: $orange1;
         }
       }
     }
@@ -146,7 +152,7 @@ body {
       text-align: center;
       font: 32px "Roboto", sans-serif;
       font-weight: 500;
-      transition: 300ms ease-in-out;
+      transition: 300ms;
       animation: intro 5s linear infinite alternate;
       animation: intro2 4s ease-in-out infinite alternate;
     }
@@ -163,11 +169,11 @@ body {
       font: 18px "Roboto Mono", monospace;
       color: $orange3;
     }
-  }
 
-  .img1,
-  .img2 {
-    display: none;
+    .img1,
+    .img2 {
+      display: none;
+    }
   }
 
   .cursor {
@@ -204,6 +210,58 @@ body {
     }
   }
 
+  .diri {
+    margin-top: 70px;
+
+    .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 250px;
+      margin: 0 auto;
+
+      .diri1 {
+        display: none;
+        text-align: center;
+      }
+
+      .diri2 {
+        text-align: center;
+      }
+
+      .diri1,
+      .diri2 {
+        h1 {
+          text-align: center;
+          font: 22px "Roboto", sans-serif;
+          font-weight: 500;
+          transition: 300ms;
+        }
+
+        h1:hover {
+          color: $orange1;
+        }
+
+        h3 {
+          margin-top: 20px;
+          font: 18px "Roboto Mono", monospace;
+          color: $orange3;
+          font-style: italic;
+        }
+      }
+
+      .img {
+        text-align: center;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
   .univ {
     margin-top: 70px;
     position: relative;
@@ -217,7 +275,10 @@ body {
       }
 
       .img {
+        text-align: center;
+
         img {
+          margin-top: 20px;
           position: relative;
           z-index: 9999;
           max-width: 100%;
@@ -234,6 +295,8 @@ body {
       }
 
       .profile {
+        text-align: center;
+
         h1 {
           cursor: pointer;
           text-align: center;
@@ -250,23 +313,24 @@ body {
           cursor: pointer;
           margin-top: 20px;
           text-align: center;
-          font: 20px "Roboto Mono", monospace;
+          font: 18px "Roboto Mono", monospace;
           color: $orange3;
+          font-style: italic;
         }
       }
     }
   }
 
   .portfolio {
-    margin-top: 70px;
+    margin-top: 100px;
 
     .portfolio-1 {
       h1 {
         cursor: pointer;
         text-align: center;
-        font: 22px "Roboto", sans-serif;
-        font-weight: 500;
-        transition: 300ms ease-in-out;
+        font: 24px "Roboto", sans-serif;
+        // font-weight: 500;
+        transition: 300ms;
       }
 
       h1:hover {
@@ -302,7 +366,7 @@ body {
           height: auto;
           border: 5px solid $purple2;
           border-radius: 10px;
-          transition: 300ms ease-in-out;
+          transition: 300ms;
           animation: border 2s linear infinite alternate;
           z-index: 9999;
         }
@@ -364,7 +428,7 @@ body {
         text-shadow: 1px 1px 2px #3f3f3f;
         outline: none;
         letter-spacing: 1.2px;
-        transition: background-color 300ms;
+        transition: 300ms;
       }
 
       button:hover {
@@ -385,7 +449,7 @@ body {
       text-align: center;
       font: 24px "Roboto", sans-serif;
       font-weight: 500;
-      transition: 300ms ease-in-out;
+      transition: 300ms;
     }
 
     h1:hover {
@@ -413,7 +477,7 @@ body {
 
       a {
         text-decoration: none;
-        transition: 300ms ease-in-out;
+        transition: 300ms;
       }
     }
 
@@ -538,16 +602,13 @@ body {
     .navigation {
       width: 100%;
       margin-top: 0;
-      align-items: center;
 
       .logo {
         display: flex;
-        // align-items: center;
         justify-content: center;
         color: #fff8e5;
 
         img {
-          margin-right: 5px;
           width: 100%;
           max-width: 30px;
         }
@@ -571,7 +632,7 @@ body {
     }
 
     .intro {
-      margin-top: 50px;
+      margin-top: 70px;
       height: 520px;
       display: flex;
       align-items: center;
@@ -579,6 +640,7 @@ body {
 
       .img1,
       .img2 {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
@@ -624,16 +686,40 @@ body {
       }
     }
 
-    .univ {
+    .diri {
       margin-top: 100px;
 
       .row {
         display: flex;
-        max-width: 100%;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0 auto;
 
-        .profile {
+        .img {
+          img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 50%;
+          }
+        }
+
+        .diri1 {
+          display: inline-block;
+
+          h1 {
+            text-align: center;
+          }
+        }
+
+        .diri2 {
+          display: none;
+          text-align: center;
+        }
+
+        .diri1,
+        .diri2 {
           h1 {
             font: 30px "Roboto", sans-serif;
           }
@@ -645,14 +731,41 @@ body {
       }
     }
 
+    .univ {
+      margin-top: 100px;
+
+      .row {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .img {
+          img {
+            max-width: 80%;
+          }
+        }
+
+        .profile {
+          h1 {
+            font: 30px "Roboto", sans-serif;
+          }
+
+          h3 {
+            font: 20px "Roboto Mono", monospace;
+            font-style: italic;
+          }
+        }
+      }
+    }
+
     .portfolio {
       margin-top: 100px;
 
       .portfolio-1 {
         h1 {
           text-align: center;
-          font: 22px "Roboto", sans-serif;
-          font-weight: 500;
+          font: 24px "Roboto", sans-serif;
         }
       }
 
@@ -683,11 +796,8 @@ body {
       margin-top: 100px;
 
       h1 {
-        cursor: pointer;
-        text-align: center;
         font: 24px "Roboto", sans-serif;
-        font-weight: 500;
-        transition: 300ms ease-in-out;
+        transition: 300ms;
       }
 
       h1:hover {
@@ -715,7 +825,7 @@ body {
 
         a {
           text-decoration: none;
-          transition: 300ms ease-in-out;
+          transition: 300ms;
         }
       }
 
@@ -735,11 +845,7 @@ body {
       }
 
       h3 {
-        cursor: pointer;
-        margin-top: 20px;
-        text-align: center;
         font: 18px "Roboto", sans-serif;
-        color: $universal;
       }
     }
   }

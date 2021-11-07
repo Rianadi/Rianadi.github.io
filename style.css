@@ -79,6 +79,9 @@ body li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .navigation .logo {
@@ -89,6 +92,8 @@ body li {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff8e5;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .container .navigation .logo img {
@@ -102,6 +107,7 @@ body li {
   margin-left: 5px;
   font: 26px "Fredoka One", cursive;
   font-weight: lighter;
+  text-transform: uppercase;
 }
 
 .container .navigation .logo h1 a {
@@ -154,8 +160,8 @@ body li {
   text-align: center;
   font: 32px "Roboto", sans-serif;
   font-weight: 500;
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   -webkit-animation: intro 5s linear infinite alternate;
           animation: intro 5s linear infinite alternate;
   -webkit-animation: intro2 4s ease-in-out infinite alternate;
@@ -176,8 +182,8 @@ body li {
   color: #ff935d;
 }
 
-.container .img1,
-.container .img2 {
+.container .intro .img1,
+.container .intro .img2 {
   display: none;
 }
 
@@ -223,6 +229,64 @@ body li {
           animation: opacity 300ms linear 300ms infinite alternate;
 }
 
+.container .diri {
+  margin-top: 70px;
+}
+
+.container .diri .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.container .diri .row .diri1 {
+  display: none;
+  text-align: center;
+}
+
+.container .diri .row .diri2 {
+  text-align: center;
+}
+
+.container .diri .row .diri1 h1,
+.container .diri .row .diri2 h1 {
+  text-align: center;
+  font: 22px "Roboto", sans-serif;
+  font-weight: 500;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container .diri .row .diri1 h1:hover,
+.container .diri .row .diri2 h1:hover {
+  color: #c36a2d;
+}
+
+.container .diri .row .diri1 h3,
+.container .diri .row .diri2 h3 {
+  margin-top: 20px;
+  font: 18px "Roboto Mono", monospace;
+  color: #ff935d;
+  font-style: italic;
+}
+
+.container .diri .row .img {
+  text-align: center;
+}
+
+.container .diri .row .img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
 .container .univ {
   margin-top: 70px;
   position: relative;
@@ -237,7 +301,12 @@ body li {
   text-decoration: none;
 }
 
+.container .univ .row .img {
+  text-align: center;
+}
+
 .container .univ .row .img img {
+  margin-top: 20px;
   position: relative;
   z-index: 9999;
   max-width: 100%;
@@ -253,6 +322,10 @@ body li {
 .container .univ .row .img img:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
+}
+
+.container .univ .row .profile {
+  text-align: center;
 }
 
 .container .univ .row .profile h1 {
@@ -272,21 +345,21 @@ body li {
   cursor: pointer;
   margin-top: 20px;
   text-align: center;
-  font: 20px "Roboto Mono", monospace;
+  font: 18px "Roboto Mono", monospace;
   color: #ff935d;
+  font-style: italic;
 }
 
 .container .portfolio {
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .container .portfolio .portfolio-1 h1 {
   cursor: pointer;
   text-align: center;
-  font: 22px "Roboto", sans-serif;
-  font-weight: 500;
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+  font: 24px "Roboto", sans-serif;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .container .portfolio .portfolio-1 h1:hover {
@@ -332,8 +405,8 @@ body li {
   height: auto;
   border: 5px solid #2c2891;
   border-radius: 10px;
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   -webkit-animation: border 2s linear infinite alternate;
           animation: border 2s linear infinite alternate;
   z-index: 9999;
@@ -407,8 +480,8 @@ body li {
   text-shadow: 1px 1px 2px #3f3f3f;
   outline: none;
   letter-spacing: 1.2px;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .container .portfolio .all button:hover {
@@ -429,8 +502,8 @@ body li {
   text-align: center;
   font: 24px "Roboto", sans-serif;
   font-weight: 500;
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .container .together h1:hover {
@@ -457,8 +530,8 @@ body li {
 
 .container .social h3 a {
   text-decoration: none;
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .container .social a:hover {
@@ -585,9 +658,6 @@ body li {
   .container .navigation {
     width: 100%;
     margin-top: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .container .navigation .logo {
     display: -webkit-box;
@@ -599,7 +669,6 @@ body li {
     color: #fff8e5;
   }
   .container .navigation .logo img {
-    margin-right: 5px;
     width: 100%;
     max-width: 30px;
   }
@@ -615,7 +684,7 @@ body li {
     display: none;
   }
   .container .intro {
-    margin-top: 50px;
+    margin-top: 70px;
     height: 520px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -627,6 +696,7 @@ body li {
   }
   .container .intro .img1,
   .container .intro .img2 {
+    cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -668,6 +738,47 @@ body li {
   .container .cursor h3.scroll {
     display: block;
   }
+  .container .diri {
+    margin-top: 100px;
+  }
+  .container .diri .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .container .diri .row .img img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+  }
+  .container .diri .row .diri1 {
+    display: inline-block;
+  }
+  .container .diri .row .diri1 h1 {
+    text-align: center;
+  }
+  .container .diri .row .diri2 {
+    display: none;
+    text-align: center;
+  }
+  .container .diri .row .diri1 h1,
+  .container .diri .row .diri2 h1 {
+    font: 30px "Roboto", sans-serif;
+  }
+  .container .diri .row .diri1 h3,
+  .container .diri .row .diri2 h3 {
+    font: 20px "Roboto Mono", monospace;
+  }
   .container .univ {
     margin-top: 100px;
   }
@@ -683,19 +794,22 @@ body li {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .container .univ .row .img img {
+    max-width: 80%;
+  }
   .container .univ .row .profile h1 {
     font: 30px "Roboto", sans-serif;
   }
   .container .univ .row .profile h3 {
     font: 20px "Roboto Mono", monospace;
+    font-style: italic;
   }
   .container .portfolio {
     margin-top: 100px;
   }
   .container .portfolio .portfolio-1 h1 {
     text-align: center;
-    font: 22px "Roboto", sans-serif;
-    font-weight: 500;
+    font: 24px "Roboto", sans-serif;
   }
   .container .portfolio .portfolio-2,
   .container .portfolio .portfolio-3,
@@ -724,12 +838,9 @@ body li {
     margin-top: 100px;
   }
   .container .together h1 {
-    cursor: pointer;
-    text-align: center;
     font: 24px "Roboto", sans-serif;
-    font-weight: 500;
-    -webkit-transition: 300ms ease-in-out;
-    transition: 300ms ease-in-out;
+    -webkit-transition: 300ms;
+    transition: 300ms;
   }
   .container .together h1:hover {
     color: #c36a2d;
@@ -752,8 +863,8 @@ body li {
   }
   .container .social h3 a {
     text-decoration: none;
-    -webkit-transition: 300ms ease-in-out;
-    transition: 300ms ease-in-out;
+    -webkit-transition: 300ms;
+    transition: 300ms;
   }
   .container .social a:hover {
     color: #c36a2d;
@@ -773,11 +884,7 @@ body li {
         flex-wrap: wrap;
   }
   .container .footer h3 {
-    cursor: pointer;
-    margin-top: 20px;
-    text-align: center;
     font: 18px "Roboto", sans-serif;
-    color: #ededed;
   }
 }
 
