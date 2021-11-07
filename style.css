@@ -260,6 +260,12 @@ body li {
   text-align: center;
   font: 22px "Roboto", sans-serif;
   font-weight: 500;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container .univ .row .profile h1:hover {
+  color: #c36a2d;
 }
 
 .container .univ .row .profile h3 {
@@ -677,23 +683,11 @@ body li {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container .univ .row .img img {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid #2c2891;
-    border-radius: 10px;
-  }
   .container .univ .row .profile h1 {
-    cursor: pointer;
-    text-align: center;
     font: 30px "Roboto", sans-serif;
-    font-weight: 500;
   }
   .container .univ .row .profile h3 {
-    margin-top: 20px;
-    text-align: center;
     font: 20px "Roboto Mono", monospace;
-    color: #ff935d;
   }
   .container .portfolio {
     margin-top: 100px;

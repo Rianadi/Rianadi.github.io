@@ -239,6 +239,11 @@ body {
           text-align: center;
           font: 22px "Roboto", sans-serif;
           font-weight: 500;
+          transition: 300ms;
+        }
+
+        h1:hover {
+          color: $orange1;
         }
 
         h3 {
@@ -628,28 +633,13 @@ body {
         align-items: center;
         justify-content: center;
 
-        .img {
-          img {
-            max-width: 100%;
-            height: auto;
-            border: 5px solid $purple2;
-            border-radius: 10px;
-          }
-        }
-
         .profile {
           h1 {
-            cursor: pointer;
-            text-align: center;
             font: 30px "Roboto", sans-serif;
-            font-weight: 500;
           }
 
           h3 {
-            margin-top: 20px;
-            text-align: center;
             font: 20px "Roboto Mono", monospace;
-            color: $orange3;
           }
         }
       }
