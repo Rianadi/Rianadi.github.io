@@ -257,6 +257,7 @@ body li {
 
 .container .diri .row .diri1 h1,
 .container .diri .row .diri2 h1 {
+  cursor: pointer;
   text-align: center;
   font: 22px "Roboto", sans-serif;
   font-weight: 500;
@@ -271,6 +272,7 @@ body li {
 
 .container .diri .row .diri1 h3,
 .container .diri .row .diri2 h3 {
+  cursor: pointer;
   margin-top: 20px;
   font: 18px "Roboto Mono", monospace;
   color: #ff935d;
@@ -282,9 +284,17 @@ body li {
 }
 
 .container .diri .row .img img {
+  cursor: pointer;
   max-width: 100%;
   height: auto;
   border-radius: 50%;
+  -webkit-animation: border 2s linear infinite alternate;
+          animation: border 2s linear infinite alternate;
+}
+
+.container .diri .row .img img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .container .univ {

@@ -232,6 +232,7 @@ body {
       .diri1,
       .diri2 {
         h1 {
+          cursor: pointer;
           text-align: center;
           font: 22px "Roboto", sans-serif;
           font-weight: 500;
@@ -243,6 +244,7 @@ body {
         }
 
         h3 {
+          cursor: pointer;
           margin-top: 20px;
           font: 18px "Roboto Mono", monospace;
           color: $orange3;
@@ -254,9 +256,15 @@ body {
         text-align: center;
 
         img {
+          cursor: pointer;
           max-width: 100%;
           height: auto;
           border-radius: 50%;
+          animation: border 2s linear infinite alternate;
+        }
+
+        img:hover {
+          transform: scale(1.25);
         }
       }
     }
@@ -329,7 +337,6 @@ body {
         cursor: pointer;
         text-align: center;
         font: 24px "Roboto", sans-serif;
-        // font-weight: 500;
         transition: 300ms;
       }
 
