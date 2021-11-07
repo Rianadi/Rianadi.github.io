@@ -146,7 +146,7 @@ body li {
 }
 
 .container .intro {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .container .intro h1 {
@@ -223,8 +223,55 @@ body li {
           animation: opacity 300ms linear 300ms infinite alternate;
 }
 
+.container .univ {
+  margin-top: 70px;
+  position: relative;
+}
+
+.container .univ .row {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.container .univ .row a {
+  text-decoration: none;
+}
+
+.container .univ .row .img img {
+  position: relative;
+  z-index: 9999;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #2c2891;
+  border-radius: 10px;
+  -webkit-animation: border 2s linear infinite alternate;
+          animation: border 2s linear infinite alternate;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container .univ .row .img img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.container .univ .row .profile h1 {
+  cursor: pointer;
+  text-align: center;
+  font: 22px "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.container .univ .row .profile h3 {
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  font: 20px "Roboto Mono", monospace;
+  color: #ff935d;
+}
+
 .container .portfolio {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .container .portfolio .portfolio-1 h1 {
@@ -413,7 +460,7 @@ body li {
 }
 
 .container .footer {
-  margin-top: 30px;
+  margin-top: 70px;
   -webkit-animation: opacity 500ms linear infinite alternate;
           animation: opacity 500ms linear infinite alternate;
 }
@@ -614,6 +661,39 @@ body li {
   }
   .container .cursor h3.scroll {
     display: block;
+  }
+  .container .univ {
+    margin-top: 100px;
+  }
+  .container .univ .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .univ .row .img img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #2c2891;
+    border-radius: 10px;
+  }
+  .container .univ .row .profile h1 {
+    cursor: pointer;
+    text-align: center;
+    font: 30px "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .container .univ .row .profile h3 {
+    margin-top: 20px;
+    text-align: center;
+    font: 20px "Roboto Mono", monospace;
+    color: #ff935d;
   }
   .container .portfolio {
     margin-top: 100px;
