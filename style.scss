@@ -822,22 +822,32 @@ body {
     }
 
     .social {
-      h3 {
-        cursor: pointer;
-        margin-top: 20px;
-        text-align: center;
-        font: 18px "Roboto Mono", monospace;
-        color: $universal;
-        font-style: italic;
+      a {
+        text-decoration: none;
 
-        a {
-          text-decoration: none;
+        // img {
+        //   width: 10%;
+        //   height: auto;
+        // }
+
+        h3 {
+          cursor: pointer;
+          margin-top: 20px;
+          text-align: center;
+          font: 18px "Roboto Mono", monospace;
+          color: $universal;
+          font-style: italic;
           transition: 300ms;
         }
-      }
 
-      a:hover {
-        color: $orange1;
+        h3:hover {
+          color: $orange1;
+        }
+
+        // h3:before {
+        //   content: url(img/linkedin.png);
+        //   z-index: -9999;
+        // }
       }
     }
 
