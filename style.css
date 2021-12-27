@@ -863,20 +863,20 @@ body li {
     color: #ff935d;
     font-style: italic;
   }
-  .container .social h3 {
+  .container .social a {
+    text-decoration: none;
+  }
+  .container .social a h3 {
     cursor: pointer;
     margin-top: 20px;
     text-align: center;
     font: 18px "Roboto Mono", monospace;
     color: #ededed;
     font-style: italic;
-  }
-  .container .social h3 a {
-    text-decoration: none;
     -webkit-transition: 300ms;
     transition: 300ms;
   }
-  .container .social a:hover {
+  .container .social a h3:hover {
     color: #c36a2d;
   }
   .container .footer {
