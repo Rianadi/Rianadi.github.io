@@ -52,11 +52,6 @@ body li {
   letter-spacing: 1.2px;
 }
 
-body h1#disabled {
-  font-size: 10px;
-  opacity: 0;
-}
-
 .container {
   margin: 15px;
   padding: 10px;
@@ -379,6 +374,11 @@ body h1#disabled {
 
 .container .portfolio .portfolio-1 h1:hover {
   color: #c36a2d;
+}
+
+.container .portfolio .portfolio-1 h1#disabled {
+  font-size: 10px;
+  opacity: 0;
 }
 
 .container .portfolio .portfolio-2,

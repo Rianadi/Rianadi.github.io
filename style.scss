@@ -62,11 +62,6 @@ body {
     color: $universal;
     letter-spacing: 1.2px;
   }
-
-  h1#disabled {
-    font-size: 10px;
-    opacity: 0;
-  }
 }
 
 .container {
@@ -348,6 +343,11 @@ body {
       h1:hover {
         color: $orange1;
       }
+
+      h1#disabled {
+        font-size: 10px;
+        opacity: 0;
+      }
     }
 
     .portfolio-2,
@@ -499,32 +499,6 @@ body {
       color: $orange1;
     }
   }
-
-  // .footer {
-  //   margin-top: 70px;
-  //   animation: opacity 500ms linear infinite alternate;
-
-  //   .row {
-  //     display: flex;
-  //     text-align: center;
-  //     align-items: center;
-  //     flex-wrap: wrap;
-  //   }
-
-  //   h3 {
-  //     cursor: pointer;
-  //     margin-top: 20px;
-  //     text-align: center;
-  //     font: 18px "Roboto", sans-serif;
-  //     color: $universal;
-
-  //     span {
-  //       display: inline-block;
-  //       transform: scale(0.8);
-  //       padding-top: 20px;
-  //     }
-  //   }
-  // }
 }
 
 @media only screen and (min-width: 768px) {
