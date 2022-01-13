@@ -52,6 +52,11 @@ body li {
   letter-spacing: 1.2px;
 }
 
+body h1#disabled {
+  font-size: 10px;
+  opacity: 0;
+}
+
 .container {
   margin: 15px;
   padding: 10px;
