@@ -77,6 +77,10 @@ body li {
 
 .container .topnav img {
   margin-top: 2px;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  max-width: 30px;
+  max-height: auto;
 }
 
 .container .topnav a {
@@ -88,6 +92,12 @@ body li {
   text-decoration: none;
   font: 18px "Roboto", sans-serif;
   font-weight: lighter;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container .topnav h3 {
+  font: 18px "Roboto", sans-serif;
 }
 
 .container .topnav a.active {
@@ -630,9 +640,18 @@ body li {
     float: right;
     padding-right: 2px;
     padding-left: 2px;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
     font-size: 20px;
+  }
+  .container .topnav h3 {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    padding-bottom: 4px;
+    font: 18px "Roboto", sans-serif;
     border-bottom: 2px solid #ff824300;
+  }
+  .container .topnav h3:hover {
+    border-bottom: 2px solid #ff8243;
   }
   .container .topnav a:not(.last) {
     margin-right: 70px;
@@ -811,10 +830,10 @@ body li {
   }
   .container .together h1 {
     font: 24px "Roboto", sans-serif;
-    -webkit-transition: 300ms;
-    transition: 300ms;
   }
   .container .together h1:hover {
+    -webkit-transition: color 300ms;
+    transition: color 300ms;
     color: #c36a2d;
   }
   .container .together h3 {

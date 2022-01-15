@@ -45,17 +45,20 @@
 
   <div class="container" id="container">
 
-    <div class="topnav" id="myTopnav">
-      <a class="img"><img id="header-img" src="img/foxico30.png" alt="FOXICO" data-aos="fade-down"></a>
-      <a href="#together" data-aos="fade-down" class="last">Contacts</a>
-      <a href="#projects" data-aos="fade-down">Projects</a>
-      <a href="#certificates" data-aos="fade-down">Certificates</a>
-      <a href="#diri" data-aos="fade-down">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()" data-aos="fade-down">
-        <i class="fa fa-bars" style="font-size:24px"></i></i>
-      </a>
-    </div>
-
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a class="img">
+          <img id="header-img" src="img/foxico50.png" alt="FOXICO" data-aos="fade-down">
+        </a>
+        <a href="#together" data-aos="fade-down" class="last"><h3><i class='fa fa-address-card'></i> Contacts</h3></a>
+        <a href="#projects" data-aos="fade-down"><h3><i class='fa fa-file-code-o'></i> Projects</h3></a>
+        <a href="#certificates" data-aos="fade-down"><h3><i class='fa fa-folder-o'></i> Certificates</h3></a>
+        <a href="#diri" data-aos="fade-down"><h3><i class='fa fa-info'></i> About</h3></a>
+        <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()" data-aos="fade-down" aria-hidden="true"><i class="fa fa-bars" style="font-size:24px"></i>
+        </a>
+      </div>
+    </nav>
+    
     <section id="welcome-section">
       <div class="row intro" id="intro">
 
@@ -320,7 +323,7 @@
         <div class="col-4 col-s-12">
           <h3>
             <a href="https://www.linkedin.com/in/fikri-dean-radityo-23bb3621a/" target="_blank" id="profile-link">
-              LinkedIn
+              <i class='fa fa-linkedin-square'></i> LinkedIn
             </a>
           </h3>
         </div>
@@ -328,7 +331,7 @@
         <div class="col-4 col-s-12">
           <h3>
             <a href="https://github.com/Rianadi" target="_blank" id="profile-link">
-              Github
+              <i class='fa fa-github-square'></i> Github
             </a>
           </h3>
         </div>
@@ -336,7 +339,7 @@
         <div class="col-4 col-s-12">
           <h3>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deanradityo@gmail.com" target="_blank" id="profile-link">
-              Email
+              <i class='fa fa-google'></i> Email
             </a>
           </h3>
         </div>
@@ -344,23 +347,6 @@
       </div>
 
     </section>
-    <!-- <div class="footer">
-
-      <div class="row">
-
-        <div class="col-12 col-s-12">
-
-          <h3>
-            Created by Fikri Dean Radityo
-          </h3>
-
-        </div>
-
-      </div>
-
-    </div>
-    
-  </div> -->
 
 <!-- AOS JS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

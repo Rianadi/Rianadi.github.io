@@ -86,6 +86,9 @@ body {
 
     img {
       margin-top: 2px;
+      transition: 700ms;
+      max-width: 30px;
+      max-height: auto;
     }
 
     a {
@@ -97,6 +100,11 @@ body {
       text-decoration: none;
       font: 18px "Roboto", sans-serif;
       font-weight: lighter;
+      transition: 1s;
+    }
+
+    h3 {
+      font: 18px "Roboto", sans-serif;
     }
 
     a.active {
@@ -592,18 +600,24 @@ body {
         float: right;
         padding-right: 2px;
         padding-left: 2px;
-        padding-bottom: 2px;
+        padding-bottom: 4px;
         font-size: 20px;
+      }
+
+      h3 {
+        transition: 300ms;
+        padding-bottom: 4px;
+        font: 18px "Roboto", sans-serif;
         border-bottom: 2px solid #ff824300;
+      }
+
+      h3:hover {
+        border-bottom: 2px solid #ff8243;
       }
 
       a:not(.last) {
         margin-right: 70px;
       }
-
-      // a:hover {
-      //   border-bottom: 2px solid #ff8243;
-      // }
 
       a.img {
         float: left;
@@ -613,6 +627,7 @@ body {
         }
       }
     }
+
     .topnav .icon {
       display: inline-block;
     }
@@ -795,10 +810,10 @@ body {
 
       h1 {
         font: 24px "Roboto", sans-serif;
-        transition: 300ms;
       }
 
       h1:hover {
+        transition: color 300ms;
         color: $orange1;
       }
 
@@ -818,11 +833,6 @@ body {
       a {
         text-decoration: none;
 
-        // img {
-        //   width: 10%;
-        //   height: auto;
-        // }
-
         h3 {
           cursor: pointer;
           margin-top: 20px;
@@ -836,28 +846,8 @@ body {
         h3:hover {
           color: $orange1;
         }
-
-        // h3:before {
-        //   content: url(img/linkedin.png);
-        //   z-index: -9999;
-        // }
       }
     }
-
-    // .footer {
-    //   margin-top: 100px;
-
-    //   .row {
-    //     display: flex;
-    //     text-align: center;
-    //     align-items: center;
-    //     flex-wrap: wrap;
-    //   }
-
-    //   h3 {
-    //     font: 18px "Roboto", sans-serif;
-    //   }
-    // }
   }
 }
 
