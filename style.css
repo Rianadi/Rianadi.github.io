@@ -69,82 +69,61 @@ body li {
   width: 30%;
 }
 
-.container .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.container .topnav {
+  overflow: hidden;
+  animation: container 5s linear infinite alternate-reverse;
+  border-radius: 20px;
 }
 
-.container .navigation .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff8e5;
-  text-align: center;
-  margin: 0 auto;
+.container .topnav img {
+  margin-top: 2px;
 }
 
-.container .navigation .logo img {
-  margin-right: 5px;
-  width: 100%;
-  max-width: 30px;
-  height: auto;
-}
-
-.container .navigation .logo h1 {
-  margin-left: 5px;
-  font: 26px "Fredoka One", cursive;
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
-.container .navigation .logo h1 a {
-  text-decoration: none;
-  color: #fff8e5;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-.container .navigation .logo h1 a:hover {
-  color: #c36a2d;
-}
-
-.container .navigation .about h4,
-.container .navigation .work h4,
-.container .navigation .contact h4 {
-  text-align: center;
-  font: 20px "Roboto", sans-serif;
-}
-
-.container .navigation .about h4 a,
-.container .navigation .work h4 a,
-.container .navigation .contact h4 a {
-  text-decoration: none;
-  font-weight: 500;
+.container .topnav a {
+  float: left;
+  display: block;
   color: #ededed;
-  -webkit-transition: 1s;
-  transition: 1s;
-  padding-bottom: 5px;
-  -webkit-transition: border-bottom 300ms;
-  transition: border-bottom 300ms;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font: 18px "Roboto", sans-serif;
+  font-weight: lighter;
 }
 
-.container .navigation .about h4 a:hover,
-.container .navigation .work h4 a:hover,
-.container .navigation .contact h4 a:hover {
-  border-bottom: 2px solid #c36a2d;
+.container .topnav a.active {
+  background-color: #04aa6d;
+  color: #ededed;
+}
+
+.container .topnav .icon {
+  display: none;
+}
+
+.container .topnav a:not(:first-child) {
+  display: none;
+}
+
+.container .topnav a.icon {
+  margin-top: 4px;
+  float: right;
+  display: block;
+}
+
+.container .topnav.responsive {
+  position: relative;
+}
+
+.container .topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ededed;
+}
+
+.container .topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
 }
 
 .container .hr1 {
@@ -641,30 +620,40 @@ body li {
   .col-12 {
     width: 100%;
   }
-  .container .navigation {
-    width: 100%;
-    margin-top: 0;
+  .container .topnav {
+    margin: 0 50px;
+    -webkit-animation: none;
+            animation: none;
   }
-  .container .navigation .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #fff8e5;
+  .container .topnav a {
+    float: right;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    border-bottom: 2px solid #ff824300;
   }
-  .container .navigation .logo img {
-    width: 100%;
-    max-width: 30px;
+  .container .topnav a:not(.last) {
+    margin-right: 70px;
   }
-  .container .navigation .logo h1 {
-    font: 26px "Fredoka One", cursive;
+  .container .topnav a:hover {
+    border-bottom: 2px solid #ff8243;
   }
-  .container .navigation .about h4,
-  .container .navigation .work h4,
-  .container .navigation .contact h4 {
-    font: 20px "Roboto", sans-serif;
+  .container .topnav a.img {
+    float: left;
+  }
+  .container .topnav a.img img {
+    margin-top: -3px;
+  }
+  .container .topnav .icon {
+    display: inline-block;
+  }
+  .container .topnav a:not(:first-child) {
+    display: inline-block;
+  }
+  .container .topnav a.icon {
+    float: right;
+    display: none;
   }
   .container .hr1 {
     display: none;
@@ -678,7 +667,6 @@ body li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url(img/);
   }
   .container .intro .img1,
   .container .intro .img2 {

@@ -35,39 +35,31 @@
   <!-- Google-Font -->
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Fredoka+One&family=Monoton&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
-    <!-- Self -->
-    <link rel="stylesheet" href="style.css">
+  <!-- W3School CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container" id="container">
 
-    <nav id="navbar">
-      <div class="row navigation">
-
-        <div class="col-3 col-s-12 logo">
-          <a href=""><img id="header-img" src="img/foxico30.png" alt="FOXICO"></a>
-  
-          <h1><a href="">Portfolio</a></h1>
-        </div>
-    
-        <div class="col-1 col-s-12"></div>
-        
-        <div class="col-2 col-s-12 about"><h4><a href="#diri" class="nav-link">About</a></h4></div>
-    
-        <div class="col-2 col-s-12 work"><h4><a href="#certificates" class="nav-link">Certificates</a></h4></div>
-
-        <div class="col-2 col-s-12 work"><h4><a href="#projects" class="nav-link">Projects</a></h4></div>
-    
-        <div class="col-2 col-s-12 contact"><h4><a href="#together" class="nav-link">Contact</a></h4></div>
-  
-      </div>
-    </nav>
+    <div class="topnav" id="myTopnav">
+      <a class="img"><img id="header-img" src="img/foxico30.png" alt="FOXICO" data-aos="fade-down"></a>
+      <a href="#together" data-aos="fade-down" class="last">Contacts</a>
+      <a href="#projects" data-aos="fade-down">Projects</a>
+      <a href="#certificates" data-aos="fade-down">Certificates</a>
+      <a href="#diri" data-aos="fade-down">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()" data-aos="fade-down">
+        <i class="fa fa-bars" style="font-size:24px"></i></i>
+      </a>
+    </div>
 
     <section id="welcome-section">
       <div class="row intro" id="intro">
 
-        <div class="col-12 col-s-12">
+        <div class="col-12 col-s-12" data-aos="zoom-in">
   
           <h1 id="hi">Hi, I'm Dean</h1>
   
@@ -78,7 +70,7 @@
       </div>
 
       <div class="row cursor">
-        <div class="col-12 col-s-0">
+        <div class="col-12 col-s-0" data-aos="fade-up">
 
           <h3 class="scroll">Scroll</h3>
           <h3 class="satu">v</h3>
@@ -375,6 +367,9 @@
 <script>
   AOS.init();
 </script>
+
+<!-- Personal JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
