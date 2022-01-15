@@ -626,6 +626,7 @@ body li {
             animation: none;
   }
   .container .topnav a {
+    cursor: pointer;
     float: right;
     padding-right: 2px;
     padding-left: 2px;
@@ -635,9 +636,6 @@ body li {
   }
   .container .topnav a:not(.last) {
     margin-right: 70px;
-  }
-  .container .topnav a:hover {
-    border-bottom: 2px solid #ff8243;
   }
   .container .topnav a.img {
     float: left;

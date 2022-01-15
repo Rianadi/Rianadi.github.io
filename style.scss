@@ -588,6 +588,7 @@ body {
       animation: none;
 
       a {
+        cursor: pointer;
         float: right;
         padding-right: 2px;
         padding-left: 2px;
@@ -600,9 +601,9 @@ body {
         margin-right: 70px;
       }
 
-      a:hover {
-        border-bottom: 2px solid #ff8243;
-      }
+      // a:hover {
+      //   border-bottom: 2px solid #ff8243;
+      // }
 
       a.img {
         float: left;
