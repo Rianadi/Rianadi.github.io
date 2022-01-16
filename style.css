@@ -689,8 +689,8 @@ body .disable {
     display: inline-block;
     position: absolute;
     top: 38px;
-    left: 100px;
-    width: 15%;
+    left: 75px;
+    width: 20%;
     text-align: start;
   }
   .container .topnav a.img .title-screen h1 {
