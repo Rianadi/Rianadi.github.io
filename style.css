@@ -52,6 +52,10 @@ body li {
   letter-spacing: 1.2px;
 }
 
+body .disable {
+  display: none;
+}
+
 .container {
   margin: 15px;
   padding: 10px;
@@ -119,6 +123,10 @@ body li {
   display: block;
 }
 
+.container .topnav .title-screen {
+  display: none;
+}
+
 .container .topnav.responsive {
   position: relative;
 }
@@ -134,6 +142,21 @@ body li {
   float: none;
   display: block;
   text-align: left;
+}
+
+.container .title {
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+}
+
+.container .title h1 {
+  font: 26px "Roboto", sans-serif;
+  font-weight: 500;
+  text-align: center;
 }
 
 .container .hr1 {
@@ -662,6 +685,19 @@ body li {
   .container .topnav a.img img {
     margin-top: -3px;
   }
+  .container .topnav a.img .title-screen {
+    display: inline-block;
+    position: absolute;
+    top: 38px;
+    left: 100px;
+    width: 15%;
+    text-align: start;
+  }
+  .container .topnav a.img .title-screen h1 {
+    font: 26px "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
   .container .topnav .icon {
     display: inline-block;
   }
@@ -670,6 +706,9 @@ body li {
   }
   .container .topnav a.icon {
     float: right;
+    display: none;
+  }
+  .container .title {
     display: none;
   }
   .container .hr1 {
