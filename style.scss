@@ -164,6 +164,11 @@ body {
       font: 26px "Roboto", sans-serif;
       font-weight: 500;
       text-align: center;
+      transition: 300ms;
+    }
+
+    h1:hover {
+      color: $orange1;
     }
   }
 
@@ -661,6 +666,11 @@ body {
             font: 26px "Roboto", sans-serif;
             font-weight: 500;
             text-align: center;
+            transition: 300ms;
+          }
+
+          h1:hover {
+            color: $orange1;
           }
         }
       }
