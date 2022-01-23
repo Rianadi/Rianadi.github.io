@@ -85,6 +85,8 @@ body .disable {
   transition: 700ms;
   max-width: 30px;
   max-height: auto;
+  -webkit-animation: opacity 1s ease-in-out;
+          animation: opacity 1s ease-in-out;
 }
 
 .container .topnav a {
@@ -98,6 +100,8 @@ body .disable {
   font-weight: lighter;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-animation: opacity 1s ease-in-out;
+          animation: opacity 1s ease-in-out;
 }
 
 .container .topnav h3 {
@@ -151,14 +155,14 @@ body .disable {
   left: 40%;
   width: 50%;
   margin-left: -15%;
+  -webkit-animation: opacity 1s ease-in-out;
+          animation: opacity 1s ease-in-out;
 }
 
 .container .title h1 {
   font: 20px "Roboto", sans-serif;
   font-weight: 500;
   text-align: center;
-  -webkit-transition: 300ms;
-  transition: 300ms;
 }
 
 .container .title h1:hover {
@@ -661,8 +665,8 @@ body .disable {
   }
   .container .topnav {
     margin: 0 50px;
-    -webkit-animation: none;
-            animation: none;
+    -webkit-animation: opacity 1s ease-in-out;
+            animation: opacity 1s ease-in-out;
   }
   .container .topnav a {
     cursor: pointer;
@@ -695,14 +699,13 @@ body .disable {
     display: inline-block;
     position: absolute;
     top: 38px;
-    left: 75px;
-    width: 20%;
-    text-align: start;
+    left: 130px;
+    width: 15%;
   }
   .container .topnav a.img .title-screen h1 {
     font: 22px "Roboto", sans-serif;
     font-weight: 500;
-    text-align: center;
+    text-align: start;
     -webkit-transition: 300ms;
     transition: 300ms;
   }

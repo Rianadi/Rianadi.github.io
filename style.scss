@@ -93,6 +93,7 @@ body {
       transition: 700ms;
       max-width: 30px;
       max-height: auto;
+      animation: opacity 1s ease-in-out;
     }
 
     a {
@@ -105,6 +106,7 @@ body {
       font: 18px "Roboto", sans-serif;
       font-weight: lighter;
       transition: 1s;
+      animation: opacity 1s ease-in-out;
     }
 
     h3 {
@@ -159,12 +161,12 @@ body {
     left: 40%;
     width: 50%;
     margin-left: -15%;
+    animation: opacity 1s ease-in-out;
 
     h1 {
       font: 20px "Roboto", sans-serif;
       font-weight: 500;
       text-align: center;
-      transition: 300ms;
     }
 
     h1:hover {
@@ -574,6 +576,9 @@ body {
   .col-s-12 {
     width: 100%;
   }
+
+  .container {
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -621,7 +626,7 @@ body {
   .container {
     .topnav {
       margin: 0 50px;
-      animation: none;
+      animation: opacity 1s ease-in-out;
 
       a {
         cursor: pointer;
@@ -658,14 +663,13 @@ body {
           display: inline-block;
           position: absolute;
           top: 38px;
-          left: 75px;
-          width: 20%;
-          text-align: start;
+          left: 130px;
+          width: 15%;
 
           h1 {
             font: 22px "Roboto", sans-serif;
             font-weight: 500;
-            text-align: center;
+            text-align: start;
             transition: 300ms;
           }
 
