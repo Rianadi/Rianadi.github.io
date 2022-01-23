@@ -138,7 +138,9 @@ body {
   }
 
   .topnav.responsive {
+    background-color: #140941;
     position: relative;
+    animation: opacity 1s ease-in-out;
   }
 
   .topnav.responsive a.icon {
@@ -152,6 +154,13 @@ body {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .topnav.responsive a.num1,
+  .topnav.responsive a.num2,
+  .topnav.responsive a.num3,
+  .topnav.responsive a.num4 {
+    animation: translate 800ms ease-in-out;
   }
 
   .title {
@@ -268,7 +277,7 @@ body {
         h1 {
           cursor: pointer;
           text-align: center;
-          font: 22px "Roboto", sans-serif;
+          font: 18px "Roboto", sans-serif;
           font-weight: 500;
           transition: 300ms;
         }
@@ -280,7 +289,7 @@ body {
         h3 {
           cursor: pointer;
           margin-top: 20px;
-          font: 18px "Roboto Mono", monospace;
+          font: 14px "Roboto Mono", monospace;
           color: $orange3;
           font-style: italic;
         }
@@ -291,7 +300,7 @@ body {
 
         img {
           cursor: pointer;
-          max-width: 100%;
+          max-width: 80%;
           height: auto;
           border-radius: 50%;
           animation: border 2s linear infinite alternate;
@@ -323,7 +332,7 @@ body {
           margin-top: 20px;
           position: relative;
           z-index: 9999;
-          max-width: 100%;
+          max-width: 80%;
           height: auto;
           border: 5px solid $purple2;
           border-radius: 10px;
@@ -342,7 +351,7 @@ body {
         h1 {
           cursor: pointer;
           text-align: center;
-          font: 22px "Roboto", sans-serif;
+          font: 18px "Roboto", sans-serif;
           font-weight: 500;
           transition: 300ms;
         }
@@ -355,7 +364,7 @@ body {
           cursor: pointer;
           margin-top: 20px;
           text-align: center;
-          font: 18px "Roboto Mono", monospace;
+          font: 14px "Roboto Mono", monospace;
           color: $orange3;
           font-style: italic;
         }
@@ -370,7 +379,7 @@ body {
       h1 {
         cursor: pointer;
         text-align: center;
-        font: 24px "Roboto", sans-serif;
+        font: 20px "Roboto", sans-serif;
         transition: 300ms;
       }
 
@@ -408,7 +417,7 @@ body {
 
         img {
           position: relative;
-          max-width: 100%;
+          max-width: 80%;
           height: auto;
           border: 5px solid $purple2;
           border-radius: 10px;
@@ -425,7 +434,7 @@ body {
           display: block;
           margin-top: 20px;
           text-align: center;
-          font: 18px "Roboto Mono", monospace;
+          font: 14px "Roboto Mono", monospace;
           color: $orange3;
         }
 
@@ -493,7 +502,7 @@ body {
     h1 {
       cursor: pointer;
       text-align: center;
-      font: 24px "Roboto", sans-serif;
+      font: 20px "Roboto", sans-serif;
       font-weight: 500;
       transition: 300ms;
     }
@@ -506,7 +515,7 @@ body {
       cursor: pointer;
       margin-top: 20px;
       text-align: center;
-      font: 18px "Roboto Mono", monospace;
+      font: 14px "Roboto Mono", monospace;
       color: $orange3;
       font-style: italic;
     }
@@ -519,7 +528,7 @@ body {
       cursor: pointer;
       margin-top: 20px;
       text-align: center;
-      font: 18px "Roboto Mono", monospace;
+      font: 14px "Roboto Mono", monospace;
       color: $universal;
       font-style: italic;
 
@@ -921,6 +930,15 @@ body {
 
   to {
     border-bottom: 2px solid $orange3;
+  }
+}
+
+@keyframes translate {
+  from {
+    transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(0px);
   }
 }
 

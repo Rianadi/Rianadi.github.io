@@ -132,7 +132,10 @@ body .disable {
 }
 
 .container .topnav.responsive {
+  background-color: #140941;
   position: relative;
+  -webkit-animation: opacity 1s ease-in-out;
+          animation: opacity 1s ease-in-out;
 }
 
 .container .topnav.responsive a.icon {
@@ -146,6 +149,14 @@ body .disable {
   float: none;
   display: block;
   text-align: left;
+}
+
+.container .topnav.responsive a.num1,
+.container .topnav.responsive a.num2,
+.container .topnav.responsive a.num3,
+.container .topnav.responsive a.num4 {
+  -webkit-animation: translate 800ms ease-in-out;
+          animation: translate 800ms ease-in-out;
 }
 
 .container .title {
@@ -281,7 +292,7 @@ body .disable {
 .container .diri .row .diri2 h1 {
   cursor: pointer;
   text-align: center;
-  font: 22px "Roboto", sans-serif;
+  font: 18px "Roboto", sans-serif;
   font-weight: 500;
   -webkit-transition: 300ms;
   transition: 300ms;
@@ -296,7 +307,7 @@ body .disable {
 .container .diri .row .diri2 h3 {
   cursor: pointer;
   margin-top: 20px;
-  font: 18px "Roboto Mono", monospace;
+  font: 14px "Roboto Mono", monospace;
   color: #ff935d;
   font-style: italic;
 }
@@ -307,7 +318,7 @@ body .disable {
 
 .container .diri .row .img img {
   cursor: pointer;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 50%;
   -webkit-animation: border 2s linear infinite alternate;
@@ -341,7 +352,7 @@ body .disable {
   margin-top: 20px;
   position: relative;
   z-index: 9999;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border: 5px solid #2c2891;
   border-radius: 10px;
@@ -363,7 +374,7 @@ body .disable {
 .container .univ .row .profile h1 {
   cursor: pointer;
   text-align: center;
-  font: 22px "Roboto", sans-serif;
+  font: 18px "Roboto", sans-serif;
   font-weight: 500;
   -webkit-transition: 300ms;
   transition: 300ms;
@@ -377,7 +388,7 @@ body .disable {
   cursor: pointer;
   margin-top: 20px;
   text-align: center;
-  font: 18px "Roboto Mono", monospace;
+  font: 14px "Roboto Mono", monospace;
   color: #ff935d;
   font-style: italic;
 }
@@ -389,7 +400,7 @@ body .disable {
 .container .portfolio .portfolio-1 h1 {
   cursor: pointer;
   text-align: center;
-  font: 24px "Roboto", sans-serif;
+  font: 20px "Roboto", sans-serif;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -438,7 +449,7 @@ body .disable {
 .container .portfolio .portfolio-3 .project-tile img,
 .container .portfolio .portfolio-4 .project-tile img {
   position: relative;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border: 5px solid #2c2891;
   border-radius: 10px;
@@ -462,7 +473,7 @@ body .disable {
   display: block;
   margin-top: 20px;
   text-align: center;
-  font: 18px "Roboto Mono", monospace;
+  font: 14px "Roboto Mono", monospace;
   color: #ff935d;
 }
 
@@ -537,7 +548,7 @@ body .disable {
 .container .together h1 {
   cursor: pointer;
   text-align: center;
-  font: 24px "Roboto", sans-serif;
+  font: 20px "Roboto", sans-serif;
   font-weight: 500;
   -webkit-transition: 300ms;
   transition: 300ms;
@@ -551,7 +562,7 @@ body .disable {
   cursor: pointer;
   margin-top: 20px;
   text-align: center;
-  font: 18px "Roboto Mono", monospace;
+  font: 14px "Roboto Mono", monospace;
   color: #ff935d;
   font-style: italic;
 }
@@ -564,7 +575,7 @@ body .disable {
   cursor: pointer;
   margin-top: 20px;
   text-align: center;
-  font: 18px "Roboto Mono", monospace;
+  font: 14px "Roboto Mono", monospace;
   color: #ededed;
   font-style: italic;
 }
@@ -951,6 +962,28 @@ body .disable {
   }
   to {
     border-bottom: 2px solid #ff935d;
+  }
+}
+
+@-webkit-keyframes translate {
+  from {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes translate {
+  from {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
