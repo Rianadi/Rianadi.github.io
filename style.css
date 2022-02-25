@@ -152,11 +152,15 @@ body .disable {
 }
 
 .container .topnav.responsive a.num1,
-.container .topnav.responsive a.num2,
-.container .topnav.responsive a.num3,
-.container .topnav.responsive a.num4 {
+.container .topnav.responsive a.num3 {
   -webkit-animation: translate 800ms ease-in-out;
           animation: translate 800ms ease-in-out;
+}
+
+.container .topnav.responsive a.num2,
+.container .topnav.responsive a.num4 {
+  -webkit-animation: translate2 800ms ease-in-out;
+          animation: translate2 800ms ease-in-out;
 }
 
 .container .title {
@@ -980,6 +984,28 @@ body .disable {
   from {
     -webkit-transform: translateX(-30px);
             transform: translateX(-30px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes translate2 {
+  from {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes translate2 {
+  from {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
   }
   to {
     -webkit-transform: translateX(0px);

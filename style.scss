@@ -157,10 +157,13 @@ body {
   }
 
   .topnav.responsive a.num1,
-  .topnav.responsive a.num2,
-  .topnav.responsive a.num3,
-  .topnav.responsive a.num4 {
+  .topnav.responsive a.num3 {
     animation: translate 800ms ease-in-out;
+  }
+
+  .topnav.responsive a.num2,
+  .topnav.responsive a.num4 {
+    animation: translate2 800ms ease-in-out;
   }
 
   .title {
@@ -936,6 +939,15 @@ body {
 @keyframes translate {
   from {
     transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes translate2 {
+  from {
+    transform: translateX(30px);
   }
   to {
     transform: translateX(0px);
