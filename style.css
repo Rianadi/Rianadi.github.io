@@ -444,12 +444,12 @@ body .project-web span::after {
     padding: 0;
   }
   body .card .card-list img {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
   }
   body .card .card-list .card-info {
     display: table;
-    width: 250px;
+    width: 200px;
     white-space: normal;
     text-align: start;
   }
