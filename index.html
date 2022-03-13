@@ -3,420 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>PORTFOLIO</title>
-
-  <!-- Favicon (Web Icon) -->
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" />
-  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="&nbsp;"/>
-  <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Google-Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Fredoka+One&family=Monoton&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
   <!-- Personal CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Portfolio</title>
 </head>
 <body>
 
-  <div class="container" id="container">
-
-    <nav>
-
-      <div class="topnav" id="myTopnav">
-
-        <a class="img" >
-          <img id="header-img" src="img/foxico50.png" alt="FOXICO">
-
-          <div class="title-screen">
-            <h1>PORTFOLIO</h1>
+  <div class="container">
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <a href="#intro">Personal</a>
+      <a href="#certificate">Certificate</a>
+      <a href="#project">Project</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  
+    <div>
+      <main class='contact' id="contact">
+        <div class="row">
+          <div class='col-12 col-s-12'>
+            <h1>Fikri Dean Radityo</h1>
+            <h2>Web Developer</h2>
+            <h3>rianadi.github.io</h3>
+            <div class="row btn">
+              <div class="col-2 col-s-0"></div>
+              <div class="col-4 col-s-12">
+                <button class='email'><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i class="fa-solid fa-envelope" target="_blank"></i> Email</a></button>
+              </div>
+              <div class="col-4 col-s-12">
+                <button class='linked'><a href="https://www.linkedin.com/in/fikri-dean-radityo-23bb3621a/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></button>
+              </div>
+            </div>
           </div>
-        </a>
+        </div>
+      </main>
+    </div>
 
-        <a href="#together" class="last num1"><h3><i class="fas fa-address-book"></i>&#9Contacts</h3></a>
-
-        <a href="#projects" class="num2"><h3><i class="fas fa-project-diagram"></i>&#9Projects</h3></a>
-
-        <a href="#certificates" class="num3"><h3><i class="fas fa-address-card"></i>&#9Certificates</h3></a>
-
-        <a href="#diri" class="num4"><h3><i class="fas fa-info-circle"></i>&#9About</h3></a>
-
-        <a href="javascript:void(0);" class="icon" id="icon" onclick="hamburgerMenu()" aria-hidden="true"><i class="fa fa-bars" style="font-size:24px"></i>
-        </a>
-
-      </div>
-
-      <div class="title">
-
-        <h1>PORTFOLIO</h1>
-
-      </div>
-
-    </nav>
-    
-    <section id="welcome-section">
+    <div>
       <div class="row intro" id="intro">
 
-        <div class="col-12 col-s-12" data-aos="zoom-in">
-  
-          <h1 id="hi">Hi, I'm Dean</h1>
-  
-          <h3>a web developer</h3>
+        <div class="col-2 col-s-0"></div>
 
+        <div class="col-4 col-s-12 img">
+          
+          <img src="img/formal1000.png" alt="FIKRI DEAN RADITYO" data-aos="fade-up">
+          
         </div>
-  
-      </div>
-
-      <div class="row cursor">
-        <div class="col-12 col-s-0" data-aos="fade-up">
-
-          <h3 class="scroll">Scroll</h3>
-          <h3 class="satu">v</h3>
-          <h3 class="dua">v</h3>
-          <h3 class="tiga">v</h3>
-  
-        </div>
-      </div>
-    </section>
-
-    <section class="diri" id="diri">
-
-      <div class="row">
-
-        <div class="col-4 col-s-12 diri1">
+        
+        <div class="col-4 col-s-12 diri">
 
           <h1 data-aos="fade-up">Fikri Dean Radityo</h1>
 
           <h3 data-aos="fade-up">18 December 2002</h3>
 
         </div>
-
-        <div class="col-4 col-s-12 img">
-
-          <img src="img/formal1000.png" alt="FIKRI DEAN RADITYO" data-aos="fade-up">
-
-        </div>
-
-        <div class="col-4 col-s-12 diri2">
-
-          <h1 data-aos="fade-up">FIKRI DEAN RADITYO</h1>
-
-          <h3 data-aos="fade-up">18 December 2002</h3>
-
-        </div>
-
       </div>
+    </div>
 
-    </section>
-
-    <section class="univ" id="univ">
-
-      <div class="row">
-
-        <div class="col-4 col-s-12" data-aos="fade-up">
-
-          <div class="img">
-
-            <a href="https://www.uinjkt.ac.id/" target="_blank" title="click to go to uin official website">
-
-              <img src="img/uin.png" alt="Universitas Islam Negeri Syarif Hidayatullah Jakarta" data-aos="fade-up">
-
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="col-4 col-s-12" data-aos="fade-up">
-
-          <div class="profile">
-
-            <a href="https://www.uinjkt.ac.id/" target="_blank" title="click to go to uin official website">
-
-              <h1 data-aos="fade-up">Universitas Islam Negeri Syarif Hidayatullah Jakarta</h1>
-
-            </a>
-
-            <h3 data-aos="fade-up">College Student</h3>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section id="certificates">
-      
-      <div class="portfolio">
-
-        <div class="row portfolio-1" data-aos="fade-up">
-
-          <div class="col-2 col-s-2"></div>
-
-          <div class="col-8 col-s-8">
-
-            <h1 id="disabled">T</h1>
-          
-            <h1>These are some of my certificates</h1>
-    
-            <hr>
-            
-          </div>
-          
-        </div>
-
-        <div class="row portfolio-4" data-aos="fade-up">
-
-          <div class="col-3 col-s-12 project-tile">
-
-              <a href="https://www.freecodecamp.org/certification/fikridean/responsive-web-design" target="_blank">
-
-                <img src="img/certificate responsive web.png" alt="Responsive Web Certificate" id="certificate" title="Certificate Responsive Web">
-
-                <h3>Responsive Web Design Certificate</h3>
-
-              </a>
-            
-          </div>
-
-          <div class="col-3 col-s-12 project-tile">
-
-            <img src="img/JF certificate.png" alt="Oracle Java Fundamental Certificate" id="certificate" title="Oracle Java Fundamental Certificate">
-
-            <h3>Oracle Java Fundamental Certificate</h3>
-          
-          </div>
-
-          <div class="col-3 col-s-12 project-tile">
-
-            <a href="https://www.freecodecamp.org/certification/fikridean/javascript-algorithms-and-data-structures" target="_blank">
-
-              <img src="img/JavaScript Algorithms and Data Structures Certificate.png" alt="JavaScript Algorithms and Data Structures Certificate" id="certificate" title="JavaScript Algorithms and Data Structures Certificate">
-
-              <h3>JavaScript Algorithms and Data Structures</h3>
-
-            </a>
-          
-          </div>
-
-      </div>
-    </section>
-    
-    <section id="projects">
-
-      <div class="portfolio">
-
-        <div class="row portfolio-1" data-aos="fade-up">
-
-          <div class="col-2 col-s-2"></div>
-
-          <div class="col-8 col-s-8">
-
-            <h1 id="disabled">T</h1>
-
-            <h1>These are some of my projects</h1>
-  
-            <hr>
-
-          </div>
-
-        </div>
-  
-        <div class="row portfolio-2">
-          
-          <div class="col-3 col-s-12 project-tile" data-aos="fade-up">
-  
-            <a href="https://rianadi.github.io/tribute/" target="_blank">
-              
-              <img src="img/tiger_woods.png" alt="Tribute" title="click to view">
-    
-              <h3>Tribute Page</h3>
-
-            </a>
-    
-          </div>
-    
-          <div class="col-3 col-s-12 project-tile" data-aos="fade-up">
-  
-            <a href="https://rianadi.github.io/survey-form/" target="_blank">
-
-              <img src="img/survey.png" alt="Survey Page"  title="click to view">
-    
-              <h3>Survey Page</h3>
-
-            </a>
-    
-          </div>
-    
-          <div class="col-3 col-s-12 project-tile" data-aos="fade-up">
-    
-            <a href="https://rianadi.github.io/js-doc/" target="_blank">
-
-              <img src="img/js_doc.png" alt="JS Documentation"  title="click to view">
-            
-              <h3>JS Documentation Page</h3>
-
-            </a>
-            
-          </div>
-    
-        </div>
-  
-        <div class="row portfolio-3">
-          
-          <div class="col-3 col-s-12 p1 project-tile" data-aos="fade-up">
-  
-            <a href="https://dribbble.com/shots/12230630-Vacansy-Landing-Page" target="_blank">
-
-              <img src="img/vacansy_remake.png" alt="Vacansy Remake"  title="click to view">
-    
-              <h3>Vacansy Remake</h3>
-
-            </a>
-    
-          </div>
-    
-          <div class="col-3 col-s-12 p2 project-tile" data-aos="fade-up">
-  
-            <a href="https://dribbble.com/shots/15607887-StepWorld" target="_blank">
-
-              <img src="img/step_world.png" alt="Step World"  title="click to view">
-    
-              <h3>Step World</h3>
-
-            </a>
-    
-          </div>
-    
-          <div class="col-3 col-s-12 p3 project-tile" data-aos="fade-up">
-
-              <img src="img/step_world2.png" alt="Step World v2"  title="Not ready yet">
-            
-              <h3>Step World v2</h3>
-    
-          </div>
-    
-        </div>
-
-        <div class="row different" data-aos="fade-up">
-
-          <div class="col-12 col-s-12">
-
-            <h3>maybe different from codepen io</h3>
-
-          </div>
-
-        </div>
-  
-        <div class="row all">
-  
-          <div class="col-12 col-s-12">
-  
-            <button id="showAll">Show All >></button>
-  
-          </div>
-  
-        </div>
-  
-      </div>
-    </section>
-    
-    <section class="together" id="together" data-aos="fade-up">
-
-      <div class="row">
-
+    <div>
+      <div class="row divider">
         <div class="col-12 col-s-12">
-
-          <h1 class="work" data-aos="fade-up">Let's work together...</h1>
-
-          <h3 class="coffee" data-aos="fade-up">How do you take your coffee?</h3>
-
+          <h1>• Certificates •</h1>
         </div>
-        
+      </div>
+    </div>
+
+    <div id="certificate">
+      <div class="row card certificate-mobile" id="certificate-mobile">
+        <div class="col-12 col-s-12">
+            <div class="card-list">
+              <img src='./img/certificate responsive web.png' alt="card" />
+              <div class="card-info">
+                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
+                <p class="info">Responsive Web Design</p>
+                <p class="date"><span>Issued</span> • November 2, 2021</p>
+              </div>
+            </div>
+            <div class="card-list">
+              <img src='./img/JF certificate.png' alt="card" />
+              <div class="card-info">
+                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
+                <p class="info">Java Fundamentals</p>
+                <p class="date"><span>Issued</span> • December 26, 2021</p>
+              </div>
+            </div>
+            <div class="card-list">
+              <img src='./img/JavaScript Algorithms and Data Structures Certificate.png' alt="card" />
+              <div class="card-info">
+                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
+                <p class="info">JavaScript Algorithms and Data Structures</p>
+                <p class="date"><span>Issued</span> • January 18, 2022</p>
+              </div>
+            </div>
+        </div>
       </div>
 
-    </section>
-
-    <section class="social">
-
-      <div class="row" data-aos="fade-up">
-
-        <div class="col-3 col-s-12">
-          <h3>
-            <a href="https://www.linkedin.com/in/fikri-dean-radityo-23bb3621a/" target="_blank" id="profile-link">
-              <i class='fa fa-linkedin-square'></i> LinkedIn
-            </a>
-          </h3>
+      <div class="row card-web certificate-web" id="certificate-web">
+        <div class="col-4 col-s-12">
+          <img src='./img/certificate responsive web.png' alt="card" />
+          <div class="card-info">
+            <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
+            <p class="info">Responsive Web Design</p>
+            <p class="date"><span>Issued</span> • November 2, 2021</p>
+          </div>
         </div>
-
-        <div class="col-3 col-s-12">
-          <h3>
-            <a href="https://github.com/Rianadi" target="_blank" id="profile-link">
-              <i class='fa fa-github-square'></i> Github
-            </a>
-          </h3>
+        <div class="col-4 col-s-12">
+          <img src='./img/JF certificate.png' alt="card" />
+          <div class="card-info">
+            <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
+            <p class="info">Java Fundamentals</p>
+            <p class="date"><span>Issued</span> • December 26, 2021</p>
+          </div>
         </div>
-
-        <div class="col-3 col-s-12">
-          <h3>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deanradityo@gmail.com" target="_blank" id="profile-link">
-              <i class='fa fa-google'></i> Email
-            </a>
-          </h3>
+        <div class="col-4 col-s-12">
+          <img src='./img/JavaScript Algorithms and Data Structures Certificate.png' alt="card" />
+          <div class="card-info">
+            <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
+            <p class="info">JavaScript Algorithms and Data Structures</p>
+            <p class="date"><span>Issued</span> • January 18, 2022</p>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="col-3 col-s-12">
-          <h3>
-            <a href="https://www.freecodecamp.org/fikridean" target="_blank" id="profile-link">
-              <i class='fa fa-free-code-camp'></i> FreeCodeCamp
-            </a>
-          </h3>
+    <div>
+      <div class="row divider">
+        <div class="col-12 col-s-12">
+          <h1>• Projects •</h1>
         </div>
+      </div>
+    </div>
 
+    <div id="project">
+      <div class="row card project-mobile" id="project-mobile">
+        <div class="col-12 col-s-12">
+            <div class="card-list">
+              <img src='./img/tiger_woods.png' alt="card" />
+              <div class="card-info">
+                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Tribute Page</span></p>
+              </div>
+            </div>
+            <div class="card-list">
+              <img src='./img/survey.png' alt="card" />
+              <div class="card-info">
+                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Survey Page</span></p>
+              </div>
+            </div>
+            <div class="card-list">
+              <img src='./img/js_doc.png' alt="card" />
+              <div class="card-info">
+                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> JS Documentation Page</span></p>
+              </div>
+            </div>
+            <div class="card-list">
+              <img src='./img/vacansy_remake.png' alt="card" />
+              <div class="card-info">
+                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Vacansy Remake</span></p>
+              </div>
+            </div>
+            <div class="card-list">
+              <img src='./img/step_world.png' alt="card" />
+              <div class="card-info">
+                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Step World</span></p>
+              </div>
+            </div>
+            <div class="card-list">
+              <img src='./img/step_world2.png' alt="card" />
+              <div class="card-info">
+                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Step World v2</span></p>
+              </div>
+            </div>
+        </div>
       </div>
 
-    </section>
+      <div class="row card-web project-web" id="project-web">
+        <div class="col-4 col-s-12">
+          <img src='./img/tiger_woods.png' alt="card" />
+          <div class="card-info">
+            <p class="rating"><span>Tribute Page</span></p>
+          </div>
+        </div>
+        <div class="col-4 col-s-12">
+          <img src='./img/survey.png' alt="card" />
+          <div class="card-info">
+            <p class="rating"><span>Survey Page</span></p>
+          </div>
+        </div>
+        <div class="col-4 col-s-12">
+          <img src='./img/js_doc.png' alt="card" />
+          <div class="card-info">
+            <p class="rating"><span>JS Documentation Page</span></p>
+          </div>
+        </div>
+      </div>
 
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+      <div class="row card-web project-web" id="project-web">
+        <div class="col-4 col-s-12">
+          <img src='./img/vacansy_remake.png' alt="card" />
+          <div class="card-info">
+            <p class="rating"><span>Vacansy Remake</span></p>
+          </div>
+        </div>
+        <div class="col-4 col-s-12">
+          <img src='./img/step_world.png' alt="card" />
+          <div class="card-info">
+            <p class="rating"><span>Step World</span></p>
+          </div>
+        </div>
+        <div class="col-4 col-s-12">
+          <img src='./img/step_world2.png' alt="card" />
+          <div class="card-info">
+            <p class="rating"><span>Step World v2</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!-- Font Awesome JS -->
-<script src="https://kit.fontawesome.com/abdbf7768f.js" crossorigin="anonymous"></script>
+  </div>
+  
+  
+  
+  
 
-<!-- Personal JS -->
-<script src="script.js" type="text/javascript"></script>
+  <!-- Font Awesome JS -->
+  <script src="https://kit.fontawesome.com/abdbf7768f.js" crossorigin="anonymous"></script>
+
+  <!-- Personal JS -->
+  <script src="script.js"></script>
 
 </body>
 </html>
