@@ -60,7 +60,9 @@ body {
   font-family: "Inter", sans-serif;
   padding: 15px;
   background-color: #23252c;
-  min-height: 10000;
+  &&:active {
+    outline: none;
+  }
 
   .container {
     background-color: #1a1b21;
