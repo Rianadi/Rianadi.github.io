@@ -63,7 +63,7 @@ body {
   transition: all 5s linear;
 
   .container {
-    background-color: #1a1b21;
+    animation: background 5s linear infinite alternate;
     border-radius: 30px;
     padding: 10px;
   }
@@ -73,6 +73,7 @@ body {
     background-color: #161619;
     border-radius: 30px;
     padding: 0 30px;
+    justify-content: space-between;
 
     a {
       float: left;
@@ -85,18 +86,19 @@ body {
       border: 2px solid #161619;
     }
 
-    a:not(:first-child):hover {
+    a:not(.active):hover {
       transition: border 300ms linear;
       border-bottom: 2px solid orange;
     }
 
-    a:first-child:hover {
-      transition: color 300ms linear;
-      color: orange;
-    }
-
     a.active {
       font-weight: 700;
+      color: orange;
+      float: left;
+    }
+
+    .innerclass {
+      float: right;
     }
 
     .icon {
@@ -106,44 +108,41 @@ body {
   }
 
   .contact {
-    padding: 20px 0;
     margin: 190px 0;
 
     h1 {
-      font-family: "Inter", sans-serif;
+      margin-bottom: 20px;
       text-align: center;
       font-size: 30px;
       font-weight: 700;
-      padding: 10px;
-      color: #fff;
-    }
-
-    h1:hover {
-      transition: color 300ms linear;
-      color: orange;
     }
 
     h2 {
-      font-family: "Inter", sans-serif;
+      margin-bottom: 20px;
       text-align: center;
       color: #f3bf99;
       font-size: 20px;
       font-weight: 600;
-      padding: 10px;
-    }
-
-    h2:hover {
-      transition: color 300ms linear;
-      color: orange;
     }
 
     h3 {
-      font-family: "Inter", sans-serif;
       text-align: center;
       font-size: 14px;
       font-weight: 400;
-      padding: 10px;
+    }
+
+    a {
+      transition: 300ms;
+      text-decoration: none;
       color: #f5f5f5;
+    }
+
+    a.job {
+      color: #f3bf99;
+    }
+
+    a:hover {
+      color: orange;
     }
 
     .btn {
@@ -184,30 +183,29 @@ body {
 
   .intro {
     display: flex;
-    margin-top: 50px;
+    margin-top: 100px;
+    align-items: center;
 
     .diri {
       text-align: center;
-      align-self: center;
 
       h1 {
         font-size: 26px;
-        color: #f5f5f5;
         margin-bottom: 10px;
-      }
-
-      h1:hover {
-        transition: all 300ms linear;
-        color: orange;
       }
 
       h3 {
         font-size: 18px;
-        color: #f5f5f5;
+        font-weight: 400;
       }
 
-      h3:hover {
+      a {
+        color: #f5f5f5;
         transition: all 300ms linear;
+        text-decoration: none;
+      }
+
+      a:hover {
         color: orange;
       }
     }
@@ -220,6 +218,45 @@ body {
         height: 200px;
         border-radius: 50%;
         animation: border 2s linear infinite alternate;
+      }
+    }
+  }
+
+  .univ {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+
+    .img {
+      img {
+        width: 350px;
+        height: 250px;
+        border-radius: 20px;
+        animation: border 2s linear infinite alternate;
+      }
+    }
+
+    .profile {
+      text-align: center;
+
+      h1 {
+        margin-bottom: 20px;
+        font-size: 26px;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      a {
+        color: #f5f5f5;
+        text-decoration: none;
+        transition: 300ms;
+      }
+
+      a:hover {
+        color: orange;
       }
     }
   }
@@ -330,12 +367,14 @@ body {
       color: #fe395c;
       content: "< ";
       z-index: -9999;
+      animation: card-info 1s linear infinite alternate;
     }
 
     span::after {
       color: #fe395c;
       content: " />";
       z-index: -9999;
+      animation: card-info 1s linear infinite alternate;
     }
   }
 }
@@ -399,7 +438,7 @@ body {
         color: #1a1b21;
       }
 
-      a:not(:first-child) {
+      a:not(.active) {
         display: none;
       }
 
@@ -407,21 +446,25 @@ body {
         float: right;
         display: block;
       }
+
+      .innerclass {
+        float: left;
+      }
     }
 
     .topnav.responsive {
       position: relative;
 
-      .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-
       a {
         float: none;
         display: block;
         text-align: left;
+      }
+
+      .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
       }
     }
 
@@ -450,9 +493,9 @@ body {
     .intro {
       display: block;
       margin-top: 0;
+      text-align: center;
 
       .diri {
-        text-align: center;
         align-self: center;
 
         h1 {
@@ -474,6 +517,46 @@ body {
           width: 170px;
           height: 170px;
           border-radius: 50%;
+        }
+      }
+    }
+
+    .univ {
+      margin-top: 0;
+      display: block;
+      align-items: center;
+      text-align: center;
+
+      .img {
+        img {
+          width: 200px;
+          height: 120px;
+          border-radius: 20px;
+          animation: border 2s linear infinite alternate;
+        }
+      }
+
+      .profile {
+        text-align: center;
+
+        h1 {
+          margin-bottom: 20px;
+          font-size: 20px;
+        }
+
+        h3 {
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        a {
+          color: #f5f5f5;
+          text-decoration: none;
+          transition: 300ms;
+        }
+
+        a:hover {
+          color: orange;
         }
       }
     }
@@ -540,5 +623,25 @@ body {
 
   to {
     border: 5px solid #34363f;
+  }
+}
+
+@keyframes background {
+  from {
+    background-color: #1a1b21;
+  }
+
+  to {
+    background-color: #070708;
+  }
+}
+
+@keyframes card-info {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }

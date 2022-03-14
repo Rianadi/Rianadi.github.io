@@ -78,7 +78,8 @@ body {
 }
 
 body .container {
-  background-color: #1a1b21;
+  -webkit-animation: background 5s linear infinite alternate;
+          animation: background 5s linear infinite alternate;
   border-radius: 30px;
   padding: 10px;
 }
@@ -88,6 +89,9 @@ body .topnav {
   background-color: #161619;
   border-radius: 30px;
   padding: 0 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body .topnav a {
@@ -101,20 +105,20 @@ body .topnav a {
   border: 2px solid #161619;
 }
 
-body .topnav a:not(:first-child):hover {
+body .topnav a:not(.active):hover {
   -webkit-transition: border 300ms linear;
   transition: border 300ms linear;
   border-bottom: 2px solid orange;
 }
 
-body .topnav a:first-child:hover {
-  -webkit-transition: color 300ms linear;
-  transition: color 300ms linear;
-  color: orange;
-}
-
 body .topnav a.active {
   font-weight: 700;
+  color: orange;
+  float: left;
+}
+
+body .topnav .innerclass {
+  float: right;
 }
 
 body .topnav .icon {
@@ -123,47 +127,43 @@ body .topnav .icon {
 }
 
 body .contact {
-  padding: 20px 0;
   margin: 190px 0;
 }
 
 body .contact h1 {
-  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
-  padding: 10px;
-  color: #fff;
-}
-
-body .contact h1:hover {
-  -webkit-transition: color 300ms linear;
-  transition: color 300ms linear;
-  color: orange;
 }
 
 body .contact h2 {
-  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
   text-align: center;
   color: #f3bf99;
   font-size: 20px;
   font-weight: 600;
-  padding: 10px;
-}
-
-body .contact h2:hover {
-  -webkit-transition: color 300ms linear;
-  transition: color 300ms linear;
-  color: orange;
 }
 
 body .contact h3 {
-  font-family: "Inter", sans-serif;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  padding: 10px;
+}
+
+body .contact a {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  text-decoration: none;
   color: #f5f5f5;
+}
+
+body .contact a.job {
+  color: #f3bf99;
+}
+
+body .contact a:hover {
+  color: orange;
 }
 
 body .contact .btn {
@@ -206,36 +206,34 @@ body .intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  margin-top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .intro .diri {
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 body .intro .diri h1 {
   font-size: 26px;
-  color: #f5f5f5;
   margin-bottom: 10px;
-}
-
-body .intro .diri h1:hover {
-  -webkit-transition: all 300ms linear;
-  transition: all 300ms linear;
-  color: orange;
 }
 
 body .intro .diri h3 {
   font-size: 18px;
-  color: #f5f5f5;
+  font-weight: 400;
 }
 
-body .intro .diri h3:hover {
+body .intro .diri a {
+  color: #f5f5f5;
   -webkit-transition: all 300ms linear;
   transition: all 300ms linear;
+  text-decoration: none;
+}
+
+body .intro .diri a:hover {
   color: orange;
 }
 
@@ -249,6 +247,49 @@ body .intro .img img {
   border-radius: 50%;
   -webkit-animation: border 2s linear infinite alternate;
           animation: border 2s linear infinite alternate;
+}
+
+body .univ {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .univ .img img {
+  width: 350px;
+  height: 250px;
+  border-radius: 20px;
+  -webkit-animation: border 2s linear infinite alternate;
+          animation: border 2s linear infinite alternate;
+}
+
+body .univ .profile {
+  text-align: center;
+}
+
+body .univ .profile h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+body .univ .profile h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body .univ .profile a {
+  color: #f5f5f5;
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+body .univ .profile a:hover {
+  color: orange;
 }
 
 body .divider {
@@ -352,12 +393,16 @@ body .project-web span::before {
   color: #fe395c;
   content: "< ";
   z-index: -9999;
+  -webkit-animation: card-info 1s linear infinite alternate;
+          animation: card-info 1s linear infinite alternate;
 }
 
 body .project-web span::after {
   color: #fe395c;
   content: " />";
   z-index: -9999;
+  -webkit-animation: card-info 1s linear infinite alternate;
+          animation: card-info 1s linear infinite alternate;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -414,25 +459,28 @@ body .project-web span::after {
   body .topnav a:first-child:hover {
     color: #1a1b21;
   }
-  body .topnav a:not(:first-child) {
+  body .topnav a:not(.active) {
     display: none;
   }
   body .topnav a.icon {
     float: right;
     display: block;
   }
+  body .topnav .innerclass {
+    float: left;
+  }
   body .topnav.responsive {
     position: relative;
-  }
-  body .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
   }
   body .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
+  }
+  body .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   body .contact {
     margin: 100px 0;
@@ -452,9 +500,9 @@ body .project-web span::after {
   body .intro {
     display: block;
     margin-top: 0;
+    text-align: center;
   }
   body .intro .diri {
-    text-align: center;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -475,6 +523,41 @@ body .project-web span::after {
     width: 170px;
     height: 170px;
     border-radius: 50%;
+  }
+  body .univ {
+    margin-top: 0;
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  body .univ .img img {
+    width: 200px;
+    height: 120px;
+    border-radius: 20px;
+    -webkit-animation: border 2s linear infinite alternate;
+            animation: border 2s linear infinite alternate;
+  }
+  body .univ .profile {
+    text-align: center;
+  }
+  body .univ .profile h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  body .univ .profile h3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  body .univ .profile a {
+    color: #f5f5f5;
+    text-decoration: none;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  body .univ .profile a:hover {
+    color: orange;
   }
   body .divider h1 {
     font-size: 20px;
@@ -532,6 +615,42 @@ body .project-web span::after {
   }
   to {
     border: 5px solid #34363f;
+  }
+}
+
+@-webkit-keyframes background {
+  from {
+    background-color: #1a1b21;
+  }
+  to {
+    background-color: #070708;
+  }
+}
+
+@keyframes background {
+  from {
+    background-color: #1a1b21;
+  }
+  to {
+    background-color: #070708;
+  }
+}
+
+@-webkit-keyframes card-info {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes card-info {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
