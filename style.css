@@ -315,7 +315,7 @@ body .project-web span::after {
   z-index: -9999;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .col-s-0 {
     width: 0;
   }

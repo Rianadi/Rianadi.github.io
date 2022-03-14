@@ -14,7 +14,7 @@ const projectMobile = document.querySelectorAll('.project-mobile');
 const certificateWeb = document.querySelectorAll('.certificate-web');
 const projectWeb = document.querySelectorAll('.project-web');
 
-if (screenWidth > 768) {
+if (screenWidth > 1200) {
   for(let i = 0; i < certificateWeb.length; i++) {
     certificateMobile[i].style.display = 'none';
   }
