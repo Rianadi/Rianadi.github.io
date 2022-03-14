@@ -73,6 +73,7 @@ body {
   font-family: "Inter", sans-serif;
   padding: 15px;
   background-color: #23252c;
+  min-height: 10000;
 }
 
 body .container {
@@ -283,6 +284,10 @@ body .card-web {
 body .card-web img {
   width: 300px;
   height: 250px;
+  border: 5px solid red;
+  border-radius: 15px;
+  -webkit-animation: border 2s linear infinite alternate;
+          animation: border 2s linear infinite alternate;
 }
 
 body .card-web .card-info {
@@ -466,6 +471,24 @@ body .project-web span::after {
   }
   body .card::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@-webkit-keyframes border {
+  from {
+    border: 5px solid #0c0c0e;
+  }
+  to {
+    border: 5px solid #34363f;
+  }
+}
+
+@keyframes border {
+  from {
+    border: 5px solid #0c0c0e;
+  }
+  to {
+    border: 5px solid #34363f;
   }
 }
 /*# sourceMappingURL=style.css.map */

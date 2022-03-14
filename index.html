@@ -38,6 +38,8 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Personal CSS -->
   <link rel="stylesheet" href="style.css">
@@ -48,12 +50,12 @@
 
   <div class="container">
     <div class="topnav" id="myTopnav">
-      <a href="#" class="active">Portfolio</a>
-      <a href="#contact">Contact</a>
-      <a href="#intro">Personal</a>
-      <a href="#certificate">Certificate</a>
-      <a href="#project">Project</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="#" class="active" data-aos="fade-up">Portfolio</a>
+      <a href="#contact" data-aos="fade-up">Contact</a>
+      <a href="#intro" data-aos="fade-up">Personal</a>
+      <a href="#certificate" data-aos="fade-up">Certificate</a>
+      <a href="#project" data-aos="fade-up">Project</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()" data-aos="fade-up">
         <i class="fa fa-bars"></i>
       </a>
     </div>
@@ -62,16 +64,16 @@
       <main class='contact' id="contact">
         <div class="row">
           <div class='col-12 col-s-12'>
-            <h1>Fikri Dean Radityo</h1>
-            <h2>Web Developer</h2>
-            <h3>rianadi.github.io</h3>
+            <h1 data-aos="zoom-in">Fikri Dean Radityo</h1>
+            <h2 data-aos="zoom-in">Web Developer</h2>
+            <h3 data-aos="zoom-in">rianadi.github.io</h3>
             <div class="row btn">
               <div class="col-2 col-s-0"></div>
               <div class="col-4 col-s-12">
-                <button class='email'><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i class="fa-solid fa-envelope" target="_blank"></i> Email</a></button>
+                <button class='email' data-aos="zoom-in"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i class="fa-solid fa-envelope" target="_blank"></i> Email</a></button>
               </div>
               <div class="col-4 col-s-12">
-                <button class='linked'><a href="https://www.linkedin.com/in/fikri-dean-radityo-23bb3621a/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></button>
+                <button class='linked' data-aos="zoom-in"><a href="https://www.linkedin.com/in/fikri-dean-radityo-23bb3621a/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></button>
               </div>
             </div>
           </div>
@@ -103,13 +105,13 @@
     <div>
       <div class="row divider">
         <div class="col-12 col-s-12">
-          <h1>• Certificates •</h1>
+          <h1 data-aos="fade-up">• Certificates •</h1>
         </div>
       </div>
     </div>
 
     <div id="certificate">
-      <div class="row card certificate-mobile" id="certificate-mobile">
+      <div class="row card certificate-mobile" id="certificate-mobile" data-aos="zoom-in">
         <div class="col-12 col-s-12">
             <div class="card-list">
               <img src='./img/certificate responsive web.png' alt="card" />
@@ -138,7 +140,7 @@
         </div>
       </div>
 
-      <div class="row card-web certificate-web" id="certificate-web">
+      <div class="row card-web certificate-web" id="certificate-web" data-aos="zoom-in">
         <div class="col-4 col-s-12">
           <img src='./img/certificate responsive web.png' alt="card" />
           <div class="card-info">
@@ -175,7 +177,7 @@
     </div>
 
     <div id="project">
-      <div class="row card project-mobile" id="project-mobile">
+      <div class="row card project-mobile" id="project-mobile"  data-aos="zoom-in">
         <div class="col-12 col-s-12">
             <div class="card-list">
               <img src='./img/tiger_woods.png' alt="card" />
@@ -216,7 +218,7 @@
         </div>
       </div>
 
-      <div class="row card-web project-web" id="project-web">
+      <div class="row card-web project-web" id="project-web" data-aos="zoom-in">
         <div class="col-4 col-s-12">
           <img src='./img/tiger_woods.png' alt="card" />
           <div class="card-info">
@@ -237,7 +239,7 @@
         </div>
       </div>
 
-      <div class="row card-web project-web" id="project-web">
+      <div class="row card-web project-web" id="project-web" data-aos="zoom-in">
         <div class="col-4 col-s-12">
           <img src='./img/vacansy_remake.png' alt="card" />
           <div class="card-info">
@@ -264,6 +266,9 @@
   
   <!-- Font Awesome JS -->
   <script src="https://kit.fontawesome.com/abdbf7768f.js" crossorigin="anonymous"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Personal JS -->
   <script src="script.js" type="text/javascript"></script>

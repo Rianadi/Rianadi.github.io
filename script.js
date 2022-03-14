@@ -1,3 +1,5 @@
+AOS.init();
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -22,13 +24,10 @@ if (screenWidth > 1200) {
     projectMobile[i].style.display = 'none';
   }
 } else {
-  
   for(let i = 0; i < certificateWeb.length; i++) {
     certificateWeb[i].style.display = 'none';
   }
-
   for(let i = 0; i < projectWeb.length; i++) {
     projectWeb[i].style.display = 'none';
   }
-  
 }
