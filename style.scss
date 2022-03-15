@@ -455,12 +455,13 @@ body {
 
       a {
         font-size: 18px;
+        border: none;
       }
 
       a:hover {
         background-color: orange;
         color: #1a1b21;
-        border: 2px solid #161619;
+        border: none;
       }
 
       a:first-child:hover {

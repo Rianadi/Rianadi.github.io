@@ -485,11 +485,12 @@ body .project-web span::after {
   }
   body .topnav a {
     font-size: 18px;
+    border: none;
   }
   body .topnav a:hover {
     background-color: orange;
     color: #1a1b21;
-    border: 2px solid #161619;
+    border: none;
   }
   body .topnav a:first-child:hover {
     color: #1a1b21;
