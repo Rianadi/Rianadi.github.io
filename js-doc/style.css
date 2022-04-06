@@ -1,0 +1,281 @@
+/* SCSS Variable*/
+/* For mobile phones: */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#1c0c5b), to(#2c2891));
+  background-image: linear-gradient(to right, #1c0c5b, #2c2891);
+  letter-spacing: 1px;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body a,
+body label,
+body input:not([type="radio"]),
+body select,
+body p,
+body h6,
+body code,
+body li {
+  line-height: 24px;
+  color: #ededed;
+  letter-spacing: 1.2px;
+}
+
+body header {
+  display: none;
+}
+
+.container {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#1c0c5b), to(#2c2891));
+  background-image: linear-gradient(270deg, #1c0c5b, #2c2891);
+  word-wrap: break-word;
+}
+
+.container hr {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 30%;
+}
+
+.container .title {
+  text-align: center;
+}
+
+.container .title h1 {
+  font: 28px "Roboto", sans-serif;
+  color: #ff935d;
+  font-weight: 500;
+}
+
+.container .navigation {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.container .navigation h1 {
+  font: 20px "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.container #navbar {
+  margin-top: 10px;
+  background: #161e54;
+  overflow: auto;
+  width: 100%;
+  height: 300px;
+  border-radius: 30px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 0.01px #161425;
+          box-shadow: 0 0 10px 0.01px #161425;
+  cursor: pointer;
+}
+
+.container #navbar ul {
+  list-style-type: none;
+}
+
+.container #navbar ul li {
+  margin-bottom: 15px;
+  background-color: #1e296e;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.container #navbar ul li a {
+  font: 14px "Roboto", sans-serif;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.container #navbar ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.container #navbar ul li:hover {
+  background-color: #202966;
+}
+
+.container .content .row {
+  margin: 50px 0;
+}
+
+.container .content .row:last-child {
+  margin-bottom: 0;
+}
+
+.container .content h1 {
+  text-align: center;
+  font: 20px "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.container .content p,
+.container .content li {
+  margin-top: 30px;
+  font: 16px "Roboto", sans-serif;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.container .content li {
+  margin-left: 30px;
+}
+
+.container .content code {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  font: 16px "Roboto Mono", monospace;
+  color: salmon;
+}
+
+.container .content a {
+  font: 16px "Roboto", sans-serif;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-0 {
+    width: 0;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  .container .title h1 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+  .col-0 {
+    width: 0;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .container {
+    position: relative;
+    margin-left: 22%;
+  }
+  .container .title h1 {
+    font-size: 34px;
+  }
+  .container .navigation {
+    display: none;
+  }
+  .container #navbar {
+    margin-top: 0;
+    border-radius: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+  }
+  .container .content {
+    margin-top: -40px;
+    padding: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -17,10 +17,10 @@ const certificateWeb = document.querySelectorAll('.certificate-web');
 const projectWeb = document.querySelectorAll('.project-web');
 
 if (screenWidth > 1200) {
-  for(let i = 0; i < certificateWeb.length; i++) {
+  for(let i = 0; i < certificateMobile.length; i++) {
     certificateMobile[i].style.display = 'none';
   }
-  for(let i = 0; i < certificateWeb.length; i++) {
+  for(let i = 0; i < projectMobile.length; i++) {
     projectMobile[i].style.display = 'none';
   }
 } else {

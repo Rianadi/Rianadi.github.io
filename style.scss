@@ -403,6 +403,7 @@ body {
   .project-web {
     span::before {
       color: #fe395c;
+      font-weight: 700;
       content: "< ";
       z-index: -9999;
       animation: card-info 1s linear infinite alternate;
@@ -411,6 +412,7 @@ body {
 
     span::after {
       color: #fe395c;
+      font-weight: 700;
       content: " />";
       z-index: -9999;
       animation: card-info 1s linear infinite alternate;

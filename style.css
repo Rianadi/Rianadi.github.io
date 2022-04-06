@@ -434,6 +434,7 @@ body .card-web .card-info .date span {
 
 body .project-web span::before {
   color: #fe395c;
+  font-weight: 700;
   content: "< ";
   z-index: -9999;
   -webkit-animation: card-info 1s linear infinite alternate;
@@ -443,6 +444,7 @@ body .project-web span::before {
 
 body .project-web span::after {
   color: #fe395c;
+  font-weight: 700;
   content: " />";
   z-index: -9999;
   -webkit-animation: card-info 1s linear infinite alternate;
