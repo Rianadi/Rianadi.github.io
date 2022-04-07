@@ -452,6 +452,11 @@ body .project-web span::after {
   position: relative;
 }
 
+body .swipe-right {
+  -webkit-animation: card-info 1s linear infinite alternate;
+          animation: card-info 1s linear infinite alternate;
+}
+
 @media only screen and (max-width: 1200px) {
   .col-s-0 {
     width: 0;

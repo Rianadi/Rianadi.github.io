@@ -419,6 +419,10 @@ body {
       position: relative;
     }
   }
+
+  .swipe-right {
+    animation: card-info 1s linear infinite alternate;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
