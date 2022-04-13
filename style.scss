@@ -357,8 +357,18 @@ body {
     }
   }
 
-  .card::-webkit-scrollbar {
-    display: none;
+  // .card::-webkit-scrollbar {
+  //   display: none;
+  // }
+
+  .card::-webkit-scrollbar{
+    height: 5px;
+    background: gray;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:horizontal{
+      background-color: orange;
+      border-radius: 10px;
   }
 
   .card-web {
@@ -657,9 +667,11 @@ body {
       }
     }
 
-    .card::-webkit-scrollbar {
-      display: none;
-    }
+    // .card::-webkit-scrollbar {
+    //   display: none;
+    // }
+    
+    
   }
 }
 

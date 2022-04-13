@@ -389,7 +389,14 @@ body .card .card-list:not(:last-child) {
 }
 
 body .card::-webkit-scrollbar {
-  display: none;
+  height: 5px;
+  background: gray;
+  border-radius: 10px;
+}
+
+body ::-webkit-scrollbar-thumb:horizontal {
+  background-color: orange;
+  border-radius: 10px;
 }
 
 body .card-web {
@@ -647,9 +654,6 @@ body .swipe-right {
   }
   body .card .card-list .card-info .date span {
     font-weight: 700;
-  }
-  body .card::-webkit-scrollbar {
-    display: none;
   }
 }
 
