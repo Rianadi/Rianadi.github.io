@@ -170,12 +170,8 @@ body .contact .btn {
   margin-top: 20px;
 }
 
-body .contact .btn a {
-  text-decoration: none;
+body .contact .btn input {
   color: #f5f5f5;
-}
-
-body .contact .btn button {
   min-width: 170px;
   border: none;
   border-radius: 10px;
@@ -190,7 +186,7 @@ body .contact .btn button {
   cursor: pointer;
 }
 
-body .contact .btn button:hover {
+body .contact .btn input:hover {
   opacity: 0.6;
 }
 
@@ -465,11 +461,11 @@ body .card-web::-webkit-scrollbar {
   display: none;
 }
 
-body .btn {
+body .button {
   text-align: center;
 }
 
-body .btn button {
+body .button button {
   cursor: pointer;
   padding: 10px 30px;
   border: none;
@@ -482,11 +478,11 @@ body .btn button {
   transition: 300ms;
 }
 
-body .btn button:hover {
+body .button button:hover {
   background-color: rgba(255, 166, 0, 0.5);
 }
 
-body .btn button:active {
+body .button button:active {
   background-color: rgba(255, 166, 0, 0.2);
 }
 
