@@ -21,19 +21,24 @@ if (screenWidth > 1200) {
   for(let i = 0; i < certificateMobile.length; i++) {
     certificateMobile[i].style.display = 'none';
   }
+
   for(let i = 0; i < projectMobile.length; i++) {
     projectMobile[i].style.display = 'none';
   }
+
 } else {
   for(let i = 0; i < certificateWeb.length; i++) {
     certificateWeb[i].style.display = 'none';
   }
+
   for(let i = 0; i < projectWeb.length; i++) {
     projectWeb[i].style.display = 'none';
   }
+
   for (let i = 0; i < btn.length; i++) {
     btn[i].style.display = 'none';
   }
+
 }
 
 $('#cerLeft').on('click', function() {
@@ -59,3 +64,11 @@ $('#proRight').on('click', function() {
   let numRight = $(".project-web").scrollLeft() + numChange;
   $('.project-web').animate({scrollLeft: numRight}, 300);
 });
+
+const counterCertificate = $(".certificate-web .card-list");
+
+if (counterCertificate.length <= 4) {
+  $(".btn-certificate").hide();
+}
+
+console.log(counterCertificate.length);

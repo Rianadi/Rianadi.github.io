@@ -362,21 +362,28 @@ body {
   }
 
   .card-web {
-    padding: 0;
     overflow: auto;
     white-space: nowrap;
     text-align: center;
     position: relative;
+    height: 400px;
 
     .card-list {
       display: inline-block;
       align-content: center;
+      padding: 0 15px;
 
       img {
         width: 300px;
         height: 250px;
         border-radius: 15px;
         animation: border 2s linear infinite alternate;
+        z-index: 9999;
+        transition: 300ms;
+      }
+
+      img:hover {
+        transform: scale(1.5) translateY(45px);
       }
 
       .card-info {
@@ -415,10 +422,6 @@ body {
           }
         }
       }
-    }
-
-    .card-list:not(:last-child) {
-      padding-right: 30px;
     }
   }
 

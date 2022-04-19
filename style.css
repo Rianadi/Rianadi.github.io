@@ -393,17 +393,18 @@ body .card::-webkit-scrollbar {
 }
 
 body .card-web {
-  padding: 0;
   overflow: auto;
   white-space: nowrap;
   text-align: center;
   position: relative;
+  height: 400px;
 }
 
 body .card-web .card-list {
   display: inline-block;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 0 15px;
 }
 
 body .card-web .card-list img {
@@ -412,6 +413,14 @@ body .card-web .card-list img {
   border-radius: 15px;
   -webkit-animation: border 2s linear infinite alternate;
           animation: border 2s linear infinite alternate;
+  z-index: 9999;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+body .card-web .card-list img:hover {
+  -webkit-transform: scale(1.5) translateY(45px);
+          transform: scale(1.5) translateY(45px);
 }
 
 body .card-web .card-list .card-info {
@@ -445,10 +454,6 @@ body .card-web .card-list .card-info .rating .star {
 
 body .card-web .card-list .card-info .date span {
   font-weight: 700;
-}
-
-body .card-web .card-list:not(:last-child) {
-  padding-right: 30px;
 }
 
 body .card-web::-webkit-scrollbar {
