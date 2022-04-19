@@ -485,7 +485,7 @@ body .project-web {
 }
 
 body .project-web span::before {
-  color: #fe395c;
+  color: orange;
   font-weight: 700;
   content: "< ";
   z-index: -9999;
@@ -495,7 +495,7 @@ body .project-web span::before {
 }
 
 body .project-web span::after {
-  color: #fe395c;
+  color: orange;
   font-weight: 700;
   content: " />";
   z-index: -9999;
