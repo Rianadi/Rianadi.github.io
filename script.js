@@ -70,5 +70,3 @@ const counterCertificate = $(".certificate-web .card-list");
 if (counterCertificate.length <= 4) {
   $(".btn-certificate").hide();
 }
-
-console.log(counterCertificate.length);

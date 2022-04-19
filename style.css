@@ -418,11 +418,6 @@ body .card-web .card-list img {
   transition: 300ms;
 }
 
-body .card-web .card-list img:hover {
-  -webkit-transform: scale(1.5) translateY(45px);
-          transform: scale(1.5) translateY(45px);
-}
-
 body .card-web .card-list .card-info {
   display: table;
   width: 300px;
@@ -454,6 +449,16 @@ body .card-web .card-list .card-info .rating .star {
 
 body .card-web .card-list .card-info .date span {
   font-weight: 700;
+}
+
+body .card-list:nth-child(even) img:hover {
+  -webkit-transform: scale(1.5) translateY(45px) translateX(-30px);
+          transform: scale(1.5) translateY(45px) translateX(-30px);
+}
+
+body .card-list:nth-child(odd) img:hover {
+  -webkit-transform: scale(1.5) translateY(45px) translateX(30px);
+          transform: scale(1.5) translateY(45px) translateX(30px);
 }
 
 body .card-web::-webkit-scrollbar {

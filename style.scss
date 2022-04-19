@@ -382,9 +382,7 @@ body {
         transition: 300ms;
       }
 
-      img:hover {
-        transform: scale(1.5) translateY(45px);
-      }
+      
 
       .card-info {
         display: table; // gak tau kenapa berfungsi
@@ -422,6 +420,18 @@ body {
           }
         }
       }
+    }
+  }
+
+  .card-list:nth-child(even) {
+    img:hover {
+      transform: scale(1.5) translateY(45px) translateX(-30px);
+    }
+  }
+
+  .card-list:nth-child(odd) {
+    img:hover {
+      transform: scale(1.5) translateY(45px) translateX(30px);
     }
   }
 
