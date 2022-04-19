@@ -389,54 +389,95 @@ body .card .card-list:not(:last-child) {
 }
 
 body .card::-webkit-scrollbar {
-  height: 5px;
-  background: gray;
-  border-radius: 10px;
-}
-
-body ::-webkit-scrollbar-thumb:horizontal {
-  background-color: orange;
-  border-radius: 10px;
+  display: none;
 }
 
 body .card-web {
+  padding: 0;
+  overflow: auto;
+  white-space: nowrap;
   text-align: center;
+  position: relative;
 }
 
-body .card-web img {
+body .card-web .card-list {
+  display: inline-block;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .card-web .card-list img {
   width: 300px;
   height: 250px;
-  border: 5px solid red;
   border-radius: 15px;
-  -webkit-animation: border 2s ease-in-out infinite alternate;
-          animation: border 2s ease-in-out infinite alternate;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-animation: border 2s linear infinite alternate;
+          animation: border 2s linear infinite alternate;
 }
 
-body .card-web img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+body .card-web .card-list .card-info {
+  display: table;
+  width: 300px;
+  white-space: normal;
+  text-align: start;
 }
 
-body .card-web .card-info {
+body .card-web .card-list .card-info h1 {
+  font-size: 18px;
   text-align: center;
-  color: #f5f5f5;
+  padding-bottom: 40px;
+  color: #f2f2f2;
+  font-weight: 400;
+}
+
+body .card-web .card-list .card-info h1 i {
+  color: orange;
+}
+
+body .card-web .card-list .card-info p {
   margin: 10px 0;
+  font-size: 14px;
+  color: #f5f5f5;
 }
 
-body .card-web .card-info p {
-  margin: 5px 0;
-}
-
-body .card-web .card-info .rating .star {
+body .card-web .card-list .card-info .rating .star {
   color: #fe395c;
 }
 
-body .card-web .card-info .date span {
+body .card-web .card-list .card-info .date span {
   font-weight: 700;
+}
+
+body .card-web .card-list:not(:last-child) {
+  padding-right: 30px;
+}
+
+body .card-web::-webkit-scrollbar {
+  display: none;
+}
+
+body .btn {
+  text-align: center;
+}
+
+body .btn button {
+  cursor: pointer;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffa600;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 0.5px 0.5px 1px #3a3a3a;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+body .btn button:hover {
+  background-color: rgba(255, 166, 0, 0.5);
+}
+
+body .btn button:active {
+  background-color: rgba(255, 166, 0, 0.2);
 }
 
 body .project-web span::before {

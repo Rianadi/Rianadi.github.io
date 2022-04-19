@@ -357,56 +357,96 @@ body {
     }
   }
 
-  // .card::-webkit-scrollbar {
-  //   display: none;
-  // }
-
-  .card::-webkit-scrollbar{
-    height: 5px;
-    background: gray;
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb:horizontal{
-      background-color: orange;
-      border-radius: 10px;
+  .card::-webkit-scrollbar {
+    display: none;
   }
 
   .card-web {
+    padding: 0;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+
+    .card-list {
+      display: inline-block;
+      align-content: center;
+
+      img {
+        width: 300px;
+        height: 250px;
+        border-radius: 15px;
+        animation: border 2s linear infinite alternate;
+      }
+
+      .card-info {
+        display: table; // gak tau kenapa berfungsi
+        width: 300px;
+        white-space: normal;
+        text-align: start;
+
+        h1 {
+          font-size: 18px;
+          text-align: center;
+          padding-bottom: 40px;
+          color: #f2f2f2;
+          font-weight: 400;
+
+          i {
+            color: orange;
+          }
+        }
+
+        p {
+          margin: 10px 0;
+          font-size: 14px;
+          color: #f5f5f5;
+        }
+
+        .rating {
+          .star {
+            color: #fe395c;
+          }
+        }
+
+        .date {
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .card-list:not(:last-child) {
+      padding-right: 30px;
+    }
+  }
+
+  .card-web::-webkit-scrollbar {
+    display: none;
+  }
+
+  .btn {
     text-align: center;
 
-    img {
-      width: 300px;
-      height: 250px;
-      border: 5px solid red;
-      border-radius: 15px;
-      animation: border 2s ease-in-out infinite alternate;
-      transition: transform 300ms ease-in-out;
-    }
-
-    img:hover {
-      transform: scale(1.5);
-    }
-
-    .card-info {
-      text-align: center;
+    button {
+      cursor: pointer;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 10px;
+      background-color: rgba(255, 166, 0, 1);
+      font-weight: 700;
       color: #f5f5f5;
-      margin: 10px 0;
+      text-shadow: .5px .5px 1px rgb(58, 58, 58);
+      transition: 300ms;
+    }
 
-      p {
-        margin: 5px 0;
-      }
+    button:hover {
+      background-color: rgba(255, 166, 0, 0.5);
+    }
 
-      .rating {
-        .star {
-          color: #fe395c;
-        }
-      }
-
-      .date {
-        span {
-          font-weight: 700;
-        }
-      }
+    button:active {
+      background-color: rgba(255, 166, 0, 0.2);
     }
   }
 

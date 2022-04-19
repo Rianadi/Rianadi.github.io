@@ -15,6 +15,7 @@ const certificateMobile = document.querySelectorAll('.certificate-mobile');
 const projectMobile = document.querySelectorAll('.project-mobile');
 const certificateWeb = document.querySelectorAll('.certificate-web');
 const projectWeb = document.querySelectorAll('.project-web');
+const btn = document.querySelectorAll('.btn');
 
 if (screenWidth > 1200) {
   for(let i = 0; i < certificateMobile.length; i++) {
@@ -30,4 +31,31 @@ if (screenWidth > 1200) {
   for(let i = 0; i < projectWeb.length; i++) {
     projectWeb[i].style.display = 'none';
   }
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].style.display = 'none';
+  }
 }
+
+$('#cerLeft').on('click', function() {
+  const numChange = 200;
+  let numLeft = $(".card-web").scrollLeft() - numChange;
+  $('.certificate-web').animate({scrollLeft: numLeft}, 300);
+});
+
+$('#cerRight').on('click', function() {
+  const numChange = 200;
+  let numRight = $(".card-web").scrollLeft() + numChange;
+  $('.certificate-web').animate({scrollLeft: numRight}, 300);
+});
+
+$('#proLeft').on('click', function() {
+  const numChange = 200;
+  let numLeft = $(".project-web").scrollLeft() - numChange;
+  $('.project-web').animate({scrollLeft: numLeft}, 300);
+});
+
+$('#proRight').on('click', function() {
+  const numChange = 200;
+  let numRight = $(".project-web").scrollLeft() + numChange;
+  $('.project-web').animate({scrollLeft: numRight}, 300);
+});
