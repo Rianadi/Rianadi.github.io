@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +20,7 @@
   <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
   <link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="&nbsp;"/>
+  <meta name="application-name" content="&nbsp;" />
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="mstile-144x144.png" />
   <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
@@ -36,7 +37,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -46,36 +49,47 @@
 
   <title>Portfolio</title>
 </head>
+
 <body>
 
   <div class="container web">
 
-      <aside class="sidebar">
-        <nav class="nav">
-          <ul>
-            <li><a href="#" class="home active"><img src="./img/foxico30.png" alt="foxico-logo"></a></li>
-            <li><a href="#" class="contact-value">Contacts</a></li>
-            <li><a href="#" class="personal">Personal</a></li>
-            <li><a href="#" class="certificate">Certificates</a></li>
-            <li><a href="#" class="project">Projects</a></li>
-          </ul>
-        </nav>
-      </aside>
-    
-      <main class="main">
-        <div class="welcome">
-          <div class="row">
-            <div class="col-12 col-s-12">
-              <h1>Welcome <span>To</span> My <span>Portfolio</span> WebPage!</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-s-12">
-              <input type="button" formtarget="_blank" class='btn button-welcome' value="Look Around">
-            </div>
+    <aside class="sidebar">
+      <nav class="nav">
+        <ul>
+          <li><a href="javascript:;" class="contact-value active">Contacts</a></li>
+          <li><a href="javascript:;" class="personal">Personal</a></li>
+          <li><a href="javascript:;" class="certificate">Certificates</a></li>
+          <li><a href="javascript:;" class="project">Projects</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <main class='contact-value' id="contact" data-aos="zoom-in">
+        <div class="row">
+          <div class='col-12 col-s-12'>
+            <h1><a href="javascript:;">Fikri Dean Radityo</a></h1>
+            <h2><a href="javascript:;" class="job">Web Developer</a></h2>
+            <h3><a href="javascript:;">rianadi.github.io</a></h3>
           </div>
         </div>
+        <div class="row btn">
+              <div class="col-3 col-s-12">
+                <input type="button" onclick="email()" formtarget="_blank" class='email' value="Email">
+              </div>
+              <div class="col-3 col-s-12">
+                <input type="button" onclick="linkedin()" formtarget="_blank" class='linked' value="LinkedIn">
+              </div>
+              <div class="col-3 col-s-12">
+                <input type="button" onclick="github()" formtarget="_blank" class='github' value="Github">
+              </div>
+              <div class="col-3 col-s-12">
+                <input type="button" onclick="freecodecamp()" formtarget="_blank" class='freecodecamp' value="FreeCodeCamp">
+              </div>
+            </div>
       </main>
+    </main>
 
   </div>
 
@@ -90,7 +104,7 @@
           <a href="#certificate" data-aos="fade-up">Certificates</a>
           <a href="#project" data-aos="fade-up">Projects</a>
         </div>
-        
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()" data-aos="fade-up">
           <i class="fa fa-bars"></i>
         </a>
@@ -107,16 +121,20 @@
         <div class="row btn">
           <div class="col-2 col-s-0"></div>
           <div class="col-2 col-s-12">
-            <input type="button" onclick="email()" formtarget="_blank" class='email' data-aos="fade-up" value="Email" class="btn">
+            <input type="button" onclick="email()" formtarget="_blank" class='email' data-aos="fade-up" value="Email"
+              class="btn">
           </div>
           <div class="col-2 col-s-12">
-            <input type="button" onclick="linkedin()" formtarget="_blank" class='linked' data-aos="fade-up" value="LinkedIn">
+            <input type="button" onclick="linkedin()" formtarget="_blank" class='linked' data-aos="fade-up"
+              value="LinkedIn">
           </div>
           <div class="col-2 col-s-12">
-            <input type="button" onclick="github()" formtarget="_blank" class='github' data-aos="fade-up" value="Github">
+            <input type="button" onclick="github()" formtarget="_blank" class='github' data-aos="fade-up"
+              value="Github">
           </div>
           <div class="col-2 col-s-12">
-            <input type="button" onclick="freecodecamp()" formtarget="_blank" class='freecodecamp' data-aos="fade-up" value="FreeCodeCamp">
+            <input type="button" onclick="freecodecamp()" formtarget="_blank" class='freecodecamp' data-aos="fade-up"
+              value="FreeCodeCamp">
           </div>
         </div>
       </main>
@@ -126,11 +144,11 @@
         <div class="col-2 col-s-0"></div>
 
         <div class="col-4 col-s-12 img">
-          
+
           <img src="img/formal1000.png" alt="FIKRI DEAN RADITYO" data-aos="fade-up">
-          
+
         </div>
-        
+
         <div class="col-4 col-s-12 diri">
 
           <h1 data-aos="fade-up"><a href="javascript:;">Fikri Dean Radityo</a></h1>
@@ -162,7 +180,9 @@
 
           <div class="profile">
 
-            <h1 data-aos="fade-up"><a href="https://www.uinjkt.ac.id/" target="_blank" title="click to go to uin official website">Universitas Islam Negeri Syarif Hidayatullah Jakarta</a></h1>
+            <h1 data-aos="fade-up"><a href="https://www.uinjkt.ac.id/" target="_blank"
+                title="click to go to uin official website">Universitas Islam Negeri Syarif Hidayatullah Jakarta</a>
+            </h1>
 
             <h3 data-aos="fade-up"><a href="javascript:;">College Student</a></h3>
 
@@ -175,121 +195,133 @@
       <div>
         <div class="row divider" id="certificate">
           <div class="col-12 col-s-12">
-            <a href="javascript:;"><h1 data-aos="fade-up">📜 Certificates 📜</h1></a>
+            <a href="javascript:;">
+              <h1 data-aos="fade-up">📜 Certificates 📜</h1>
+            </a>
           </div>
         </div>
       </div>
 
       <div class="row card certificate-mobile" id="certificate-mobile" data-aos="zoom-in">
         <div class="col-12 col-s-12">
-            <div class="card-list">
-              <div class="card-info">
-                <h1 class="info swipe-right">Swipe right <i class="fa-solid fa-arrow-right"></i></h1>
-              </div>
+          <div class="card-list">
+            <div class="card-info">
+              <h1 class="info swipe-right">Swipe right <i class="fa-solid fa-arrow-right"></i></h1>
             </div>
-            <div class="card-list">
-              <a href="https://www.freecodecamp.org/certification/fikridean/responsive-web-design" target="_blank"><img src='./img/certificate responsive web.png' alt="Responsive Web Design" /></a>
-              <div class="card-info">
-                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
-                <p class="info">Responsive Web Design</p>
-                <p class="date"><span>Issued</span> • November 2nd, 2021</p>
-              </div>
+          </div>
+          <div class="card-list">
+            <a href="https://www.freecodecamp.org/certification/fikridean/responsive-web-design" target="_blank"><img
+                src='./img/certificate responsive web.png' alt="Responsive Web Design" /></a>
+            <div class="card-info">
+              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
+              <p class="info">Responsive Web Design</p>
+              <p class="date"><span>Issued</span> • November 2nd, 2021</p>
             </div>
-            <div class="card-list">
-              <img src='./img/JF certificate.png' alt="Java Fundamentals" />
-              <div class="card-info">
-                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
-                <p class="info">Java Fundamentals</p>
-                <p class="date"><span>Issued</span> • December 26th, 2021</p>
-              </div>
+          </div>
+          <div class="card-list">
+            <img src='./img/JF certificate.png' alt="Java Fundamentals" />
+            <div class="card-info">
+              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
+              <p class="info">Java Fundamentals</p>
+              <p class="date"><span>Issued</span> • December 26th, 2021</p>
             </div>
-            <div class="card-list">
-              <a href="https://www.freecodecamp.org/certification/fikridean/javascript-algorithms-and-data-structures" target="_blank"><img src='./img/JavaScript Algorithms and Data Structures Certificate.png' alt="JavaScript Algorithms and Data Structures" /></a>
-              <div class="card-info">
-                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
-                <p class="info">JavaScript Algorithms and Data Structures</p>
-                <p class="date"><span>Issued</span> • January 18th, 2022</p>
-              </div>
+          </div>
+          <div class="card-list">
+            <a href="https://www.freecodecamp.org/certification/fikridean/javascript-algorithms-and-data-structures"
+              target="_blank"><img src='./img/JavaScript Algorithms and Data Structures Certificate.png'
+                alt="JavaScript Algorithms and Data Structures" /></a>
+            <div class="card-info">
+              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
+              <p class="info">JavaScript Algorithms and Data Structures</p>
+              <p class="date"><span>Issued</span> • January 18th, 2022</p>
             </div>
-            <div class="card-list">
-              <img src='./img/JFo Certificate.png' alt="JavaScript Algorithms and Data Structures" />
-              <div class="card-info">
-                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
-                <p class="info">Java Foundations</p>
-                <p class="date"><span>Issued</span> • April 6th, 2022</p>
-              </div>
+          </div>
+          <div class="card-list">
+            <img src='./img/JFo Certificate.png' alt="JavaScript Algorithms and Data Structures" />
+            <div class="card-info">
+              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
+              <p class="info">Java Foundations</p>
+              <p class="date"><span>Issued</span> • April 6th, 2022</p>
             </div>
+          </div>
         </div>
-        
+
       </div>
 
       <div>
         <div class="row divider project" id="project">
           <div class="col-12 col-s-12">
-            <a href="javascript:;"><h1>🗃️ Projects 🗃️</h1></a>
+            <a href="javascript:;">
+              <h1>🗃️ Projects 🗃️</h1>
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="row card project-mobile" id="project-mobile"  data-aos="zoom-in">
+      <div class="row card project-mobile" id="project-mobile" data-aos="zoom-in">
         <div class="col-12 col-s-12">
-            <div class="card-list">
-              <div class="card-info">
-                <h1 class="info swipe-right">Swipe right <i class="fa-solid fa-arrow-right"></i></h1>
-              </div>
+          <div class="card-list">
+            <div class="card-info">
+              <h1 class="info swipe-right">Swipe right <i class="fa-solid fa-arrow-right"></i></h1>
             </div>
-            <div class="card-list">
-              <a href="https://rianadi.github.io/tribute/" target="_blank"><img src='./img/tiger_woods.png' alt="card" /></a>
-              <div class="card-info">
-                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Tribute Page</span></p>
-              </div>
+          </div>
+          <div class="card-list">
+            <a href="https://rianadi.github.io/tribute/" target="_blank"><img src='./img/tiger_woods.png'
+                alt="card" /></a>
+            <div class="card-info">
+              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Tribute Page</span></p>
             </div>
-            <div class="card-list">
-              <a href="https://rianadi.github.io/survey-form/" target="_blank"><img src='./img/survey.png' alt="card" /></a>
-              <div class="card-info">
-                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Survey Page</span></p>
-              </div>
+          </div>
+          <div class="card-list">
+            <a href="https://rianadi.github.io/survey-form/" target="_blank"><img src='./img/survey.png'
+                alt="card" /></a>
+            <div class="card-info">
+              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Survey Page</span></p>
             </div>
-            <div class="card-list">
-              <a href="https://rianadi.github.io/js-doc/" target="_blank"><img src='./img/js_doc.png' alt="card" /></a>
-              <div class="card-info">
-                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> JS Documentation Page</span></p>
-              </div>
+          </div>
+          <div class="card-list">
+            <a href="https://rianadi.github.io/js-doc/" target="_blank"><img src='./img/js_doc.png' alt="card" /></a>
+            <div class="card-info">
+              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> JS Documentation Page</span>
+              </p>
             </div>
-            <div class="card-list">
-              <a href="https://dribbble.com/shots/12230630-Vacansy-Landing-Page" target="_blank"><img src='./img/vacansy_remake.png' alt="card" /></a>
-              <div class="card-info">
-                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Vacansy Remake</span></p>
-              </div>
+          </div>
+          <div class="card-list">
+            <a href="https://dribbble.com/shots/12230630-Vacansy-Landing-Page" target="_blank"><img
+                src='./img/vacansy_remake.png' alt="card" /></a>
+            <div class="card-info">
+              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Vacansy Remake</span></p>
             </div>
-            <div class="card-list">
-              <a href="https://dribbble.com/shots/15607887-StepWorld" target="_blank"><img src='./img/step_world.png' alt="card" /></a>
-              <div class="card-info">
-                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Step World</span></p>
-              </div>
+          </div>
+          <div class="card-list">
+            <a href="https://dribbble.com/shots/15607887-StepWorld" target="_blank"><img src='./img/step_world.png'
+                alt="card" /></a>
+            <div class="card-info">
+              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Step World</span></p>
             </div>
-            <div class="card-list">
-              <img src='./img/step_world2.png' alt="card" />
-              <div class="card-info">
-                <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Step World v2</span></p>
-              </div>
+          </div>
+          <div class="card-list">
+            <img src='./img/step_world2.png' alt="card" />
+            <div class="card-info">
+              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Step World v2</span></p>
             </div>
+          </div>
         </div>
       </div>
 
       <div class="footer">
         <div class="row">
           <div class="col-s-12 col-12">
-            
+
           </div>
         </div>
       </div>
-      
+
     </div>
 
   </div>
-  
-  
+
+
   <!-- Font Awesome JS -->
   <script src="https://kit.fontawesome.com/abdbf7768f.js" crossorigin="anonymous"></script>
 
@@ -300,4 +332,5 @@
   <script src="script.js" type="text/javascript"></script>
 
 </body>
+
 </html>
