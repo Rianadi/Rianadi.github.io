@@ -108,8 +108,8 @@ body .container .sidebar {
   width: 20%;
   height: 100%;
   font-size: 0.65em;
-  -webkit-animation: background 4s linear infinite alternate;
-          animation: background 4s linear infinite alternate;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1a1b21), to(#070708));
+  background-image: linear-gradient(to right, #1a1b21, #070708);
 }
 
 body .container .main {
