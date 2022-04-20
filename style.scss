@@ -1,3 +1,6 @@
+$orange1 : #FF5403;
+$orange2: #FFCA03;
+
 * {
   margin: 0;
   padding: 0;
@@ -58,16 +61,185 @@
 
 body {
   font-family: "Inter", sans-serif;
-  padding: 15px;
-  background-color: #23252c;
   position: relative;
 
   .container {
-    animation: background 5s linear infinite alternate;
-    border-radius: 30px;
-    padding: 10px;
+    input.btn {
+      min-width: 170px;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .sidebar {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      position: fixed;
+      left: 0;
+      width: 20%;
+      height: 100%;
+      background: #23252c;
+      font-size: 0.65em;
+    }
+  
+    .main {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      right: 0;
+      top: 0;
+      width: 80%;
+      height: 100%;
+      background-image: url(./img/background.jpg);
+      background-size: cover;
+      overflow-y: auto;
+      padding: 30px;
+    }
+  
+    .nav {
+      position: relative;
+      margin: auto 10%;
+      text-align: right;
+      font-weight: 700;
+      width: 100%;
+  
+      ul {
+        list-style: none;
+        
+        li {
+          position: relative;
+          margin: 3.2em 0;
+          
+          a {
+            line-height: 5em;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.4em;
+            color: rgba(#FFF, 0.35);
+            display: block;
+            transition: all ease-out 300ms;
+    
+            &.active {
+              color: white;
+            }
+    
+            &:not(.active):hover {
+              color: rgba(#FFF, 0.75);
+            }
+
+            &:not(.active)::after {
+              opacity: 0.2;
+            }
+            
+            
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 0.2em;
+              left: 0;
+              bottom: 0;
+              background-image: linear-gradient(to right, $orange1, $orange2);
+            }
+          }
+        }
+      }
+    }
   }
 
+  .contact-value {
+    position: relative;
+    
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      text-shadow: 2px 2px 2px rgb(23, 23, 23);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #f3bf99;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    a {
+      transition: 300ms ease-in-out;
+      text-decoration: none;
+      color: #f5f5f5;
+    }
+
+    a.job {
+      color: #f3bf99;
+    }
+
+    a:hover {
+      color: orange;
+    }
+
+    .btn {
+      input {
+        color: #f5f5f5;
+        min-width: 170px;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 14px;
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      input:hover {
+        opacity: 0.6;
+        padding-bottom: 30px;
+        padding-top: 30px;
+      }
+
+      .email {
+        background-color: #f4511e;
+      }
+
+      .linked {
+        background-color: #5093e2;
+      }
+
+      .github {
+        background-color: #580a0a;
+      }
+
+      .freecodecamp {
+        background-color: #002ead;
+      }
+    }
+  }
+  
   .topnav {
     overflow: hidden;
     background-color: #161619;
@@ -188,19 +360,18 @@ body {
 
   .intro {
     display: flex;
-    margin-top: 100px;
     align-items: center;
 
     .diri {
       text-align: center;
 
       h1 {
-        font-size: 26px;
+        font-size: 24px;
         margin-bottom: 10px;
       }
 
       h3 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
       }
 
@@ -219,14 +390,15 @@ body {
       text-align: center;
 
       img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
         animation: border 2s linear infinite alternate;
+        transition: 300ms;
       }
 
       img:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
     }
   }
@@ -237,15 +409,18 @@ body {
     align-items: center;
 
     .img {
+      text-align: center;
+      
       img {
-        width: 350px;
-        height: 250px;
+        width: 300px;
+        height: 200px;
         border-radius: 20px;
         animation: border 2s linear infinite alternate;
+        transition: 300ms;
       }
 
       img:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
     }
 
@@ -254,11 +429,11 @@ body {
 
       h1 {
         margin-bottom: 20px;
-        font-size: 26px;
+        font-size: 24px;
       }
 
       h3 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
       }
 
@@ -347,22 +522,19 @@ body {
         }
       }
     }
-
-    .card-list:not(:last-child) {
-      padding-right: 30px;
-    }
   }
 
-  .card::-webkit-scrollbar {
-    display: none;
-  }
+  // .card::-webkit-scrollbar {
+  //   display: none;
+  // }
 
   .card-web {
     overflow: auto;
     white-space: nowrap;
     text-align: center;
     position: relative;
-    height: 400px;
+    width: 100%;
+    height: 80%;
 
     .card-list {
       display: inline-block;
@@ -429,19 +601,36 @@ body {
     }
   }
 
-  .card-web::-webkit-scrollbar {
-    display: none;
-  }
+  // .card-web::-webkit-scrollbar {
+  //   display: none;
+  // }
 
+  .card-web::-webkit-scrollbar {
+    width: 4px;
+    border: 1px solid #d5d5d5;
+    height: 10px;
+    border-radius: 30px;
+  }
+  
+  .card-web::-webkit-scrollbar-track {
+    border-radius: 30px;
+    background: #eeeeee;
+  }
+  
+  .card-web::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: $orange1;
+  }
+  
   .button {
-    text-align: center;
+    display: flex;
 
     button {
       cursor: pointer;
       padding: 10px 30px;
       border: none;
       border-radius: 10px;
-      background-color: rgba(255, 166, 0, 1);
+      background-color: $orange1;
       font-weight: 700;
       color: #f5f5f5;
       text-shadow: .5px .5px 1px rgb(58, 58, 58);
@@ -449,39 +638,38 @@ body {
     }
 
     button:hover {
-      background-color: rgba(255, 166, 0, 0.5);
+      background-color: #ff53035a;
     }
 
     button:active {
-      background-color: rgba(255, 166, 0, 0.2);
+      background-color: #ff530334;
     }
   }
 
-  .project-web {
-    color: #f5f5f5;
-    
-    span::before {
-      color: orange;
-      font-weight: 700;
-      content: "< ";
-      z-index: -9999;
-      animation: card-info 1s linear infinite alternate;
-      position: relative;
+  .welcome {
+    text-align: center;
+
+    h1 {
+      color: #f5f5f5;
+      text-shadow: 2px 2px 2px rgb(23, 23, 23);
+      animation: opacity 1s linear infinite alternate;
+
+      span {
+        color: $orange2;
+      }
     }
 
-    span::after {
-      color: orange;
-      font-weight: 700;
-      content: " />";
-      z-index: -9999;
-      animation: card-info 1s linear infinite alternate;
-      position: relative;
+    input {
+      background-color: $orange1;
+      color: #f5f5f5;
+    }
+
+    input:hover {
+      padding-right: 250px;
+      padding-left: 250px;
     }
   }
-
-  .swipe-right {
-    animation: card-info 1s linear infinite alternate;
-  }
+  
 }
 
 @media only screen and (max-width: 1200px) {
@@ -526,8 +714,11 @@ body {
   }
 
   body {
+    background-color: #1a1b21;
+    
     .topnav {
       padding: 0;
+      margin: 15px;
 
       a {
         font-size: 18px;
@@ -678,11 +869,12 @@ body {
       overflow: auto;
       white-space: nowrap;
       text-align: center;
-
+      
       .card-list {
         display: inline-block;
         align-content: center;
         padding: 0;
+        margin: 0 15px;
 
         img {
           width: 200px;
@@ -716,11 +908,6 @@ body {
       }
     }
 
-    // .card::-webkit-scrollbar {
-    //   display: none;
-    // }
-    
-    
   }
 }
 
@@ -744,7 +931,7 @@ body {
   }
 }
 
-@keyframes card-info {
+@keyframes opacity {
   from {
     opacity: 1;
   }

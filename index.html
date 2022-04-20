@@ -48,57 +48,79 @@
 </head>
 <body>
 
-  <div class="container">
-    <div class="topnav" id="myTopnav">
-      <a href="" class="active" data-aos="fade-up">Portfolio</a>
-      <div class="innerclass">
-        <a href="#contact" data-aos="fade-up">Contacts</a>
-        <a href="#intro" data-aos="fade-up">Personal</a>
-        <a href="#certificate" data-aos="fade-up">Certificates</a>
-        <a href="#project" data-aos="fade-up">Projects</a>
+  <div class="container web">
+
+      <aside class="sidebar">
+        <nav class="nav">
+          <ul>
+            <li><a href="#" class="home active"><img src="./img/foxico30.png" alt="foxico-logo"></a></li>
+            <li><a href="#" class="contact-value">Contacts</a></li>
+            <li><a href="#" class="personal">Personal</a></li>
+            <li><a href="#" class="certificate">Certificates</a></li>
+            <li><a href="#" class="project">Projects</a></li>
+          </ul>
+        </nav>
+      </aside>
+    
+      <main class="main">
+        <div class="welcome">
+          <div class="row">
+            <div class="col-12 col-s-12">
+              <h1>Welcome <span>To</span> My <span>Portfolio</span> WebPage!</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-s-12">
+              <input type="button" formtarget="_blank" class='btn button-welcome' value="Look Around">
+            </div>
+          </div>
+        </div>
+      </main>
+
+  </div>
+
+  <div class="mobile">
+
+    <div class="container">
+      <div class="topnav" id="myTopnav">
+        <a href="" class="active" data-aos="fade-up">Portfolio</a>
+        <div class="innerclass">
+          <a href="#contact" data-aos="fade-up">Contacts</a>
+          <a href="#intro" data-aos="fade-up">Personal</a>
+          <a href="#certificate" data-aos="fade-up">Certificates</a>
+          <a href="#project" data-aos="fade-up">Projects</a>
+        </div>
+        
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" data-aos="fade-up">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()" data-aos="fade-up">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  
-    <div>
+
       <main class='contact' id="contact">
         <div class="row">
           <div class='col-12 col-s-12'>
             <h1 data-aos="zoom-in"><a href="javascript:;">Fikri Dean Radityo</a></h1>
             <h2 data-aos="zoom-in"><a href="javascript:;" class="job">Web Developer</a></h2>
             <h3 data-aos="zoom-in"><a href="javascript:;">rianadi.github.io</a></h3>
-            <div class="row btn">
-              <div class="col-2 col-s-0"></div>
-              <div class="col-2 col-s-12">
-                <input type="button" onclick="email()" formtarget="_blank" class='email' data-aos="fade-up" value="Email">
-
-                <!-- <button class='email' data-aos="fade-up"><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBptCNkzXPGKQFhFQflhqSTFvRPLDPfnfkrRTJscwSZgRdNDhKwPHhSdVjJPrbcxhzQZTlW" target="_blank"><i class="fa-solid fa-envelope" target="_blank"></i> Email</a></button> -->
-              </div>
-              <div class="col-2 col-s-12">
-                <input type="button" onclick="linkedin()" formtarget="_blank" class='linked' data-aos="fade-up" value="LinkedIn">
-
-                <!-- <button class='linked' data-aos="fade-up"><a href="https://www.linkedin.com/in/fikri-dean-radityo-23bb3621a/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></button> -->
-              </div>
-              <div class="col-2 col-s-12">
-                <input type="button" onclick="github()" formtarget="_blank" class='github' data-aos="fade-up" value="Github">
-
-                <!-- <button class='github' data-aos="fade-up"><a href="https://github.com/Rianadi" target="_blank"><i class='fa fa-github-square'></i> Github</a></button> -->
-              </div>
-              <div class="col-2 col-s-12">
-                <input type="button" onclick="freecodecamp()" formtarget="_blank" class='freecodecamp' data-aos="fade-up" value="FreeCodeCamp">
-
-                <!-- <button class='freecodecamp' data-aos="fade-up"><a href="https://www.freecodecamp.org/fikridean" target="_blank"><i class='fa fa-free-code-camp'></i> FreeCodeCamp</a></button> -->
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="row btn">
+          <div class="col-2 col-s-0"></div>
+          <div class="col-2 col-s-12">
+            <input type="button" onclick="email()" formtarget="_blank" class='email' data-aos="fade-up" value="Email" class="btn">
+          </div>
+          <div class="col-2 col-s-12">
+            <input type="button" onclick="linkedin()" formtarget="_blank" class='linked' data-aos="fade-up" value="LinkedIn">
+          </div>
+          <div class="col-2 col-s-12">
+            <input type="button" onclick="github()" formtarget="_blank" class='github' data-aos="fade-up" value="Github">
+          </div>
+          <div class="col-2 col-s-12">
+            <input type="button" onclick="freecodecamp()" formtarget="_blank" class='freecodecamp' data-aos="fade-up" value="FreeCodeCamp">
           </div>
         </div>
       </main>
-    </div>
 
-    <div>
       <div class="row intro" id="intro">
 
         <div class="col-2 col-s-0"></div>
@@ -117,9 +139,7 @@
 
         </div>
       </div>
-    </div>
 
-    <div>
       <div class="row univ">
 
         <div class="col-2 col-s-0"></div>
@@ -151,17 +171,15 @@
         </div>
 
       </div>
-    </div>
 
-    <div>
-      <div class="row divider" id="certificate">
-        <div class="col-12 col-s-12">
-          <a href="javascript:;"><h1 data-aos="fade-up">📜 Certificates 📜</h1></a>
+      <div>
+        <div class="row divider" id="certificate">
+          <div class="col-12 col-s-12">
+            <a href="javascript:;"><h1 data-aos="fade-up">📜 Certificates 📜</h1></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="certificate">
       <div class="row card certificate-mobile" id="certificate-mobile" data-aos="zoom-in">
         <div class="col-12 col-s-12">
             <div class="card-list">
@@ -205,67 +223,14 @@
         
       </div>
 
-      <div class="row button btn-certificate" data-aos="fade-up">
-        <div class="col-6 col-s-12">
-          <button class="button" id="cerLeft">
-            <i class="fa-solid fa-arrow-left"></i> Left 
-          </button>
-        </div>
-
-        <div class="col-6 col-s-12">
-          <button class="button" id="cerRight">
-            Right <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="row card-web certificate-web" id="certificate-web" data-aos="zoom-in">
-        <div class="col-12 col-s-12">
-          <div class="card-list first">
-            <a href="https://www.freecodecamp.org/certification/fikridean/responsive-web-design" target="_blank"><img src='./img/certificate responsive web.png' alt="Responsive Web Design" /></a>
-            <div class="card-info">
-              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
-              <p class="info">Responsive Web Design</p>
-              <p class="date"><span>Issued</span> • November 2nd, 2021</p>
-            </div>
-          </div>
-          <div class="card-list">
-            <img src='./img/JF certificate.png' alt="Java Fundamentals" />
-            <div class="card-info">
-              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
-              <p class="info">Java Fundamentals</p>
-              <p class="date"><span>Issued</span> • December 26th, 2021</p>
-            </div>
-          </div>
-          <div class="card-list">
-            <a href="https://www.freecodecamp.org/certification/fikridean/javascript-algorithms-and-data-structures" target="_blank"><img src='./img/JavaScript Algorithms and Data Structures Certificate.png' alt="JavaScript Algorithms and Data Structures" /></a>
-            <div class="card-info">
-              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
-              <p class="info">JavaScript Algorithms and Data Structures</p>
-              <p class="date"><span>Issued</span> • January 18th, 2022</p>
-            </div>
-          </div>
-          <div class="card-list">
-            <img src='./img/JFo Certificate.png' alt="JavaScript Algorithms and Data Structures" />
-            <div class="card-info">
-              <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
-              <p class="info">Java Foundations</p>
-              <p class="date"><span>Issued</span> • April 6th, 2022</p>
-            </div>
+      <div>
+        <div class="row divider project" id="project">
+          <div class="col-12 col-s-12">
+            <a href="javascript:;"><h1>🗃️ Projects 🗃️</h1></a>
           </div>
         </div>
       </div>
-    </div>
 
-    <div>
-      <div class="row divider project" id="project">
-        <div class="col-12 col-s-12">
-          <a href="javascript:;"><h1>🗃️ Projects 🗃️</h1></a>
-        </div>
-      </div>
-    </div>
-
-    <div id="project">
       <div class="row card project-mobile" id="project-mobile"  data-aos="zoom-in">
         <div class="col-12 col-s-12">
             <div class="card-list">
@@ -312,68 +277,14 @@
         </div>
       </div>
 
-      <div class="row button btn-project" data-aos="fade-up">
-        <div class="col-6 col-s-12">
-          <button class="button" id="proLeft">
-            <i class="fa-solid fa-arrow-left"></i> Left 
-          </button>
-        </div>
-
-        <div class="col-6 col-s-12">
-          <button class="button" id="proRight">
-            Right <i class="fa-solid fa-arrow-right"></i>
-          </button>
+      <div class="footer">
+        <div class="row">
+          <div class="col-s-12 col-12">
+            
+          </div>
         </div>
       </div>
-
-      <div class="row card-web project-web" id="project-web" data-aos="zoom-in">
-        <div class="col-12 col-s-12">
-            <div class="card-list">
-              <a href="https://rianadi.github.io/tribute/" target="_blank"><img src='./img/tiger_woods.png' alt="card" /></a>
-              <div class="card-info">
-                <p class="rating"><span><i class="fa-solid fa-star star"></i> Tribute Page</span></p>
-              </div>
-            </div>
-            <div class="card-list">
-              <a href="https://rianadi.github.io/survey-form/" target="_blank"><img src='./img/survey.png' alt="card" /></a>
-              <div class="card-info">
-                <p class="rating"><span><i class="fa-solid fa-star star"></i> Survey Page</span></p>
-              </div>
-            </div>
-            <div class="card-list">
-              <a href="https://rianadi.github.io/js-doc/" target="_blank"><img src='./img/js_doc.png' alt="card" /></a>
-              <div class="card-info">
-                <p class="rating"><span><i class="fa-solid fa-star star"></i> JS Documentation Page</span></p>
-              </div>
-            </div>
-            <div class="card-list">
-              <a href="https://dribbble.com/shots/12230630-Vacansy-Landing-Page" target="_blank"><img src='./img/vacansy_remake.png' alt="card" /></a>
-              <div class="card-info">
-                <p class="rating"><span><i class="fa-solid fa-star star"></i> Vacansy Remake</span></p>
-              </div>
-            </div>
-            <div class="card-list">
-              <a href="https://dribbble.com/shots/15607887-StepWorld" target="_blank"><img src='./img/step_world.png' alt="card" /></a>
-              <div class="card-info">
-                <p class="rating"><span><i class="fa-solid fa-star star"></i> Step World</span></p>
-              </div>
-            </div>
-            <div class="card-list">
-              <img src='./img/step_world2.png' alt="card" />
-              <div class="card-info">
-                <p class="rating"><span><i class="fa-solid fa-star star"></i> Step World v2</span></p>
-              </div>
-            </div>
-        </div>
-      </div>
-
-
-    <div class="footer">
-      <div class="row">
-        <div class="col-s-12 col-12">
-          
-        </div>
-      </div>
+      
     </div>
 
   </div>
