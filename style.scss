@@ -90,8 +90,8 @@ body {
       left: 0;
       width: 20%;
       height: 100%;
-      background: #23252c;
       font-size: 0.65em;
+      animation: background 4s linear infinite alternate;
     }
   
     .main {
@@ -714,7 +714,7 @@ body {
   }
 
   body {
-    background-color: #1a1b21;
+    animation: background 4s linear infinite alternate;
     
     .topnav {
       padding: 0;
