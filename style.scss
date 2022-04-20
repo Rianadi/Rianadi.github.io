@@ -63,6 +63,10 @@ body {
   font-family: "Inter", sans-serif;
   position: relative;
 
+  h1, h2, h3, h4, h5, h6, p, li, a, input {
+    text-shadow: 1.3px 1.3px 2px rgb(23, 23, 23);
+  }
+
   .container {
     input.btn {
       min-width: 170px;
@@ -169,7 +173,6 @@ body {
       text-align: center;
       font-size: 30px;
       font-weight: 700;
-      text-shadow: 2px 2px 2px rgb(23, 23, 23);
     }
 
     h2 {
@@ -651,7 +654,6 @@ body {
 
     h1 {
       color: #f5f5f5;
-      text-shadow: 2px 2px 2px rgb(23, 23, 23);
       animation: opacity 1s linear infinite alternate;
 
       span {
