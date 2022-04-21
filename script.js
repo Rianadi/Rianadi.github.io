@@ -38,25 +38,25 @@ $( document ).ready(function() {
     location.href = "https://www.freecodecamp.org/fikridean";
   }
 
-  $('.icon').click(function() {
+  $(document).on('click', 'input[id^="icon"]', function() {
     myFunction();
-  })
+  });
 
-  $('.email').click(function() {
+  $(document).on('click', 'input[id^="email"]', function() {
     email();
-  })
+  });
 
-  $('.linked').click(function() {
+  $(document).on('click', 'input[id^="linked"]', function() {
     linked();
-  })
+  });
 
-  $('.github').click(function() {
+  $(document).on('click', 'input[id^="github"]', function() {
     github();
-  })
+  });
 
-  $('.freecodecamp').click(function() {
+  $(document).on('click', 'input[id^="freecodecamp"]', function() {
     freecodecamp();
-  })
+  });
 
   $(document).on('click', 'button[id^="cerLeft"]', function() {
     const numChange = 200;
@@ -106,16 +106,16 @@ $( document ).ready(function() {
                           </div>
                           <div class="row btn">
                             <div class="col-3 col-s-12">
-                              <input type="button" onclick="email()" formtarget="_blank" class='email' value="Email">
+                              <input type="button" formtarget="_blank" class='email' value="Email" id="email">
                             </div>
                             <div class="col-3 col-s-12">
-                              <input type="button" onclick="linkedin()" formtarget="_blank" class='linked' value="LinkedIn">
+                              <input type="button" formtarget="_blank" class='linked' value="LinkedIn" id="linked">
                             </div>
                             <div class="col-3 col-s-12">
-                              <input type="button" onclick="github()" formtarget="_blank" class='github' value="Github">
+                              <input type="button" formtarget="_blank" class='github' value="Github" id="github">
                             </div>
                             <div class="col-3 col-s-12">
-                              <input type="button" onclick="freecodecamp()" formtarget="_blank" class='freecodecamp' value="FreeCodeCamp">
+                              <input type="button" formtarget="_blank" class='freecodecamp' value="FreeCodeCamp" id="freecodecamp">
                             </div>
                           </div>
                         </main>`);
