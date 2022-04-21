@@ -68,6 +68,8 @@ body {
   }
 
   .container {
+    background-color:rgb(23, 23, 23);
+
     input.btn {
       min-width: 170px;
       border: none;
@@ -555,7 +557,7 @@ body {
     text-align: center;
     position: relative;
     width: 100%;
-    height: 60%;
+    height: 100%;
 
     .card-list {
       display: inline-block;

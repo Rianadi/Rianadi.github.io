@@ -78,6 +78,10 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body li, body a, b
   text-shadow: 1px 1px 1px #171717;
 }
 
+body .container {
+  background-color: #171717;
+}
+
 body .container input.btn {
   min-width: 170px;
   border: none;
@@ -605,7 +609,7 @@ body .card-web {
   text-align: center;
   position: relative;
   width: 100%;
-  height: 60%;
+  height: 100%;
 }
 
 body .card-web .card-list {
