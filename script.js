@@ -19,6 +19,38 @@ $( document ).ready(function() {
     }
   }
 
+  $(document).on('click', 'button[id^="cerLeft"]', function() {
+    const numChange = 200;
+    let numLeft = $(".card-web").scrollLeft() - numChange;
+    $('.certificate-web').animate({scrollLeft: numLeft}, 300);
+  });
+
+  $(document).on('click', 'button[id^="cerRight"]', function() {
+    const numChange = 200;
+    let numLeft = $(".card-web").scrollLeft() + numChange;
+    $('.certificate-web').animate({scrollLeft: numLeft}, 300);
+  });
+
+  $(document).on('click', 'button[id^="proLeft"]', function() {
+    const numChange = 200;
+    let numLeft = $(".card-web").scrollLeft() - numChange;
+    $('.project-web').animate({scrollLeft: numLeft}, 300);
+  });
+
+  $(document).on('click', 'button[id^="proRight"]', function() {
+    const numChange = 200;
+    let numLeft = $(".card-web").scrollLeft() + numChange;
+    $('.project-web').animate({scrollLeft: numLeft}, 300);
+  });
+
+  $(document).on('mouseenter', 'h5[id^="footer-text"]', function(){
+    $(this).css("color", "#FF5403");
+  });
+
+  $(document).on('mouseleave', 'h5[id^="footer-text"]', function(){
+    $(this).css("color", "#FFCA03");
+  });
+
   $('.nav ul li a').on({
     click: function() {
       $('nav ul .active').removeClass('active');
@@ -34,19 +66,19 @@ $( document ).ready(function() {
                             </div>
                           </div>
                           <div class="row btn">
-                                <div class="col-3 col-s-12">
-                                  <input type="button" onclick="email()" formtarget="_blank" class='email' value="Email">
-                                </div>
-                                <div class="col-3 col-s-12">
-                                  <input type="button" onclick="linkedin()" formtarget="_blank" class='linked' value="LinkedIn">
-                                </div>
-                                <div class="col-3 col-s-12">
-                                  <input type="button" onclick="github()" formtarget="_blank" class='github' value="Github">
-                                </div>
-                                <div class="col-3 col-s-12">
-                                  <input type="button" onclick="freecodecamp()" formtarget="_blank" class='freecodecamp' value="FreeCodeCamp">
-                                </div>
-                              </div>
+                            <div class="col-3 col-s-12">
+                              <input type="button" onclick="email()" formtarget="_blank" class='email' value="Email">
+                            </div>
+                            <div class="col-3 col-s-12">
+                              <input type="button" onclick="linkedin()" formtarget="_blank" class='linked' value="LinkedIn">
+                            </div>
+                            <div class="col-3 col-s-12">
+                              <input type="button" onclick="github()" formtarget="_blank" class='github' value="Github">
+                            </div>
+                            <div class="col-3 col-s-12">
+                              <input type="button" onclick="freecodecamp()" formtarget="_blank" class='freecodecamp' value="FreeCodeCamp">
+                            </div>
+                          </div>
                         </main>`);
       } else if ($(this).hasClass('personal')) {
         $('.main').html(`<div data-aos="zoom-in">
@@ -81,6 +113,19 @@ $( document ).ready(function() {
                       </div>`);
       } else if ($(this).hasClass('certificate')) {
           $('.main').html(`
+                          <div class="row button btn-certificate" data-aos="fade-up">
+                            <div class="col-6 col-s-12">
+                              <button class="button" id="cerLeft">
+                                <i class="fa-solid fa-arrow-left"></i> Left 
+                              </button>
+                            </div>
+
+                            <div class="col-6 col-s-12">
+                              <button class="button" id="cerRight">
+                                Right <i class="fa-solid fa-arrow-right"></i>
+                              </button>
+                            </div>
+                          </div>
                           <div class="row card-web certificate-web" id="certificate-web" data-aos="zoom-in">
                             <div class="col-12 col-s-12">
                               <div class="card-list first">
@@ -119,7 +164,21 @@ $( document ).ready(function() {
                           </div>`)
       }
       else if ($(this).hasClass('project')) {
-        $('.main').html(`<div class="row card-web project-web" id="project-web" data-aos="zoom-in">
+        $('.main').html(`<div class="row button btn-project" data-aos="fade-up">
+                          <div class="col-6 col-s-12">
+                            <button class="button" id="proLeft">
+                              <i class="fa-solid fa-arrow-left"></i> Left 
+                            </button>
+                          </div>
+
+                          <div class="col-6 col-s-12">
+                            <button class="button" id="proRight">
+                              Right <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                          </div>
+                        </div>
+        
+                        <div class="row card-web project-web" id="project-web" data-aos="zoom-in">
                           <div class="col-12 col-s-12">
                               <div class="card-list">
                                 <a href="https://rianadi.github.io/tribute/" target="_blank"><img src='./img/tiger_woods.png' alt="card" /></a>
@@ -163,4 +222,3 @@ $( document ).ready(function() {
     }
   });
 });
-

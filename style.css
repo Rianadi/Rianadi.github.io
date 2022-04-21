@@ -75,7 +75,7 @@ body {
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6, body p, body li, body a, body input {
-  text-shadow: 1.3px 1.3px 2px #171717;
+  text-shadow: 1px 1px 1px #171717;
 }
 
 body .container input.btn {
@@ -116,6 +116,17 @@ body .container .sidebar {
   background-image: linear-gradient(to right, #1a1b21, #070708);
 }
 
+body .container .sidebar h5#footer-text {
+  text-align: left;
+  color: #f5f5f5;
+  font-weight: 600;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  padding: 5px;
+}
+
 body .container .main {
   position: fixed;
   display: -webkit-box;
@@ -144,7 +155,7 @@ body .container .main {
 body .container .nav {
   position: relative;
   margin: auto 10%;
-  text-align: right;
+  text-align: left;
   font-weight: 700;
   width: 100%;
 }
@@ -173,6 +184,10 @@ body .container .nav ul li a.active {
   color: white;
 }
 
+body .container .nav ul li a.active::after {
+  width: 100%;
+}
+
 body .container .nav ul li a:not(.active):hover {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -184,12 +199,18 @@ body .container .nav ul li a:not(.active)::after {
 body .container .nav ul li a::after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 50%;
   height: 0.2em;
   left: 0;
   bottom: 0;
   background-image: -webkit-gradient(linear, left top, right top, from(#FF5403), to(#FFCA03));
   background-image: linear-gradient(to right, #FF5403, #FFCA03);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+body .container .nav ul li a:hover::after {
+  width: 100%;
 }
 
 body .contact-value {
@@ -233,6 +254,7 @@ body .contact-value a:hover {
 }
 
 body .contact-value .btn input {
+  cursor: pointer;
   color: #f5f5f5;
   min-width: 170px;
   border: none;
@@ -245,13 +267,12 @@ body .contact-value .btn input {
   transition: 0.3s ease-in-out;
   display: inline-block;
   text-decoration: none;
-  cursor: pointer;
 }
 
 body .contact-value .btn input:hover {
   opacity: 0.6;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 body .contact-value .btn .email {
