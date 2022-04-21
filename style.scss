@@ -545,9 +545,9 @@ body {
     }
   }
 
-  // .card::-webkit-scrollbar {
-  //   display: none;
-  // }
+  .card::-webkit-scrollbar {
+    display: none;
+  }
 
   .card-web {
     overflow: auto;

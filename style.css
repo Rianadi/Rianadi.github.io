@@ -595,6 +595,10 @@ body .card .card-list .card-info .date span {
   font-weight: 700;
 }
 
+body .card::-webkit-scrollbar {
+  display: none;
+}
+
 body .card-web {
   overflow: auto;
   white-space: nowrap;

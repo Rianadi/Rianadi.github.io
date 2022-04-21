@@ -19,6 +19,45 @@ $( document ).ready(function() {
     }
   }
 
+  function email() {
+    location.href = "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBptCNkzXPGKQFhFQflhqSTFvRPLDPfnfkrRTJscwSZgRdNDhKwPHhSdVjJPrbcxhzQZTlW";
+  }
+  
+  // Linkedin button
+  function linked() {
+    location.href = "https://www.linkedin.com/in/fikri-dean-radityo-23bb3621a/";
+  }
+  
+  // Github button
+  function github() {
+    location.href = "https://github.com/Rianadi";
+  }
+  
+  // Freecodecamp button
+  function freecodecamp() {
+    location.href = "https://www.freecodecamp.org/fikridean";
+  }
+
+  $('.icon').click(function() {
+    myFunction();
+  })
+
+  $('.email').click(function() {
+    email();
+  })
+
+  $('.linked').click(function() {
+    linked();
+  })
+
+  $('.github').click(function() {
+    github();
+  })
+
+  $('.freecodecamp').click(function() {
+    freecodecamp();
+  })
+
   $(document).on('click', 'button[id^="cerLeft"]', function() {
     const numChange = 200;
     let numLeft = $(".card-web").scrollLeft() - numChange;
