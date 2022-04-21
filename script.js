@@ -90,6 +90,44 @@ $( document ).ready(function() {
     $(this).css("color", "#FFCA03");
   });
 
+  $(document).on('click', 'h1[id^="sidebar-icon"]', function(){
+    if ($(this).hasClass('hide')) {
+      $(this).removeClass('hide');
+      $('.sidebar').css({
+        'width': '20%',
+        'transition': '300ms'
+      });
+      $('.main').css({
+        'width': '80%',
+        'transition': '300ms'
+      });
+      $(this).css({
+        'text-align': 'left',
+        'transition': '300ms'
+      });
+      $('.nav-link').show();
+      $('#footer-text').show();
+      $(this).html(`<i class="fa-solid fa-circle-xmark"></i>`);
+    } else {
+      $(this).addClass('hide');
+      $('.sidebar').css({
+        'width': '5%',
+        'transition': '300ms'
+      });
+      $('.main').css({
+        'width': '95%',
+        'transition': '300ms'
+      })
+      $(this).css({
+        'text-align': 'center',
+        'transition': '300ms'
+      });
+      $('.nav-link').hide();
+      $('#footer-text').hide();
+      $(this).html(`<i class="fa fa-bars"></i>`);
+    }
+  });
+
   $('.nav ul li a').on({
     click: function() {
       $('nav ul .active').removeClass('active');

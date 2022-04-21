@@ -91,7 +91,6 @@ body {
     .sidebar {
       display: flex;
       align-items: center;
-      justify-content: end;
       position: fixed;
       left: 0;
       width: 20%;
@@ -99,14 +98,23 @@ body {
       font-size: 0.65em;
       background-image: linear-gradient(to right, #1a1b21, #070708);
 
-      h5#footer-text {
+      h1#sidebar-icon {
         text-align: left;
-        color: #f5f5f5;
+        font-size: 30px;
+        color: $orange2;
+        transition: 300ms;
+
+        &:hover {
+          color: $orange1;
+        }
+      }
+
+      h5#footer-text {
+        color: $orange2;
         font-weight: 600;
         transition: 300ms;
         font-size: 1em;
         letter-spacing: 0.1em;
-        padding: 5px;
       }
     }
   
@@ -238,9 +246,10 @@ body {
         transition: 0.3s ease-in-out;
         display: inline-block;
         text-decoration: none;
+        opacity: .8;
 
         &:hover {
-          opacity: 0.6;
+          opacity: 1;
           transform: scale(1.3);
         }
       }
