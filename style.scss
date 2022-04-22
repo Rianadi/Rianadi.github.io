@@ -70,6 +70,23 @@ body {
   .container {
     background-color:rgb(23, 23, 23);
 
+    ::-webkit-scrollbar {
+      width: 6px;
+      border: 1px solid #d5d5d5;
+      height: 6px;
+      border-radius: 30px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      border-radius: 30px;
+      background: #eeeeee;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      border-radius: 30px;
+      background: $orange1;
+    }
+
     input.btn {
       min-width: 170px;
       border: none;
@@ -96,7 +113,10 @@ body {
       width: 20%;
       height: 100%;
       font-size: 0.65em;
-      background-image: linear-gradient(to right, #1a1b21, #070708);
+      // background-image: linear-gradient(to right, #1a1b21, #070708);
+      background-image: url(./img/background.jpg);
+      background-size: cover;
+      border-right: 2px solid $orange2;
 
       h1#sidebar-icon {
         text-align: left;
@@ -107,14 +127,6 @@ body {
         &:hover {
           color: $orange1;
         }
-      }
-
-      h5#footer-text {
-        color: $orange2;
-        font-weight: 600;
-        transition: 300ms;
-        font-size: 1em;
-        letter-spacing: 0.1em;
       }
     }
   
@@ -128,7 +140,7 @@ body {
       top: 0;
       width: 80%;
       height: 100%;
-      background-image: url(./img/background.jpg);
+      background-image: url(./img/background-2.jpg);
       background-size: cover;
       overflow-y: auto;
       padding: 30px;
@@ -192,515 +204,533 @@ body {
         }
       }
     }
-  }
 
-  .contact-value {
-    position: relative;
-    
-    h1 {
-      margin-bottom: 20px;
-      text-align: center;
-      font-size: 30px;
-      font-weight: 700;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      text-align: center;
-      color: #f3bf99;
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    h3 {
-      text-align: center;
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    a {
-      transition: 300ms ease-in-out;
-      text-decoration: none;
-      color: #f5f5f5;
-    }
-
-    a.job {
-      color: #f3bf99;
-    }
-
-    a:hover {
-      color: orange;
-    }
-
-    .btn {
-      input {
-        cursor: pointer;
-        color: #f5f5f5;
-        min-width: 170px;
-        border: none;
-        border-radius: 10px;
-        padding: 10px 20px;
-        text-align: center;
-        font-size: 14px;
-        opacity: 1;
-        transition: 0.3s ease-in-out;
-        display: inline-block;
-        text-decoration: none;
-        opacity: .8;
-
-        &:hover {
-          opacity: 1;
-          transform: scale(1.3);
-        }
-      }
-
-      .email {
-        background-color: #f4511e;
-      }
-
-      .linked {
-        background-color: #5093e2;
-      }
-
-      .github {
-        background-color: #580a0a;
-      }
-
-      .freecodecamp {
-        background-color: #002ead;
-      }
-    }
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #161619;
-    border-radius: 30px;
-    padding: 0 30px;
-    justify-content: space-between;
-
-    a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 18px;
-      border: 2px solid #161619;
-    }
-
-    a:not(.active):hover {
-      transition: border 300ms ease-in-out;
-      border-bottom: 2px solid orange;
-    }
-
-    a.active {
-      font-weight: 700;
-      color: orange;
-      float: left;
-    }
-
-    .innerclass {
-      float: right;
-    }
-
-    .icon {
-      display: none;
-      background-color: #161619;
-    }
-  }
-
-  .contact {
-    margin: 190px 0;
-
-    h1 {
-      margin-bottom: 20px;
-      text-align: center;
-      font-size: 30px;
-      font-weight: 700;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      text-align: center;
-      color: #f3bf99;
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    h3 {
-      text-align: center;
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    a {
-      transition: 300ms ease-in-out;
-      text-decoration: none;
-      color: #f5f5f5;
-    }
-
-    a.job {
-      color: #f3bf99;
-    }
-
-    a:hover {
-      color: orange;
-    }
-
-    .btn {
-      text-align: center;
-      margin-top: 20px;
-
-      input {
-        color: #f5f5f5;
-        min-width: 170px;
-        border: none;
-        border-radius: 10px;
-        padding: 10px 20px;
-        text-align: center;
-        font-size: 14px;
-        opacity: 1;
-        transition: 0.3s ease-in-out;
-        display: inline-block;
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-      input:hover {
-        opacity: 0.6;
-      }
-
-      .email {
-        background-color: #f4511e;
-      }
-
-      .linked {
-        background-color: #5093e2;
-      }
-
-      .github {
-        background-color: #580a0a;
-      }
-
-      .freecodecamp {
-        background-color: #002ead;
-      }
-    }
-  }
-
-  .intro {
-    display: flex;
-    align-items: center;
-
-    .diri {
-      text-align: center;
-
-      h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-
-      h3 {
-        font-size: 16px;
-        font-weight: 400;
-      }
-
-      a {
-        color: #f5f5f5;
-        transition: all 300ms ease-in-out;
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: orange;
-      }
-    }
-
-    .img {
-      text-align: center;
-
-      img {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        animation: border 2s linear infinite alternate;
-        transition: 300ms;
-      }
-
-      img:hover {
-        transform: scale(1.2);
-      }
-    }
-  }
-
-  .univ {
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-
-    .img {
-      text-align: center;
+    .contact-value {
+      position: relative;
       
-      img {
-        width: 300px;
-        height: 200px;
-        border-radius: 20px;
-        animation: border 2s linear infinite alternate;
-        transition: 300ms;
-      }
-
-      img:hover {
-        transform: scale(1.2);
-      }
-    }
-
-    .profile {
-      text-align: center;
-
       h1 {
         margin-bottom: 20px;
-        font-size: 24px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
       }
-
+  
+      h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #f3bf99;
+        font-size: 20px;
+        font-weight: 600;
+      }
+  
       h3 {
-        font-size: 16px;
+        text-align: center;
+        font-size: 14px;
         font-weight: 400;
       }
+  
+      a {
+        transition: 300ms ease-in-out;
+        text-decoration: none;
+        color: #f5f5f5;
+      }
+  
+      a.job {
+        color: #f3bf99;
+      }
+  
+      a:hover {
+        color: orange;
+      }
+  
+      .btn {
+        input {
+          background-color: pink;
+          cursor: pointer;
+          color: #f5f5f5;
+          width: 170px;
+          border: none;
+          border-radius: 10px;
+          padding: 10px 20px;
+          text-align: center;
+          font-size: 14px;
+          opacity: 1;
+          transition: 0.3s ease-in-out;
+          display: inline-block;
+          text-decoration: none;
+          opacity: .8;
+  
+          &:hover {
+            opacity: 1;
+            transform: scale(1.3);
+          }
+        }
+  
+        .email {
+          background-color: #f4511e;
+        }
+  
+        .linked {
+          background-color: #5093e2;
+        }
+  
+        .github {
+          background-color: #580a0a;
+        }
+  
+        .freecodecamp {
+          background-color: #002ead;
+        }
+      }
+    }
 
+    .home-hover {
+      position: absolute;
+      z-index: -1;
+      transform: translateY(-40px);
+
+      img.email-hover {
+        transition: 1s;
+        opacity: 0;
+        text-align: center;
+        padding: 10px 20px;
+        width: 170px;
+        height: 100px;
+      }
+
+      img.linked-hover {
+        transition: 1s;
+        opacity: 0;
+        text-align: center;
+        padding: 10px 20px;
+        width: 170px;
+        height: 100px;
+      }
+
+      img.github-hover {
+        transition: 1s;
+        opacity: 0;
+        text-align: center;
+        padding: 10px 20px;
+        width: 170px;
+        height: 100px;
+      }
+
+      img.freecodecamp-hover {
+        transition: 1s;
+        opacity: 0;
+        text-align: center;
+        padding: 10px 20px;
+        width: 170px;
+        height: 100px;
+      }
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #161619;
+      border-radius: 30px;
+      padding: 0 30px;
+      justify-content: space-between;
+  
+      a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        border: 2px solid #161619;
+      }
+  
+      a:not(.active):hover {
+        transition: border 300ms ease-in-out;
+        border-bottom: 2px solid orange;
+      }
+  
+      a.active {
+        font-weight: 700;
+        color: orange;
+        float: left;
+      }
+  
+      .innerclass {
+        float: right;
+      }
+  
+      .icon {
+        display: none;
+        background-color: #161619;
+      }
+    }
+  
+    .contact {
+      margin: 190px 0;
+  
+      h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+      }
+  
+      h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #f3bf99;
+        font-size: 20px;
+        font-weight: 600;
+      }
+  
+      h3 {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+      }
+  
+      a {
+        transition: 300ms ease-in-out;
+        text-decoration: none;
+        color: #f5f5f5;
+      }
+  
+      a.job {
+        color: #f3bf99;
+      }
+  
+      a:hover {
+        color: orange;
+      }
+  
+      .btn {
+        text-align: center;
+        margin-top: 20px;
+  
+        input {
+          color: #f5f5f5;
+          min-width: 170px;
+          border: none;
+          border-radius: 10px;
+          padding: 10px 20px;
+          text-align: center;
+          font-size: 14px;
+          opacity: 1;
+          transition: 0.3s ease-in-out;
+          display: inline-block;
+          text-decoration: none;
+          cursor: pointer;
+        }
+  
+        input:hover {
+          opacity: 0.6;
+        }
+  
+        .email {
+          background-color: #f4511e;
+        }
+  
+        .linked {
+          background-color: #5093e2;
+        }
+  
+        .github {
+          background-color: #580a0a;
+        }
+  
+        .freecodecamp {
+          background-color: #002ead;
+        }
+      }
+    }
+  
+    .intro {
+      display: flex;
+      align-items: center;
+  
+      .diri {
+        text-align: center;
+  
+        h1 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+  
+        h3 {
+          font-size: 16px;
+          font-weight: 400;
+        }
+  
+        a {
+          color: #f5f5f5;
+          transition: all 300ms ease-in-out;
+          text-decoration: none;
+        }
+  
+        a:hover {
+          color: orange;
+        }
+      }
+  
+      .img {
+        text-align: center;
+  
+        img {
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          animation: border 2s linear infinite alternate;
+          transition: 300ms;
+        }
+  
+        img:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  
+    .univ {
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+  
+      .img {
+        text-align: center;
+        
+        img {
+          width: 300px;
+          height: 200px;
+          border-radius: 20px;
+          animation: border 2s linear infinite alternate;
+          transition: 300ms;
+        }
+  
+        img:hover {
+          transform: scale(1.2);
+        }
+      }
+  
+      .profile {
+        text-align: center;
+  
+        h1 {
+          margin-bottom: 20px;
+          font-size: 24px;
+        }
+  
+        h3 {
+          font-size: 16px;
+          font-weight: 400;
+        }
+  
+        a {
+          color: #f5f5f5;
+          text-decoration: none;
+          transition: 300ms ease-in-out;
+        }
+  
+        a:hover {
+          color: orange;
+        }
+      }
+    }
+  
+    .divider {
+      margin-top: 100px;
+  
+      h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+  
       a {
         color: #f5f5f5;
         text-decoration: none;
-        transition: 300ms ease-in-out;
+        transition: color 300ms ease-in-out;
       }
-
+  
       a:hover {
         color: orange;
       }
     }
-  }
-
-  .divider {
-    margin-top: 100px;
-
-    h1 {
-      font-size: 24px;
+  
+    .card {
+      padding: 0;
+      overflow: auto;
+      white-space: nowrap;
       text-align: center;
-    }
-
-    a {
-      color: #f5f5f5;
-      text-decoration: none;
-      transition: color 300ms ease-in-out;
-    }
-
-    a:hover {
-      color: orange;
-    }
-  }
-
-  .card {
-    padding: 0;
-    overflow: auto;
-    white-space: nowrap;
-    text-align: center;
-
-    .card-list {
-      display: inline-block;
-      align-content: center;
-
-      img {
-        width: 300px;
-        height: 250px;
-        border-radius: 15px;
-        animation: border 2s linear infinite alternate;
-      }
-
-      .card-info {
-        display: table; // gak tau kenapa berfungsi
-        width: 300px;
-        white-space: normal;
-        text-align: start;
-
-        h1 {
-          font-size: 18px;
-          text-align: center;
-          padding-bottom: 40px;
-          color: #f2f2f2;
-          font-weight: 400;
-
-          i {
-            color: orange;
+  
+      .card-list {
+        display: inline-block;
+        align-content: center;
+  
+        img {
+          width: 300px;
+          height: 250px;
+          border-radius: 15px;
+          animation: border 2s linear infinite alternate;
+        }
+  
+        .card-info {
+          display: table; // gak tau kenapa berfungsi
+          width: 300px;
+          white-space: normal;
+          text-align: start;
+  
+          h1 {
+            font-size: 18px;
+            text-align: center;
+            padding-bottom: 40px;
+            color: #f2f2f2;
+            font-weight: 400;
+  
+            i {
+              color: orange;
+            }
           }
-        }
-
-        p {
-          margin: 10px 0;
-          font-size: 14px;
-          color: #f5f5f5;
-        }
-
-        .rating {
-          .star {
-            color: #fe395c;
+  
+          p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #f5f5f5;
           }
-        }
-
-        .date {
-          span {
-            font-weight: 700;
+  
+          .rating {
+            .star {
+              color: #fe395c;
+            }
+          }
+  
+          .date {
+            span {
+              font-weight: 700;
+            }
           }
         }
       }
     }
-  }
-
-  .card::-webkit-scrollbar {
-    display: none;
-  }
-
-  .card-web {
-    overflow: auto;
-    white-space: nowrap;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    .card-list {
-      display: inline-block;
-      align-content: center;
-      padding: 0 15px;
-
-      img {
-        width: 300px;
-        height: 250px;
-        border-radius: 15px;
-        animation: border 2s linear infinite alternate;
-        z-index: 9999;
+  
+    .card::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .card-web {
+      overflow: auto;
+      white-space: nowrap;
+      text-align: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+  
+      .card-list {
+        display: inline-block;
+        align-content: center;
+        padding: 0 15px;
+  
+        img {
+          width: 300px;
+          height: 250px;
+          border-radius: 15px;
+          animation: border 2s linear infinite alternate;
+          z-index: 9999;
+          transition: 300ms;
+        }
+  
+        .card-info {
+          display: table; // gak tau kenapa berfungsi
+          width: 300px;
+          white-space: normal;
+          text-align: start;
+  
+          h1 {
+            font-size: 18px;
+            text-align: center;
+            padding-bottom: 40px;
+            color: #f2f2f2;
+            font-weight: 400;
+  
+            i {
+              color: orange;
+            }
+          }
+  
+          p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #f5f5f5;
+          }
+  
+          .rating {
+            .star {
+              color: #fe395c;
+            }
+          }
+  
+          .date {
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  
+    .card-list:nth-child(even) {
+      img:hover {
+        transform: scale(1.5) translateY(45px) translateX(-30px);
+      }
+    }
+  
+    .card-list:nth-child(odd) {
+      img:hover {
+        transform: scale(1.5) translateY(45px) translateX(30px);
+      }
+    }
+  
+    // .card-web::-webkit-scrollbar {
+    //   display: none;
+    // }
+    
+    .button {
+      display: flex;
+  
+      button {
+        cursor: pointer;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 10px;
+        background-color: $orange1;
+        font-weight: 700;
+        color: #f5f5f5;
+        text-shadow: .5px .5px 1px rgb(58, 58, 58);
         transition: 300ms;
       }
-
-      .card-info {
-        display: table; // gak tau kenapa berfungsi
-        width: 300px;
-        white-space: normal;
-        text-align: start;
-
-        h1 {
-          font-size: 18px;
-          text-align: center;
-          padding-bottom: 40px;
-          color: #f2f2f2;
-          font-weight: 400;
-
-          i {
-            color: orange;
-          }
-        }
-
-        p {
-          margin: 10px 0;
-          font-size: 14px;
-          color: #f5f5f5;
-        }
-
-        .rating {
-          .star {
-            color: #fe395c;
-          }
-        }
-
-        .date {
-          span {
-            font-weight: 700;
-          }
-        }
+  
+      button:hover {
+        background-color: #ff53035a;
+      }
+  
+      button:active {
+        background-color: #ff530334;
       }
     }
-  }
-
-  .card-list:nth-child(even) {
-    img:hover {
-      transform: scale(1.5) translateY(45px) translateX(-30px);
-    }
-  }
-
-  .card-list:nth-child(odd) {
-    img:hover {
-      transform: scale(1.5) translateY(45px) translateX(30px);
-    }
-  }
-
-  // .card-web::-webkit-scrollbar {
-  //   display: none;
-  // }
-
-  .card-web::-webkit-scrollbar {
-    width: 4px;
-    border: 1px solid #d5d5d5;
-    height: 10px;
-    border-radius: 30px;
-  }
   
-  .card-web::-webkit-scrollbar-track {
-    border-radius: 30px;
-    background: #eeeeee;
-  }
+    // .footer {
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   background-color: salmon;
   
-  .card-web::-webkit-scrollbar-thumb {
-    border-radius: 30px;
-    background: $orange1;
+    //   h5#footer-text {
+    //     color: $orange2;
+    //     font-weight: 600;
+    //     transition: 300ms;
+    //     font-size: 12px;
+    //     letter-spacing: 0.1em;
+    //   }
+    // }
   }
-  
-  .button {
-    display: flex;
-
-    button {
-      cursor: pointer;
-      padding: 10px 30px;
-      border: none;
-      border-radius: 10px;
-      background-color: $orange1;
-      font-weight: 700;
-      color: #f5f5f5;
-      text-shadow: .5px .5px 1px rgb(58, 58, 58);
-      transition: 300ms;
-    }
-
-    button:hover {
-      background-color: #ff53035a;
-    }
-
-    button:active {
-      background-color: #ff530334;
-    }
-  }
-
-  .welcome {
-    text-align: center;
-
-    h1 {
-      color: #f5f5f5;
-      animation: opacity 1s linear infinite alternate;
-
-      span {
-        color: $orange2;
-      }
-    }
-
-    input {
-      background-color: $orange1;
-      color: #f5f5f5;
-    }
-
-    input:hover {
-      padding-right: 250px;
-      padding-left: 250px;
-    }
-  }
-  
 }
 
 @media only screen and (max-width: 1200px) {

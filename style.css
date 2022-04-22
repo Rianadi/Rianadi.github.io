@@ -82,6 +82,23 @@ body .container {
   background-color: #171717;
 }
 
+body .container ::-webkit-scrollbar {
+  width: 6px;
+  border: 1px solid #d5d5d5;
+  height: 6px;
+  border-radius: 30px;
+}
+
+body .container ::-webkit-scrollbar-track {
+  border-radius: 30px;
+  background: #eeeeee;
+}
+
+body .container ::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #FF5403;
+}
+
 body .container input.btn {
   min-width: 170px;
   border: none;
@@ -113,8 +130,9 @@ body .container .sidebar {
   width: 20%;
   height: 100%;
   font-size: 0.65em;
-  background-image: -webkit-gradient(linear, left top, right top, from(#1a1b21), to(#070708));
-  background-image: linear-gradient(to right, #1a1b21, #070708);
+  background-image: url(./img/background.jpg);
+  background-size: cover;
+  border-right: 2px solid #FFCA03;
 }
 
 body .container .sidebar h1#sidebar-icon {
@@ -127,15 +145,6 @@ body .container .sidebar h1#sidebar-icon {
 
 body .container .sidebar h1#sidebar-icon:hover {
   color: #FF5403;
-}
-
-body .container .sidebar h5#footer-text {
-  color: #FFCA03;
-  font-weight: 600;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  font-size: 1em;
-  letter-spacing: 0.1em;
 }
 
 body .container .main {
@@ -157,7 +166,7 @@ body .container .main {
   top: 0;
   width: 80%;
   height: 100%;
-  background-image: url(./img/background.jpg);
+  background-image: url(./img/background-2.jpg);
   background-size: cover;
   overflow-y: auto;
   padding: 30px;
@@ -224,18 +233,18 @@ body .container .nav ul li a:hover::after {
   width: 100%;
 }
 
-body .contact-value {
+body .container .contact-value {
   position: relative;
 }
 
-body .contact-value h1 {
+body .container .contact-value h1 {
   margin-bottom: 20px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
 }
 
-body .contact-value h2 {
+body .container .contact-value h2 {
   margin-bottom: 20px;
   text-align: center;
   color: #f3bf99;
@@ -243,31 +252,32 @@ body .contact-value h2 {
   font-weight: 600;
 }
 
-body .contact-value h3 {
+body .container .contact-value h3 {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
 }
 
-body .contact-value a {
+body .container .contact-value a {
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
   text-decoration: none;
   color: #f5f5f5;
 }
 
-body .contact-value a.job {
+body .container .contact-value a.job {
   color: #f3bf99;
 }
 
-body .contact-value a:hover {
+body .container .contact-value a:hover {
   color: orange;
 }
 
-body .contact-value .btn input {
+body .container .contact-value .btn input {
+  background-color: pink;
   cursor: pointer;
   color: #f5f5f5;
-  min-width: 170px;
+  width: 170px;
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
@@ -281,29 +291,76 @@ body .contact-value .btn input {
   opacity: .8;
 }
 
-body .contact-value .btn input:hover {
+body .container .contact-value .btn input:hover {
   opacity: 1;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 
-body .contact-value .btn .email {
+body .container .contact-value .btn .email {
   background-color: #f4511e;
 }
 
-body .contact-value .btn .linked {
+body .container .contact-value .btn .linked {
   background-color: #5093e2;
 }
 
-body .contact-value .btn .github {
+body .container .contact-value .btn .github {
   background-color: #580a0a;
 }
 
-body .contact-value .btn .freecodecamp {
+body .container .contact-value .btn .freecodecamp {
   background-color: #002ead;
 }
 
-body .topnav {
+body .container .home-hover {
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+body .container .home-hover img.email-hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+  text-align: center;
+  padding: 10px 20px;
+  width: 170px;
+  height: 100px;
+}
+
+body .container .home-hover img.linked-hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+  text-align: center;
+  padding: 10px 20px;
+  width: 170px;
+  height: 100px;
+}
+
+body .container .home-hover img.github-hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+  text-align: center;
+  padding: 10px 20px;
+  width: 170px;
+  height: 100px;
+}
+
+body .container .home-hover img.freecodecamp-hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+  text-align: center;
+  padding: 10px 20px;
+  width: 170px;
+  height: 100px;
+}
+
+body .container .topnav {
   overflow: hidden;
   background-color: #161619;
   border-radius: 30px;
@@ -313,7 +370,7 @@ body .topnav {
           justify-content: space-between;
 }
 
-body .topnav a {
+body .container .topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -324,39 +381,39 @@ body .topnav a {
   border: 2px solid #161619;
 }
 
-body .topnav a:not(.active):hover {
+body .container .topnav a:not(.active):hover {
   -webkit-transition: border 300ms ease-in-out;
   transition: border 300ms ease-in-out;
   border-bottom: 2px solid orange;
 }
 
-body .topnav a.active {
+body .container .topnav a.active {
   font-weight: 700;
   color: orange;
   float: left;
 }
 
-body .topnav .innerclass {
+body .container .topnav .innerclass {
   float: right;
 }
 
-body .topnav .icon {
+body .container .topnav .icon {
   display: none;
   background-color: #161619;
 }
 
-body .contact {
+body .container .contact {
   margin: 190px 0;
 }
 
-body .contact h1 {
+body .container .contact h1 {
   margin-bottom: 20px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
 }
 
-body .contact h2 {
+body .container .contact h2 {
   margin-bottom: 20px;
   text-align: center;
   color: #f3bf99;
@@ -364,33 +421,33 @@ body .contact h2 {
   font-weight: 600;
 }
 
-body .contact h3 {
+body .container .contact h3 {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
 }
 
-body .contact a {
+body .container .contact a {
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
   text-decoration: none;
   color: #f5f5f5;
 }
 
-body .contact a.job {
+body .container .contact a.job {
   color: #f3bf99;
 }
 
-body .contact a:hover {
+body .container .contact a:hover {
   color: orange;
 }
 
-body .contact .btn {
+body .container .contact .btn {
   text-align: center;
   margin-top: 20px;
 }
 
-body .contact .btn input {
+body .container .contact .btn input {
   color: #f5f5f5;
   min-width: 170px;
   border: none;
@@ -406,27 +463,27 @@ body .contact .btn input {
   cursor: pointer;
 }
 
-body .contact .btn input:hover {
+body .container .contact .btn input:hover {
   opacity: 0.6;
 }
 
-body .contact .btn .email {
+body .container .contact .btn .email {
   background-color: #f4511e;
 }
 
-body .contact .btn .linked {
+body .container .contact .btn .linked {
   background-color: #5093e2;
 }
 
-body .contact .btn .github {
+body .container .contact .btn .github {
   background-color: #580a0a;
 }
 
-body .contact .btn .freecodecamp {
+body .container .contact .btn .freecodecamp {
   background-color: #002ead;
 }
 
-body .intro {
+body .container .intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,36 +492,36 @@ body .intro {
           align-items: center;
 }
 
-body .intro .diri {
+body .container .intro .diri {
   text-align: center;
 }
 
-body .intro .diri h1 {
+body .container .intro .diri h1 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-body .intro .diri h3 {
+body .container .intro .diri h3 {
   font-size: 16px;
   font-weight: 400;
 }
 
-body .intro .diri a {
+body .container .intro .diri a {
   color: #f5f5f5;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   text-decoration: none;
 }
 
-body .intro .diri a:hover {
+body .container .intro .diri a:hover {
   color: orange;
 }
 
-body .intro .img {
+body .container .intro .img {
   text-align: center;
 }
 
-body .intro .img img {
+body .container .intro .img img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -474,12 +531,12 @@ body .intro .img img {
   transition: 300ms;
 }
 
-body .intro .img img:hover {
+body .container .intro .img img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-body .univ {
+body .container .univ {
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,11 +546,11 @@ body .univ {
           align-items: center;
 }
 
-body .univ .img {
+body .container .univ .img {
   text-align: center;
 }
 
-body .univ .img img {
+body .container .univ .img img {
   width: 300px;
   height: 200px;
   border-radius: 20px;
@@ -503,70 +560,70 @@ body .univ .img img {
   transition: 300ms;
 }
 
-body .univ .img img:hover {
+body .container .univ .img img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-body .univ .profile {
+body .container .univ .profile {
   text-align: center;
 }
 
-body .univ .profile h1 {
+body .container .univ .profile h1 {
   margin-bottom: 20px;
   font-size: 24px;
 }
 
-body .univ .profile h3 {
+body .container .univ .profile h3 {
   font-size: 16px;
   font-weight: 400;
 }
 
-body .univ .profile a {
+body .container .univ .profile a {
   color: #f5f5f5;
   text-decoration: none;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
 }
 
-body .univ .profile a:hover {
+body .container .univ .profile a:hover {
   color: orange;
 }
 
-body .divider {
+body .container .divider {
   margin-top: 100px;
 }
 
-body .divider h1 {
+body .container .divider h1 {
   font-size: 24px;
   text-align: center;
 }
 
-body .divider a {
+body .container .divider a {
   color: #f5f5f5;
   text-decoration: none;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
 }
 
-body .divider a:hover {
+body .container .divider a:hover {
   color: orange;
 }
 
-body .card {
+body .container .card {
   padding: 0;
   overflow: auto;
   white-space: nowrap;
   text-align: center;
 }
 
-body .card .card-list {
+body .container .card .card-list {
   display: inline-block;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
-body .card .card-list img {
+body .container .card .card-list img {
   width: 300px;
   height: 250px;
   border-radius: 15px;
@@ -574,14 +631,14 @@ body .card .card-list img {
           animation: border 2s linear infinite alternate;
 }
 
-body .card .card-list .card-info {
+body .container .card .card-list .card-info {
   display: table;
   width: 300px;
   white-space: normal;
   text-align: start;
 }
 
-body .card .card-list .card-info h1 {
+body .container .card .card-list .card-info h1 {
   font-size: 18px;
   text-align: center;
   padding-bottom: 40px;
@@ -589,29 +646,29 @@ body .card .card-list .card-info h1 {
   font-weight: 400;
 }
 
-body .card .card-list .card-info h1 i {
+body .container .card .card-list .card-info h1 i {
   color: orange;
 }
 
-body .card .card-list .card-info p {
+body .container .card .card-list .card-info p {
   margin: 10px 0;
   font-size: 14px;
   color: #f5f5f5;
 }
 
-body .card .card-list .card-info .rating .star {
+body .container .card .card-list .card-info .rating .star {
   color: #fe395c;
 }
 
-body .card .card-list .card-info .date span {
+body .container .card .card-list .card-info .date span {
   font-weight: 700;
 }
 
-body .card::-webkit-scrollbar {
+body .container .card::-webkit-scrollbar {
   display: none;
 }
 
-body .card-web {
+body .container .card-web {
   overflow: auto;
   white-space: nowrap;
   text-align: center;
@@ -620,14 +677,14 @@ body .card-web {
   height: 100%;
 }
 
-body .card-web .card-list {
+body .container .card-web .card-list {
   display: inline-block;
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 0 15px;
 }
 
-body .card-web .card-list img {
+body .container .card-web .card-list img {
   width: 300px;
   height: 250px;
   border-radius: 15px;
@@ -638,14 +695,14 @@ body .card-web .card-list img {
   transition: 300ms;
 }
 
-body .card-web .card-list .card-info {
+body .container .card-web .card-list .card-info {
   display: table;
   width: 300px;
   white-space: normal;
   text-align: start;
 }
 
-body .card-web .card-list .card-info h1 {
+body .container .card-web .card-list .card-info h1 {
   font-size: 18px;
   text-align: center;
   padding-bottom: 40px;
@@ -653,58 +710,41 @@ body .card-web .card-list .card-info h1 {
   font-weight: 400;
 }
 
-body .card-web .card-list .card-info h1 i {
+body .container .card-web .card-list .card-info h1 i {
   color: orange;
 }
 
-body .card-web .card-list .card-info p {
+body .container .card-web .card-list .card-info p {
   margin: 10px 0;
   font-size: 14px;
   color: #f5f5f5;
 }
 
-body .card-web .card-list .card-info .rating .star {
+body .container .card-web .card-list .card-info .rating .star {
   color: #fe395c;
 }
 
-body .card-web .card-list .card-info .date span {
+body .container .card-web .card-list .card-info .date span {
   font-weight: 700;
 }
 
-body .card-list:nth-child(even) img:hover {
+body .container .card-list:nth-child(even) img:hover {
   -webkit-transform: scale(1.5) translateY(45px) translateX(-30px);
           transform: scale(1.5) translateY(45px) translateX(-30px);
 }
 
-body .card-list:nth-child(odd) img:hover {
+body .container .card-list:nth-child(odd) img:hover {
   -webkit-transform: scale(1.5) translateY(45px) translateX(30px);
           transform: scale(1.5) translateY(45px) translateX(30px);
 }
 
-body .card-web::-webkit-scrollbar {
-  width: 4px;
-  border: 1px solid #d5d5d5;
-  height: 10px;
-  border-radius: 30px;
-}
-
-body .card-web::-webkit-scrollbar-track {
-  border-radius: 30px;
-  background: #eeeeee;
-}
-
-body .card-web::-webkit-scrollbar-thumb {
-  border-radius: 30px;
-  background: #FF5403;
-}
-
-body .button {
+body .container .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .button button {
+body .container .button button {
   cursor: pointer;
   padding: 10px 30px;
   border: none;
@@ -717,36 +757,12 @@ body .button button {
   transition: 300ms;
 }
 
-body .button button:hover {
+body .container .button button:hover {
   background-color: #ff53035a;
 }
 
-body .button button:active {
+body .container .button button:active {
   background-color: #ff530334;
-}
-
-body .welcome {
-  text-align: center;
-}
-
-body .welcome h1 {
-  color: #f5f5f5;
-  -webkit-animation: opacity 1s linear infinite alternate;
-          animation: opacity 1s linear infinite alternate;
-}
-
-body .welcome h1 span {
-  color: #FFCA03;
-}
-
-body .welcome input {
-  background-color: #FF5403;
-  color: #f5f5f5;
-}
-
-body .welcome input:hover {
-  padding-right: 250px;
-  padding-left: 250px;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -58,6 +58,62 @@ $( document ).ready(function() {
     freecodecamp();
   });
 
+  $(document).on('mouseenter', 'input[id^="email"]', function() {
+    $('.email-hover').css({
+      'opacity': 1,
+      'transform': 'translateY(40px)'
+    })
+  });
+
+  $(document).on('mouseleave', 'input[id^="email"]', function() {
+    $('.email-hover').css({
+      'opacity': 0,
+      'transform': 'translateY(-40px)'
+    })
+  });
+
+  $(document).on('mouseenter', 'input[id^="linked"]', function() {
+    $('.linked-hover').css({
+      'opacity': 1,
+      'transform': 'translateY(40px)'
+    })
+  });
+
+  $(document).on('mouseleave', 'input[id^="linked"]', function() {
+    $('.linked-hover').css({
+      'opacity': 0,
+      'transform': 'translateY(-40px)'
+    })
+  });
+
+  $(document).on('mouseenter', 'input[id^="github"]', function() {
+    $('.github-hover').css({
+      'opacity': 1,
+      'transform': 'translateY(40px)'
+    })
+  });
+
+  $(document).on('mouseleave', 'input[id^="github"]', function() {
+    $('.github-hover').css({
+      'opacity': 0,
+      'transform': 'translateY(-40px)'
+    })
+  });
+
+  $(document).on('mouseenter', 'input[id^="freecodecamp"]', function() {
+    $('.freecodecamp-hover').css({
+      'opacity': 1,
+      'transform': 'translateY(40px)'
+    })
+  });
+
+  $(document).on('mouseleave', 'input[id^="freecodecamp"]', function() {
+    $('.freecodecamp-hover').css({
+      'opacity': 0,
+      'transform': 'translateY(-40px)'
+    })
+  });
+
   $(document).on('click', 'button[id^="cerLeft"]', function() {
     const numChange = 200;
     let numLeft = $(".card-web").scrollLeft() - numChange;
@@ -156,6 +212,25 @@ $( document ).ready(function() {
                               <input type="button" formtarget="_blank" class='freecodecamp' value="FreeCodeCamp" id="freecodecamp">
                             </div>
                           </div>
+
+                          <div class="row home-hover">
+                            <div class="col-3 col-s-12">
+                              <img class="email-hover" src="./img/email.png" alt="">
+                            </div>
+                            <div class="col-3 col-s-12">
+                              <img class="linked-hover" src="./img/linkedin.png" alt="">
+                            </div>
+                            <div class="col-3 col-s-12">
+                              <img class="github-hover" src="./img/github.png" alt="">
+                            </div>
+                            <div class="col-3 col-s-12">
+                              <img class="freecodecamp-hover" src="./img/freecodecamp.png" alt="">
+                            </div>
+                          </div>
+
+                          <!-- <div class="row footer">
+                            <h5 id="footer-text">2022 ● FIKRI DEAN RADITYO</h5>
+                          </div> -->
                         </main>`);
       } else if ($(this).hasClass('personal')) {
         $('.main').html(`<div data-aos="zoom-in">
