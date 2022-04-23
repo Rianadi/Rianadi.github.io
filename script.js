@@ -38,7 +38,7 @@ $( document ).ready(function() {
     location.href = "https://www.freecodecamp.org/fikridean";
   }
 
-  $(document).on('click', 'input[id^="icon"]', function() {
+  $(document).on('click', 'a[id^="icon"]', function() {
     myFunction();
   });
 

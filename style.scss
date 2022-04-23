@@ -62,6 +62,7 @@ $orange2: #FFCA03;
 body {
   font-family: "Inter", sans-serif;
   position: relative;
+  background-color:rgb(23, 23, 23);
 
   h1, h2, h3, h4, h5, h6, p, li, a, input {
     text-shadow: 1px 1px 1px rgb(23, 23, 23);
@@ -328,10 +329,9 @@ body {
     
     .topnav {
       overflow: hidden;
-      background-color: #161619;
       border-radius: 30px;
-      padding: 0 30px;
       justify-content: space-between;
+      background-color: #111215;
   
       a {
         float: left;
@@ -361,7 +361,6 @@ body {
   
       .icon {
         display: none;
-        background-color: #161619;
       }
     }
   
@@ -445,8 +444,8 @@ body {
     }
   
     .intro {
-      display: flex;
       align-items: center;
+      display: flex;
   
       .diri {
         text-align: center;
@@ -491,8 +490,8 @@ body {
   
     .univ {
       margin-top: 100px;
-      display: flex;
       align-items: center;
+      display: flex;
   
       .img {
         text-align: center;
@@ -775,200 +774,203 @@ body {
   }
 
   body {
-    animation: background 4s linear infinite alternate;
-    
-    .topnav {
-      padding: 0;
-      margin: 15px;
+    padding: 10px;
+    animation: background 5s linear infinite alternate;
 
-      a {
-        font-size: 18px;
-        border: none;
-      }
+    .container {
+      animation: background 5s linear infinite alternate;
 
-      a:hover {
-        background-color: orange;
-        color: #1a1b21;
-        border: none;
-      }
-
-      a:first-child:hover {
-        color: #1a1b21;
-      }
-
-      a:not(.active) {
-        display: none;
-      }
-
-      a.icon {
-        float: right;
-        display: block;
-      }
-
-      .innerclass {
-        float: left;
-      }
-    }
-
-    .topnav.responsive {
-      position: relative;
-
-      a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-
-      .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-    }
-
-    .contact {
-      margin: 100px 0;
-
-      h1 {
-        font-size: 20px;
-      }
-
-      h2 {
-        font-size: 18px;
-      }
-
-      h3 {
-        font-size: 16px;
-      }
-
-      .btn {
-        button {
-          font-size: 14px;
-        }
-      }
-    }
-
-    .intro {
-      display: block;
-      margin-top: 0;
-      text-align: center;
-
-      .diri {
-        align-self: center;
-
-        h1 {
-          font-size: 20px;
-          color: #f5f5f5;
-        }
-
-        h3 {
-          margin-top: 10px;
-          font-size: 16px;
-          color: #f5f5f5;
-        }
-      }
-
-      .img {
-        text-align: center;
-
-        img {
-          width: 150px;
-          height: 150px;
-          border-radius: 50%;
-        }
-      }
-    }
-
-    .univ {
-      margin-top: 0;
-      display: block;
-      align-items: center;
-      text-align: center;
-
-      .img {
-        img {
-          width: 200px;
-          height: 120px;
-          border-radius: 20px;
-          animation: border 2s linear infinite alternate;
-        }
-      }
-
-      .profile {
-        text-align: center;
-
-        h1 {
-          margin-bottom: 20px;
-          font-size: 20px;
-        }
-
-        h3 {
-          font-size: 16px;
-          font-weight: 400;
-        }
-
-        a {
-          color: #f5f5f5;
-          text-decoration: none;
-          transition: 300ms ease-in-out;
-        }
-
-        a:hover {
-          color: orange;
-        }
-      }
-    }
-
-    .divider {
-      h1 {
-        font-size: 20px;
-      }
-    }
-
-    .card {
-      padding: 0;
-      overflow: auto;
-      white-space: nowrap;
-      text-align: center;
-      
-      .card-list {
-        display: inline-block;
-        align-content: center;
+      .topnav {
         padding: 0;
-        margin: 0 15px;
-
-        img {
-          width: 200px;
-          height: 150px;
+  
+        a {
+          font-size: 18px;
+          border: none;
         }
-
-        .card-info {
-          display: table; // gak tau kenapa berfungsi
-          width: 200px;
-          white-space: normal;
-          text-align: start;
-
-          p {
-            margin: 10px 0;
+  
+        a:hover {
+          background-color: orange;
+          color: #1a1b21;
+          border: none;
+        }
+  
+        a:first-child:hover {
+          color: #1a1b21;
+        }
+  
+        a:not(.active) {
+          display: none;
+        }
+  
+        a.icon {
+          float: right;
+          display: block;
+        }
+  
+        .innerclass {
+          float: left;
+        }
+      }
+  
+      .topnav.responsive {
+        position: relative;
+  
+        a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+  
+        a.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+  
+      .contact {
+        margin: 100px 0;
+  
+        h1 {
+          font-size: 20px;
+        }
+  
+        h2 {
+          font-size: 18px;
+        }
+  
+        h3 {
+          font-size: 16px;
+        }
+  
+        .btn {
+          button {
             font-size: 14px;
+          }
+        }
+      }
+  
+      .intro {
+        display: block;
+        margin-top: 0;
+        text-align: center;
+  
+        .diri {
+          align-self: center;
+  
+          h1 {
+            font-size: 20px;
             color: #f5f5f5;
           }
-
-          .rating {
-            .star {
-              color: #fe395c;
-            }
+  
+          h3 {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #f5f5f5;
           }
-
-          .date {
-            span {
-              font-weight: 700;
+        }
+  
+        .img {
+          text-align: center;
+  
+          img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+          }
+        }
+      }
+  
+      .univ {
+        margin-top: 0;
+        display: block;
+        align-items: center;
+        text-align: center;
+  
+        .img {
+          img {
+            width: 200px;
+            height: 120px;
+            border-radius: 20px;
+            animation: border 2s linear infinite alternate;
+          }
+        }
+  
+        .profile {
+          text-align: center;
+  
+          h1 {
+            margin-bottom: 20px;
+            font-size: 20px;
+          }
+  
+          h3 {
+            font-size: 16px;
+            font-weight: 400;
+          }
+  
+          a {
+            color: #f5f5f5;
+            text-decoration: none;
+            transition: 300ms ease-in-out;
+          }
+  
+          a:hover {
+            color: orange;
+          }
+        }
+      }
+  
+      .divider {
+        h1 {
+          font-size: 20px;
+        }
+      }
+  
+      .card {
+        padding: 0;
+        overflow: auto;
+        white-space: nowrap;
+        text-align: center;
+        
+        .card-list {
+          display: inline-block;
+          align-content: center;
+          padding: 0;
+          margin: 0 15px;
+  
+          img {
+            width: 200px;
+            height: 150px;
+          }
+  
+          .card-info {
+            display: table; // gak tau kenapa berfungsi
+            width: 200px;
+            white-space: normal;
+            text-align: start;
+  
+            p {
+              margin: 10px 0;
+              font-size: 14px;
+              color: #f5f5f5;
+            }
+  
+            .rating {
+              .star {
+                color: #fe395c;
+              }
+            }
+  
+            .date {
+              span {
+                font-weight: 700;
+              }
             }
           }
         }
       }
     }
-
   }
 }
 
