@@ -157,7 +157,7 @@ $( document ).ready(function() {
     });
     setTimeout(() => {
       $('#close-icon').css({
-        'text-align': 'right',
+        'text-align': 'left',
         'transition': '2s',
         'opacity': '1'
       });
@@ -208,25 +208,33 @@ $( document ).ready(function() {
   });
 
   $(document).on('click', 'h1[id^="contact-icon"]', function(){
+    $('.active').removeClass('active');
+    $('.active-icon').removeClass('active-icon');
     contactMain();
   });
 
   $(document).on('click', 'h1[id^="personal-icon"]', function(){
+    $('.active').removeClass('active');
+    $('.active-icon').removeClass('active-icon');
     personalMain();
   });
 
   $(document).on('click', 'h1[id^="certificate-icon"]', function(){
+    $('.active').removeClass('active');
+    $('.active-icon').removeClass('active-icon');
     certificateMain();
   });
 
   $(document).on('click', 'h1[id^="project-icon"]', function(){
+    $('.active').removeClass('active');
+    $('.active-icon').removeClass('active-icon');
     projectMain();
   });
 
   $('.nav ul li a').on({
     click: function() {
       $('nav ul .active').removeClass('active');
-      $(this).addClass('active');
+      $('.active-icon').removeClass('active-icon');
 
       if ($(this).hasClass('contact-value')) {
         contactMain();
@@ -242,6 +250,8 @@ $( document ).ready(function() {
 });
 
 const contactMain = function() {
+  $('.contact-value').addClass('active');
+  $('#contact-icon').addClass('active-icon');
   $('.main').html(`<main class='contact-value' id="contact" data-aos="zoom-in">
                       <div class="row">
                         <div class='col-12 col-s-12'>
@@ -287,6 +297,8 @@ const contactMain = function() {
 };
 
 const personalMain = function() {
+  $('.personal').addClass('active');
+  $('#personal-icon').addClass('active-icon');
   $('.main').html(`<div data-aos="zoom-in">
                       <div class="row intro" id="intro">
 
@@ -320,6 +332,8 @@ const personalMain = function() {
 }
 
 const certificateMain = function() {
+  $('.certificate').addClass('active');
+  $('#certificate-icon').addClass('active-icon');
   $('.main').html(`
                     <div class="row button btn-certificate" data-aos="fade-up">
                       <div class="col-6 col-s-12">
@@ -373,6 +387,8 @@ const certificateMain = function() {
 }
 
 const projectMain = function() {
+  $('.project').addClass('active');
+  $('#project-icon').addClass('active-icon');
   $('.main').html(`<div class="row button btn-project" data-aos="fade-up">
                       <div class="col-6 col-s-12">
                         <button class="button" id="proLeft">

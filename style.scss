@@ -1,6 +1,10 @@
 $orange1 : #FF5403;
 $orange2: #FFCA03;
 
+html, body {
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -70,6 +74,7 @@ body {
 
   .container {
     background-color:rgb(23, 23, 23);
+    position: relative;
 
     ::-webkit-scrollbar {
       width: 6px;
@@ -119,21 +124,24 @@ body {
       border-right: 2px solid $orange2;
 
       h1.sidebar-icon {
-        text-align: right;
+        text-align: left;
         font-size: 30px;
         color: $orange2;
         transition: 300ms;
         
         &:hover {
-          color: $orange1;
+          color: #bb420a;
         }
+      }
+
+      h1.active-icon {
+        color: $orange1;
       }
 
       #contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon {
         text-align: center;
         opacity: 0;
         display: none;
-        // background-color: salmon;
       }
     }
   
@@ -176,7 +184,7 @@ body {
             display: block;
             transition: all ease-out 300ms;
             white-space: nowrap;
-            text-align: right;
+            text-align: left;
     
             &.active {
               color: white;
@@ -198,7 +206,7 @@ body {
               position: absolute;
               width: 50%;
               height: 0.2em;
-              right: 0;
+              left: 0;
               bottom: 0;
               background-image: linear-gradient(to right, $orange1, $orange2);
               transition: 300ms;
@@ -693,10 +701,6 @@ body {
         transform: scale(1.5) translateY(45px) translateX(30px);
       }
     }
-  
-    // .card-web::-webkit-scrollbar {
-    //   display: none;
-    // }
     
     .button {
       display: flex;
@@ -721,22 +725,33 @@ body {
         background-color: #ff530334;
       }
     }
-  
-    // .footer {
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 0;
-    //   right: 0;
-    //   background-color: salmon;
-  
-    //   h5#footer-text {
-    //     color: $orange2;
-    //     font-weight: 600;
-    //     transition: 300ms;
-    //     font-size: 12px;
-    //     letter-spacing: 0.1em;
-    //   }
-    // }
+
+    .loading {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-color: #0c0c0e;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .loader {
+        text-align: center;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+
+      #text, #dot1, #dot2, #dot3 {
+        padding: 30px;
+      }
+    }
   }
 }
 
@@ -1010,4 +1025,9 @@ body {
   to {
     opacity: 0;
   }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
