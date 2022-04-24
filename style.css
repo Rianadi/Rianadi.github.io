@@ -136,16 +136,22 @@ body .container .sidebar {
   border-right: 2px solid #FFCA03;
 }
 
-body .container .sidebar h1#sidebar-icon {
-  text-align: left;
+body .container .sidebar h1.sidebar-icon {
+  text-align: right;
   font-size: 30px;
   color: #FFCA03;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
 
-body .container .sidebar h1#sidebar-icon:hover {
+body .container .sidebar h1.sidebar-icon:hover {
   color: #FF5403;
+}
+
+body .container .sidebar #contact-icon, body .container .sidebar #personal-icon, body .container .sidebar #certificate-icon, body .container .sidebar #project-icon, body .container .sidebar #open-icon {
+  text-align: center;
+  opacity: 0;
+  display: none;
 }
 
 body .container .main {
@@ -199,6 +205,8 @@ body .container .nav ul li a {
   display: block;
   -webkit-transition: all ease-out 300ms;
   transition: all ease-out 300ms;
+  white-space: nowrap;
+  text-align: right;
 }
 
 body .container .nav ul li a.active {
@@ -222,7 +230,7 @@ body .container .nav ul li a::after {
   position: absolute;
   width: 50%;
   height: 0.2em;
-  left: 0;
+  right: 0;
   bottom: 0;
   background-image: -webkit-gradient(linear, left top, right top, from(#FF5403), to(#FFCA03));
   background-image: linear-gradient(to right, #FF5403, #FFCA03);
@@ -806,12 +814,10 @@ body .container .button button:active {
   }
   body {
     padding: 10px;
-    -webkit-animation: background 5s linear infinite alternate;
-            animation: background 5s linear infinite alternate;
+    background-color: #0c0c0e;
   }
   body .container {
-    -webkit-animation: background 5s linear infinite alternate;
-            animation: background 5s linear infinite alternate;
+    background-color: #0c0c0e;
   }
   body .container .topnav {
     padding: 0;

@@ -114,20 +114,26 @@ body {
       width: 20%;
       height: 100%;
       font-size: 0.65em;
-      // background-image: linear-gradient(to right, #1a1b21, #070708);
       background-image: url(./img/background.jpg);
       background-size: cover;
       border-right: 2px solid $orange2;
 
-      h1#sidebar-icon {
-        text-align: left;
+      h1.sidebar-icon {
+        text-align: right;
         font-size: 30px;
         color: $orange2;
         transition: 300ms;
-
+        
         &:hover {
           color: $orange1;
         }
+      }
+
+      #contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon {
+        text-align: center;
+        opacity: 0;
+        display: none;
+        // background-color: salmon;
       }
     }
   
@@ -169,6 +175,8 @@ body {
             color: rgba(#FFF, 0.35);
             display: block;
             transition: all ease-out 300ms;
+            white-space: nowrap;
+            text-align: right;
     
             &.active {
               color: white;
@@ -190,7 +198,7 @@ body {
               position: absolute;
               width: 50%;
               height: 0.2em;
-              left: 0;
+              right: 0;
               bottom: 0;
               background-image: linear-gradient(to right, $orange1, $orange2);
               transition: 300ms;
@@ -775,10 +783,10 @@ body {
 
   body {
     padding: 10px;
-    animation: background 5s linear infinite alternate;
+    background-color: #0c0c0e;
 
     .container {
-      animation: background 5s linear infinite alternate;
+      background-color: #0c0c0e;
 
       .topnav {
         padding: 0;

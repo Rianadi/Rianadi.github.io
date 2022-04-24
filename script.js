@@ -146,42 +146,81 @@ $( document ).ready(function() {
     $(this).css("color", "#FFCA03");
   });
 
-  $(document).on('click', 'h1[id^="sidebar-icon"]', function(){
-    if ($(this).hasClass('hide')) {
-      $(this).removeClass('hide');
-      $('.sidebar').css({
-        'width': '20%',
-        'transition': '300ms'
+  $(document).on('click', 'h1[id^="open-icon"]', function(){
+    $('.sidebar').css({
+      'width': '20%',
+      'transition': '2s'
+    });
+    $('.main').css({
+      'width': '80%',
+      'transition': '2s'
+    });
+    setTimeout(() => {
+      $('#close-icon').css({
+        'text-align': 'right',
+        'transition': '2s',
+        'opacity': '1'
       });
-      $('.main').css({
-        'width': '80%',
-        'transition': '300ms'
-      });
-      $(this).css({
-        'text-align': 'left',
-        'transition': '300ms'
-      });
-      $('.nav-link').show();
-      $('#footer-text').show();
-      $(this).html(`<i class="fa-solid fa-circle-xmark"></i>`);
-    } else {
-      $(this).addClass('hide');
-      $('.sidebar').css({
-        'width': '5%',
-        'transition': '300ms'
-      });
-      $('.main').css({
-        'width': '95%',
-        'transition': '300ms'
+
+      $('.nav-link').css({
+        'opacity': '1',
+        'transition': '3s'
       })
-      $(this).css({
-        'text-align': 'center',
-        'transition': '300ms'
-      });
-      $('.nav-link').hide();
-      $('#footer-text').hide();
-      $(this).html(`<i class="fa fa-bars"></i>`);
-    }
+    }, 1000);
+    
+    $('.nav-link').show();
+    $('#open-icon').hide();
+    $('#close-icon').show();
+    $('#contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon').css({
+      'opacity': '0'
+    });
+    $('#contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon').hide();
+  });
+
+  $(document).on('click', 'h1[id^="close-icon"]', function(){
+    $('.sidebar').css({
+      'width': '5%',
+      'transition': '2s'
+    });
+    $('.main').css({
+      'width': '95%',
+      'transition': '2s'
+    });
+    $('.nav-link').css({
+      'opacity': '0'
+    })
+    $('.nav-link').hide();
+    $('#close-icon').css({
+      'opacity': '0'
+    });
+    $('#burger-icon, #contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon').css({
+      'padding': '15px 0',
+      'margin': '15px 0',
+      'transition': '2s'
+    })
+    setTimeout(() => {
+      $('#burger-icon, #contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon').css({
+        'opacity': '1',
+      })
+    }, 1000);
+    $('#close-icon').hide();
+    $('#contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon').show();
+  });
+
+  $(document).on('click', 'h1[id^="contact-icon"]', function(){
+    contactMain();
+  });
+
+  $(document).on('click', 'h1[id^="personal-icon"]', function(){
+    personalMain();
+  });
+
+  $(document).on('click', 'h1[id^="certificate-icon"]', function(){
+    certificateMain();
+  });
+
+  $(document).on('click', 'h1[id^="project-icon"]', function(){
+    projectMain();
   });
 
   $('.nav ul li a').on({
@@ -190,187 +229,202 @@ $( document ).ready(function() {
       $(this).addClass('active');
 
       if ($(this).hasClass('contact-value')) {
-        $('.main').html(`<main class='contact-value' id="contact" data-aos="zoom-in">
-                          <div class="row">
-                            <div class='col-12 col-s-12'>
-                              <h1><a href="javascript:;">Fikri Dean Radityo</a></h1>
-                              <h2><a href="javascript:;" class="job">Web Developer</a></h2>
-                              <h3><a href="javascript:;">rianadi.github.io</a></h3>
-                            </div>
-                          </div>
-                          <div class="row btn">
-                            <div class="col-3 col-s-12">
-                              <input type="button" formtarget="_blank" class='email' value="Email" id="email">
-                            </div>
-                            <div class="col-3 col-s-12">
-                              <input type="button" formtarget="_blank" class='linked' value="LinkedIn" id="linked">
-                            </div>
-                            <div class="col-3 col-s-12">
-                              <input type="button" formtarget="_blank" class='github' value="Github" id="github">
-                            </div>
-                            <div class="col-3 col-s-12">
-                              <input type="button" formtarget="_blank" class='freecodecamp' value="FreeCodeCamp" id="freecodecamp">
-                            </div>
-                          </div>
-
-                          <div class="row home-hover">
-                            <div class="col-3 col-s-12">
-                              <img class="email-hover" src="./img/email.png" alt="">
-                            </div>
-                            <div class="col-3 col-s-12">
-                              <img class="linked-hover" src="./img/linkedin.png" alt="">
-                            </div>
-                            <div class="col-3 col-s-12">
-                              <img class="github-hover" src="./img/github.png" alt="">
-                            </div>
-                            <div class="col-3 col-s-12">
-                              <img class="freecodecamp-hover" src="./img/freecodecamp.png" alt="">
-                            </div>
-                          </div>
-
-                          <!-- <div class="row footer">
-                            <h5 id="footer-text">2022 ● FIKRI DEAN RADITYO</h5>
-                          </div> -->
-                        </main>`);
+        contactMain();
       } else if ($(this).hasClass('personal')) {
-        $('.main').html(`<div data-aos="zoom-in">
-                          <div class="row intro" id="intro">
-
-                          <div class="col-6 col-s-12 img">
-                            <img src="img/formal1000.png" alt="FIKRI DEAN RADITYO">
-                          </div>
-                        
-                          <div class="col-6 col-s-12 diri">
-                            <h1><a href="javascript:;">Fikri Dean Radityo</a></h1>
-                            <h3><a href="javascript:;">18 December 2002</a></h3>
-                          </div>
-                        </div>
-
-                        <div class="row univ">
-                          <div class="col-6 col-s-12">
-                            <div class="img">
-                              <a href="https://www.uinjkt.ac.id/" target="_blank" title="click to go to uin official website">
-                                <img src="img/uin.png" alt="Universitas Islam Negeri Syarif Hidayatullah Jakarta">
-                              </a>
-                            </div>
-                          </div>
-
-                          <div class="col-6 col-s-12">
-                            <div class="profile">
-                              <h1><a href="https://www.uinjkt.ac.id/" target="_blank" title="click to go to uin official website">Universitas Islam Negeri Syarif Hidayatullah Jakarta</a></h1>
-                              <h3><a href="javascript:;">College Student</a></h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>`);
+        personalMain();
       } else if ($(this).hasClass('certificate')) {
-          $('.main').html(`
-                          <div class="row button btn-certificate" data-aos="fade-up">
-                            <div class="col-6 col-s-12">
-                              <button class="button" id="cerLeft">
-                                <i class="fa-solid fa-arrow-left"></i> Left 
-                              </button>
-                            </div>
-
-                            <div class="col-6 col-s-12">
-                              <button class="button" id="cerRight">
-                                Right <i class="fa-solid fa-arrow-right"></i>
-                              </button>
-                            </div>
-                          </div>
-                          <div class="row card-web certificate-web" id="certificate-web" data-aos="zoom-in">
-                            <div class="col-12 col-s-12">
-                              <div class="card-list first">
-                                <a href="https://www.freecodecamp.org/certification/fikridean/responsive-web-design" target="_blank"><img src='./img/certificate responsive web.png' alt="Responsive Web Design" /></a>
-                                <div class="card-info">
-                                  <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
-                                  <p class="info">Responsive Web Design</p>
-                                  <p class="date"><span>Issued</span> • November 2nd, 2021</p>
-                                </div>
-                              </div>
-                              <div class="card-list">
-                                <img src='./img/JF certificate.png' alt="Java Fundamentals" />
-                                <div class="card-info">
-                                  <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
-                                  <p class="info">Java Fundamentals</p>
-                                  <p class="date"><span>Issued</span> • December 26th, 2021</p>
-                                </div>
-                              </div>
-                              <div class="card-list">
-                                <a href="https://www.freecodecamp.org/certification/fikridean/javascript-algorithms-and-data-structures" target="_blank"><img src='./img/JavaScript Algorithms and Data Structures Certificate.png' alt="JavaScript Algorithms and Data Structures" /></a>
-                                <div class="card-info">
-                                  <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
-                                  <p class="info">JavaScript Algorithms and Data Structures</p>
-                                  <p class="date"><span>Issued</span> • January 18th, 2022</p>
-                                </div>
-                              </div>
-                              <div class="card-list">
-                                <img src='./img/JFo Certificate.png' alt="JavaScript Algorithms and Data Structures" />
-                                <div class="card-info">
-                                  <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
-                                  <p class="info">Java Foundations</p>
-                                  <p class="date"><span>Issued</span> • April 6th, 2022</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>`)
-      }
-      else if ($(this).hasClass('project')) {
-        $('.main').html(`<div class="row button btn-project" data-aos="fade-up">
-                          <div class="col-6 col-s-12">
-                            <button class="button" id="proLeft">
-                              <i class="fa-solid fa-arrow-left"></i> Left 
-                            </button>
-                          </div>
-
-                          <div class="col-6 col-s-12">
-                            <button class="button" id="proRight">
-                              Right <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                          </div>
-                        </div>
-        
-                        <div class="row card-web project-web" id="project-web" data-aos="zoom-in">
-                          <div class="col-12 col-s-12">
-                              <div class="card-list">
-                                <a href="https://rianadi.github.io/tribute/" target="_blank"><img src='./img/tiger_woods.png' alt="card" /></a>
-                                <div class="card-info">
-                                  <p class="rating"><span><i class="fa-solid fa-star star"></i> Tribute Page</span></p>
-                                </div>
-                              </div>
-                              <div class="card-list">
-                                <a href="https://rianadi.github.io/survey-form/" target="_blank"><img src='./img/survey.png' alt="card" /></a>
-                                <div class="card-info">
-                                  <p class="rating"><span><i class="fa-solid fa-star star"></i> Survey Page</span></p>
-                                </div>
-                              </div>
-                              <div class="card-list">
-                                <a href="https://rianadi.github.io/js-doc/" target="_blank"><img src='./img/js_doc.png' alt="card" /></a>
-                                <div class="card-info">
-                                  <p class="rating"><span><i class="fa-solid fa-star star"></i> JS Documentation Page</span></p>
-                                </div>
-                              </div>
-                              <div class="card-list">
-                                <a href="https://dribbble.com/shots/12230630-Vacansy-Landing-Page" target="_blank"><img src='./img/vacansy_remake.png' alt="card" /></a>
-                                <div class="card-info">
-                                  <p class="rating"><span><i class="fa-solid fa-star star"></i> Vacansy Remake</span></p>
-                                </div>
-                              </div>
-                              <div class="card-list">
-                                <a href="https://dribbble.com/shots/15607887-StepWorld" target="_blank"><img src='./img/step_world.png' alt="card" /></a>
-                                <div class="card-info">
-                                  <p class="rating"><span><i class="fa-solid fa-star star"></i> Step World</span></p>
-                                </div>
-                              </div>
-                              <div class="card-list">
-                                <img src='./img/step_world2.png' alt="card" />
-                                <div class="card-info">
-                                  <p class="rating"><span><i class="fa-solid fa-star star"></i> Step World v2</span></p>
-                                </div>
-                              </div>
-                          </div>
-                        </div>`)
+        certificateMain();
+      } else if ($(this).hasClass('project')) {
+        projectMain();
       }
     }
   });
 });
+
+const contactMain = function() {
+  $('.main').html(`<main class='contact-value' id="contact" data-aos="zoom-in">
+                      <div class="row">
+                        <div class='col-12 col-s-12'>
+                          <h1><a href="javascript:;">Fikri Dean Radityo</a></h1>
+                          <h2><a href="javascript:;" class="job">Web Developer</a></h2>
+                          <h3><a href="javascript:;">rianadi.github.io</a></h3>
+                        </div>
+                      </div>
+                      <div class="row btn">
+                        <div class="col-3 col-s-12">
+                          <input type="button" formtarget="_blank" class='email' value="Email" id="email">
+                        </div>
+                        <div class="col-3 col-s-12">
+                          <input type="button" formtarget="_blank" class='linked' value="LinkedIn" id="linked">
+                        </div>
+                        <div class="col-3 col-s-12">
+                          <input type="button" formtarget="_blank" class='github' value="Github" id="github">
+                        </div>
+                        <div class="col-3 col-s-12">
+                          <input type="button" formtarget="_blank" class='freecodecamp' value="FreeCodeCamp" id="freecodecamp">
+                        </div>
+                      </div>
+
+                      <div class="row home-hover">
+                        <div class="col-3 col-s-12">
+                          <img class="email-hover" src="./img/email.png" alt="">
+                        </div>
+                        <div class="col-3 col-s-12">
+                          <img class="linked-hover" src="./img/linkedin.png" alt="">
+                        </div>
+                        <div class="col-3 col-s-12">
+                          <img class="github-hover" src="./img/github.png" alt="">
+                        </div>
+                        <div class="col-3 col-s-12">
+                          <img class="freecodecamp-hover" src="./img/freecodecamp.png" alt="">
+                        </div>
+                      </div>
+
+                      <!-- <div class="row footer">
+                        <h5 id="footer-text">2022 ● FIKRI DEAN RADITYO</h5>
+                      </div> -->
+                    </main>`);
+};
+
+const personalMain = function() {
+  $('.main').html(`<div data-aos="zoom-in">
+                      <div class="row intro" id="intro">
+
+                      <div class="col-6 col-s-12 img">
+                        <img src="img/formal1000.png" alt="FIKRI DEAN RADITYO">
+                      </div>
+                    
+                      <div class="col-6 col-s-12 diri">
+                        <h1><a href="javascript:;">Fikri Dean Radityo</a></h1>
+                        <h3><a href="javascript:;">18 December 2002</a></h3>
+                      </div>
+                    </div>
+
+                    <div class="row univ">
+                      <div class="col-6 col-s-12">
+                        <div class="img">
+                          <a href="https://www.uinjkt.ac.id/" target="_blank" title="click to go to uin official website">
+                            <img src="img/uin.png" alt="Universitas Islam Negeri Syarif Hidayatullah Jakarta">
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-6 col-s-12">
+                        <div class="profile">
+                          <h1><a href="https://www.uinjkt.ac.id/" target="_blank" title="click to go to uin official website">Universitas Islam Negeri Syarif Hidayatullah Jakarta</a></h1>
+                          <h3><a href="javascript:;">College Student</a></h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>`);
+}
+
+const certificateMain = function() {
+  $('.main').html(`
+                    <div class="row button btn-certificate" data-aos="fade-up">
+                      <div class="col-6 col-s-12">
+                        <button class="button" id="cerLeft">
+                          <i class="fa-solid fa-arrow-left"></i> Left 
+                        </button>
+                      </div>
+
+                      <div class="col-6 col-s-12">
+                        <button class="button" id="cerRight">
+                          Right <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row card-web certificate-web" id="certificate-web" data-aos="zoom-in">
+                      <div class="col-12 col-s-12">
+                        <div class="card-list first">
+                          <a href="https://www.freecodecamp.org/certification/fikridean/responsive-web-design" target="_blank"><img src='./img/certificate responsive web.png' alt="Responsive Web Design" /></a>
+                          <div class="card-info">
+                            <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
+                            <p class="info">Responsive Web Design</p>
+                            <p class="date"><span>Issued</span> • November 2nd, 2021</p>
+                          </div>
+                        </div>
+                        <div class="card-list">
+                          <img src='./img/JF certificate.png' alt="Java Fundamentals" />
+                          <div class="card-info">
+                            <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
+                            <p class="info">Java Fundamentals</p>
+                            <p class="date"><span>Issued</span> • December 26th, 2021</p>
+                          </div>
+                        </div>
+                        <div class="card-list">
+                          <a href="https://www.freecodecamp.org/certification/fikridean/javascript-algorithms-and-data-structures" target="_blank"><img src='./img/JavaScript Algorithms and Data Structures Certificate.png' alt="JavaScript Algorithms and Data Structures" /></a>
+                          <div class="card-info">
+                            <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> FreeCodeCamp</span></p>
+                            <p class="info">JavaScript Algorithms and Data Structures</p>
+                            <p class="date"><span>Issued</span> • January 18th, 2022</p>
+                          </div>
+                        </div>
+                        <div class="card-list">
+                          <img src='./img/JFo Certificate.png' alt="JavaScript Algorithms and Data Structures" />
+                          <div class="card-info">
+                            <p class="rating"><span class="star"><i class="fa-solid fa-star"></i></span> Oracle Academy</span></p>
+                            <p class="info">Java Foundations</p>
+                            <p class="date"><span>Issued</span> • April 6th, 2022</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>`);
+}
+
+const projectMain = function() {
+  $('.main').html(`<div class="row button btn-project" data-aos="fade-up">
+                      <div class="col-6 col-s-12">
+                        <button class="button" id="proLeft">
+                          <i class="fa-solid fa-arrow-left"></i> Left 
+                        </button>
+                      </div>
+
+                      <div class="col-6 col-s-12">
+                        <button class="button" id="proRight">
+                          Right <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+    
+                    <div class="row card-web project-web" id="project-web" data-aos="zoom-in">
+                      <div class="col-12 col-s-12">
+                          <div class="card-list">
+                            <a href="https://rianadi.github.io/tribute/" target="_blank"><img src='./img/tiger_woods.png' alt="card" /></a>
+                            <div class="card-info">
+                              <p class="rating"><span><i class="fa-solid fa-star star"></i> Tribute Page</span></p>
+                            </div>
+                          </div>
+                          <div class="card-list">
+                            <a href="https://rianadi.github.io/survey-form/" target="_blank"><img src='./img/survey.png' alt="card" /></a>
+                            <div class="card-info">
+                              <p class="rating"><span><i class="fa-solid fa-star star"></i> Survey Page</span></p>
+                            </div>
+                          </div>
+                          <div class="card-list">
+                            <a href="https://rianadi.github.io/js-doc/" target="_blank"><img src='./img/js_doc.png' alt="card" /></a>
+                            <div class="card-info">
+                              <p class="rating"><span><i class="fa-solid fa-star star"></i> JS Documentation Page</span></p>
+                            </div>
+                          </div>
+                          <div class="card-list">
+                            <a href="https://dribbble.com/shots/12230630-Vacansy-Landing-Page" target="_blank"><img src='./img/vacansy_remake.png' alt="card" /></a>
+                            <div class="card-info">
+                              <p class="rating"><span><i class="fa-solid fa-star star"></i> Vacansy Remake</span></p>
+                            </div>
+                          </div>
+                          <div class="card-list">
+                            <a href="https://dribbble.com/shots/15607887-StepWorld" target="_blank"><img src='./img/step_world.png' alt="card" /></a>
+                            <div class="card-info">
+                              <p class="rating"><span><i class="fa-solid fa-star star"></i> Step World</span></p>
+                            </div>
+                          </div>
+                          <div class="card-list">
+                            <img src='./img/step_world2.png' alt="card" />
+                            <div class="card-info">
+                              <p class="rating"><span><i class="fa-solid fa-star star"></i> Step World v2</span></p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>`);
+}
