@@ -446,13 +446,13 @@ const certificateMain = function() {
                     <div class="row button btn-certificate" data-aos="fade-up">
                       <div class="col-6 col-s-12">
                         <button class="button" id="cerLeft">
-                          <i class="fa-solid fa-arrow-left"></i> Left 
+                          <i class="fa-solid fa-arrow-left"></i> 
                         </button>
                       </div>
 
                       <div class="col-6 col-s-12">
                         <button class="button" id="cerRight">
-                          Right <i class="fa-solid fa-arrow-right"></i>
+                          <i class="fa-solid fa-arrow-right"></i>
                         </button>
                       </div>
                     </div>
@@ -500,13 +500,13 @@ const projectMain = function() {
   $('.main').html(`<div class="row button btn-project" data-aos="fade-up">
                       <div class="col-6 col-s-12">
                         <button class="button" id="proLeft">
-                          <i class="fa-solid fa-arrow-left"></i> Left 
+                          <i class="fa-solid fa-arrow-left"></i> 
                         </button>
                       </div>
 
                       <div class="col-6 col-s-12">
                         <button class="button" id="proRight">
-                          Right <i class="fa-solid fa-arrow-right"></i>
+                          <i class="fa-solid fa-arrow-right"></i>
                         </button>
                       </div>
                     </div>
