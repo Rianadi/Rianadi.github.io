@@ -171,10 +171,10 @@ $( document ).ready(function() {
     $('.nav-link').show();
     $('#open-icon').hide();
     $('#close-icon').show();
-    $('#contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon').css({
+    $('#contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon, #home-icon').css({
       'opacity': '0'
     });
-    $('#contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon').hide();
+    $('#contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon, #home-icon').hide();
   });
 
   $(document).on('click', 'h1[id^="close-icon"]', function(){
@@ -193,18 +193,24 @@ $( document ).ready(function() {
     $('#close-icon').css({
       'opacity': '0'
     });
-    $('#burger-icon, #contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon').css({
+    $('#burger-icon, #contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon, #home-icon').css({
       'padding': '15px 0',
       'margin': '15px 0',
       'transition': '2s'
-    })
+    });
     setTimeout(() => {
-      $('#burger-icon, #contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon').css({
+      $('#burger-icon, #contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon, #home-icon').css({
         'opacity': '1',
       })
     }, 1000);
     $('#close-icon').hide();
-    $('#contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon').show();
+    $('#contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon, #home-icon').show();
+  });
+
+  $(document).on('click', 'h1[id^="home-icon"]', function(){
+    $('.active').removeClass('active');
+    $('.active-icon').removeClass('active-icon');
+    landing();
   });
 
   $(document).on('click', 'h1[id^="contact-icon"]', function(){
@@ -236,7 +242,10 @@ $( document ).ready(function() {
       $('nav ul .active').removeClass('active');
       $('.active-icon').removeClass('active-icon');
 
-      if ($(this).hasClass('contact-value')) {
+      if ($(this).hasClass('home')) {
+        landing();
+      }
+      else if ($(this).hasClass('contact-value')) {
         contactMain();
       } else if ($(this).hasClass('personal')) {
         personalMain();
@@ -247,7 +256,106 @@ $( document ).ready(function() {
       }
     }
   });
+
+  $(document).on('click', 'div[id^="l-linked"]', function(){
+    linked();
+  });
+
+  $(document).on('click', 'div[id^="l-github"]', function(){
+    github();
+  });
+
+  $(document).on('click', 'div[id^="l-freecodecamp"]', function(){
+    freecodecamp();
+  });
+
+  $(document).on('click', 'div[id^="l-contact"]', function(){
+    $('.landing').css({
+      'opacity': '0',
+    });
+
+    setTimeout(() => {
+      $('.landing').css({
+        'display': 'none',
+      });
+    }, 500);
+
+    $('.active').removeClass('active');
+
+    $('.active-icon').removeClass('active-icon');
+
+    contactMain();
+  });
+
+  $(document).on('click', 'div[id^="l-personal"]', function(){
+    $('.landing').css({
+      'opacity': '0',
+    });
+
+    setTimeout(() => {
+      $('.landing').css({
+        'display': 'none',
+      });
+    }, 500);
+
+    $('.active').removeClass('active');
+
+    $('.active-icon').removeClass('active-icon');
+
+    personalMain();
+  });
+
+  $(document).on('click', 'div[id^="l-certificate"]', function(){
+    $('.landing').css({
+      'opacity': '0',
+    });
+
+    setTimeout(() => {
+      $('.landing').css({
+        'display': 'none',
+      });
+    }, 500);
+
+    $('.active').removeClass('active');
+
+    $('.active-icon').removeClass('active-icon');
+
+    certificateMain();
+  });
+
+  $(document).on('click', 'div[id^="l-project"]', function(){
+    $('.landing').css({
+      'opacity': '0',
+    });
+
+    setTimeout(() => {
+      $('.landing').css({
+        'display': 'none',
+      });
+    }, 500);
+
+    $('.active').removeClass('active');
+    $('.active-icon').removeClass('active-icon');
+    projectMain();
+  });
+
 });
+
+const landing = function() {
+  $('.landing').css({
+    'display': 'flex'
+  });
+  
+  setTimeout(() => {
+    $('.landing').css({
+      'opacity': '1'
+    });
+  }, 0);
+
+  $('.home').addClass('active');
+
+  $('#home-icon').addClass('active-icon');
+}
 
 const contactMain = function() {
   $('.contact-value').addClass('active');

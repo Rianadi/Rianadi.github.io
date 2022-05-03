@@ -111,6 +111,96 @@ body {
       }
     }
 
+    .landing {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99999;
+      background-image: url(./img/background-2.jpg);
+      background-size: cover;
+      background-position: center;
+      padding: 100px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      transition: 500ms;
+      box-shadow: 0 0 10px 2px $orange2 inset;
+
+      .landing-parent {
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        cursor: pointer;
+        border-radius: 30px;
+
+        .div1 {
+          grid-area: 1 / 1 / 2 / 3;
+          background-image: url(./img/l-linked.jpg);
+          background-size: contain;
+          background-position: center;
+          border-top-left-radius: 30px;
+        }
+
+        .div2 { 
+          grid-area: 1 / 3 / 2 / 4;
+          background-image: url(./img/l-contact.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .div3 { 
+          grid-area: 1 / 4 / 2 / 5;
+          border-top-right-radius: 30px;
+          background-image: url(./img/l-personal.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .div4 { 
+          grid-area: 2 / 1 / 3 / 2; 
+          border-bottom-left-radius: 30px;
+          background-image: url(./img/l-certificate.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .div5 { 
+          grid-area: 2 / 2 / 3 / 3; 
+          background-image: url(./img/l-project.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .div6 { 
+          grid-area: 2 / 3 / 3 / 4;
+          background-image: url(./img/l-github.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .div7 { 
+          grid-area: 2 / 4 / 3 / 5;
+          background-color: grey; 
+          border-bottom-right-radius: 30px;
+          background-image: url(./img/l-freecodecamp.png);
+          background-size: cover;
+          background-position: right;
+        }
+
+        .div1, .div2, .div3, .div4, .div5, .div6, .div7 {
+          transition: 500ms;
+        }
+
+        .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover, .div7:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+
     .sidebar {
       display: flex;
       align-items: center;
@@ -138,7 +228,7 @@ body {
         color: $orange1;
       }
 
-      #contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon {
+      #contact-icon, #personal-icon, #certificate-icon, #project-icon, #open-icon, #home-icon {
         text-align: center;
         opacity: 0;
         display: none;
@@ -802,6 +892,10 @@ body {
 
     .container {
       background-color: #0c0c0e;
+
+      .landing {
+        display: none;
+      }
 
       .topnav {
         padding: 0;
